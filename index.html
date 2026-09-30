@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ablai Khan Guide</title>
+<meta name="description" content="Неофициальный студенческий гид КазУМОиМЯ им. Абылай хана: первая неделя, кампус, учёба, академическая честность, помощь. RU · KK · EN · 中文 · TK">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F7FB;--surface:#fff;--surface2:#EDF2F8;--ink:#0F2338;--muted:#586A80;--line:#D9E2EE;--navy:#16324F;--blue:#2A5C8F;--blue2:#3A78B5;--sky:#E6EFF8;--sand:#E9D5B5;--ok:#1E8E5A;--okbg:#E2F4EB;--warn:#A0610A;--warnbg:#FFF2D9;--bad:#BD3A2B;--badbg:#FCE6E3;--sh:0 1px 2px rgba(15,35,56,.05),0 14px 34px -14px rgba(15,35,56,.22);--hdr:rgba(255,255,255,.82);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1725;--surface:#112135;--surface2:#16293F;--ink:#E8EFF8;--muted:#95A8BE;--line:#22374F;--blue:#6FA6DE;--blue2:#8DBBEB;--sky:#16293F;--okbg:#0F2E22;--warnbg:#33260D;--badbg:#38181A;--ok:#4BC58A;--warn:#E8AE55;--bad:#F07A6C;--sh:0 1px 2px rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.6);--hdr:rgba(11,23,37,.82)}}
+:root[data-theme="dark"]{--bg:#0B1725;--surface:#112135;--surface2:#16293F;--ink:#E8EFF8;--muted:#95A8BE;--line:#22374F;--blue:#6FA6DE;--blue2:#8DBBEB;--sky:#16293F;--okbg:#0F2E22;--warnbg:#33260D;--badbg:#38181A;--ok:#4BC58A;--warn:#E8AE55;--bad:#F07A6C;--sh:0 1px 2px rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.6);--hdr:rgba(11,23,37,.82)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);scroll-behavior:smooth;background:var(--bg)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter","Noto Sans SC",system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html[lang="zh"] body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei","Inter",system-ui,sans-serif}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,4.6vw,3.3rem);font-weight:800}h2{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:750}h3{font-size:1.1rem;font-weight:700}
+p{margin:0 0 1em}
+.container{width:min(1160px,100% - 40px);margin-inline:auto}
+.sec{padding:34px 0}.sec+.sec{padding-top:8px}
+.ic{width:1.15em;height:1.15em;flex:none;vertical-align:-.2em}
+:focus-visible{outline:3px solid var(--blue2);outline-offset:2px;border-radius:8px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:8px 14px;border-radius:10px;z-index:200}.skip:focus{left:12px}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--blue2),var(--sand));z-index:120;transition:width .1s}
+/* header */
+#hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:100;background:var(--hdr);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:14px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:800;letter-spacing:-.02em;white-space:nowrap}.brand:hover{text-decoration:none}
+.brand .mk{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--navy),var(--blue2));display:grid;place-items:center;color:#fff;box-shadow:0 6px 16px -6px var(--blue)}
+.brand small{display:block;font-weight:500;font-size:.68rem;color:var(--muted);letter-spacing:0;margin-top:-3px}
+nav.main{display:flex;gap:2px;margin-left:12px}
+nav.main a,.more>button{padding:8px 11px;border-radius:11px;color:var(--ink);font-size:.9rem;font-weight:550;border:0;background:none;cursor:pointer;font-family:inherit;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+nav.main a:hover,.more>button:hover{background:var(--surface2);text-decoration:none}
+nav.main a.on{background:var(--sky);color:var(--blue)}
+.sp{flex:1}
+.ibtn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:.2s}.ibtn:hover{transform:translateY(-1px);border-color:var(--blue2)}
+.lang>button{width:auto;padding:0 12px;gap:6px;display:inline-flex;align-items:center;font:600 .85rem inherit;font-family:inherit}
+.dd{position:relative}
+.menu{position:absolute;right:0;top:calc(100% + 8px);min-width:190px;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:6px;display:none;z-index:150}
+.menu.open{display:block;animation:pop .18s ease}
+.menu a,.menu button{display:flex;gap:10px;align-items:center;width:100%;text-align:left;padding:9px 12px;border-radius:10px;color:var(--ink);font:500 .92rem inherit;font-family:inherit;border:0;background:none;cursor:pointer}
+.menu a:hover,.menu button:hover{background:var(--surface2);text-decoration:none}.menu .cur{color:var(--blue);font-weight:700}
+.burger{display:none}
+#drawer{position:fixed;inset:0;background:var(--bg);z-index:140;padding:calc(env(safe-area-inset-top,0px) + 76px) 20px 30px;overflow:auto;display:none}
+#drawer.open{display:block;animation:fade .2s}
+#drawer a{display:flex;gap:12px;align-items:center;padding:14px 8px;border-bottom:1px solid var(--line);color:var(--ink);font-weight:600;font-size:1.05rem}
+@media(max-width:1040px){nav.main,.more{display:none}.burger{display:grid}}
+@media(max-width:520px){.brand small{display:none}}
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,#0F2640 0%,#16324F 45%,#2A5C8F 100%);padding:64px 0 74px}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(circle at 30% 40%,#000 0,transparent 70%);-webkit-mask-image:radial-gradient(circle at 30% 40%,#000 0,transparent 70%)}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;animation:float 14s ease-in-out infinite}
+.b1{width:380px;height:380px;background:#3A78B5;top:-120px;right:-60px}.b2{width:300px;height:300px;background:#E9D5B5;opacity:.22;bottom:-120px;left:8%;animation-delay:-5s}.b3{width:240px;height:240px;background:#6FA6DE;top:30%;left:46%;animation-delay:-9s;opacity:.3}
+.hero-in{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:99px;font-size:.82rem;font-weight:600;margin-bottom:18px;backdrop-filter:blur(6px)}
+.hero h1{color:#fff;margin-bottom:.4em}
+.hero .lead{color:#D5E3F3;font-size:1.13rem;max-width:560px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 30px}
+.stats{display:flex;gap:28px;flex-wrap:wrap}.stats b{display:block;font-size:2rem;font-weight:800;letter-spacing:-.03em}.stats span{font-size:.82rem;color:#BBD0E7}
+.hero-visual{position:relative}
+.hero-visual .ph{border-radius:28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.25)}
+.fl{position:absolute;background:var(--surface);color:var(--ink);padding:10px 14px;border-radius:16px;box-shadow:var(--sh);font-size:.85rem;font-weight:650;display:flex;gap:8px;align-items:center;animation:bob 6s ease-in-out infinite}
+.fl .ic{color:var(--blue)}.fl.f1{left:-18px;top:16%}.fl.f2{right:-12px;top:44%;animation-delay:-2s}.fl.f3{left:10%;bottom:-16px;animation-delay:-4s}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr}.hero{padding:44px 0 56px}.fl.f1{left:6px}.fl.f2{right:6px}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:14px;font:650 .95rem inherit;font-family:inherit;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;text-decoration:none!important}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--blue);color:#fff;box-shadow:0 10px 22px -10px var(--blue)}.btn.primary:hover{box-shadow:0 14px 26px -10px var(--blue)}
+.hero .btn.primary{background:#fff;color:var(--navy)}
+.btn.ghost{background:var(--surface);border-color:var(--line);color:var(--ink)}
+.btn.ghost-w{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff}
+.btn.lg{padding:14px 24px;font-size:1rem}.btn.sm{padding:7px 12px;font-size:.85rem;border-radius:11px}
+/* cards */
+.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:980px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--sh);transition:transform .25s,border-color .25s}
+a.card,.card.hov{color:var(--ink)}a.card:hover,.card.hov:hover{transform:translateY(-4px);border-color:var(--blue2);text-decoration:none}
+.tile .ti{width:48px;height:48px;border-radius:15px;background:var(--sky);color:var(--blue);display:grid;place-items:center;margin-bottom:14px;font-size:1.3rem;transition:.3s}
+.tile:hover .ti{background:var(--blue);color:#fff;transform:rotate(-6deg) scale(1.06)}
+.tile p{color:var(--muted);font-size:.93rem;margin:0}
+.tile .go{margin-top:12px;color:var(--blue);font-weight:650;font-size:.9rem;display:inline-flex;gap:6px;align-items:center}
+.tile:hover .go .ic{transform:translateX(4px)}.go .ic{transition:.2s}
+.sech{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}.sech p{color:var(--muted);margin:0}
+.kicker{font-size:.78rem;font-weight:750;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:6px}
+/* page head */
+.phead{background:linear-gradient(180deg,var(--sky),transparent);padding:34px 0 18px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.ph-row{display:flex;gap:18px;align-items:flex-start}
+.ph-ic{width:60px;height:60px;border-radius:19px;background:linear-gradient(135deg,var(--navy),var(--blue2));color:#fff;display:grid;place-items:center;font-size:1.6rem;flex:none;box-shadow:0 12px 24px -12px var(--blue)}
+.phead h1{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:.2em}.phead .lead{color:var(--muted);max-width:760px;margin:0}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center;font-size:.82rem;color:var(--muted)}
+.badge{display:inline-flex;gap:6px;align-items:center;padding:4px 11px;border-radius:99px;font-size:.78rem;font-weight:650}
+.badge.draft{background:var(--warnbg);color:var(--warn)}.badge.ok{background:var(--okbg);color:var(--ok)}.badge.bad{background:var(--badbg);color:var(--bad)}.badge.info{background:var(--sky);color:var(--blue)}
+.note{display:flex;gap:12px;padding:14px 16px;border-radius:16px;font-size:.92rem;margin:0 0 18px;align-items:flex-start}
+.note.warn{background:var(--warnbg);color:var(--warn)}.note.info{background:var(--sky);color:var(--blue)}.note .ic{margin-top:3px}.note div{color:var(--ink)}
+/* photos */
+.ph{position:relative;margin:0;border-radius:20px;overflow:hidden;background:var(--surface2);border:1px solid var(--line)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph.empty{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;text-align:center;padding:18px;color:var(--muted);font-size:.85rem;background:repeating-linear-gradient(135deg,var(--surface2) 0 12px,var(--surface) 12px 24px);border-style:dashed}
+.ph.empty .ic{font-size:1.6rem;color:var(--blue)}
+.hero .ph.empty{background:repeating-linear-gradient(135deg,rgba(255,255,255,.08) 0 12px,rgba(255,255,255,.03) 12px 24px);color:#D5E3F3;border-color:rgba(255,255,255,.35)}
+/* tabs */
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:5px;background:var(--surface2);border-radius:16px;margin-bottom:22px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+.tabs button{border:0;background:none;padding:9px 16px;border-radius:12px;font:600 .9rem inherit;font-family:inherit;color:var(--muted);cursor:pointer;white-space:nowrap;transition:.2s}
+.tabs button.on{background:var(--surface);color:var(--blue);box-shadow:var(--sh)}
+.panel{display:none}.panel.on{display:block;animation:rise .4s ease}
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{padding:12px 15px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface2);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}tr:last-child td{border-bottom:0}tbody tr:hover{background:var(--sky)}
+/* accordion */
+.acc{background:var(--surface);border:1px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden;transition:border-color .2s}
+.acc[open]{border-color:var(--blue2);box-shadow:var(--sh)}
+.acc summary{list-style:none;cursor:pointer;padding:16px 20px;font-weight:650;display:flex;gap:12px;align-items:center}.acc summary::-webkit-details-marker{display:none}
+.acc summary .ci{margin-left:auto;transition:transform .25s;color:var(--muted)}.acc[open] summary .ci{transform:rotate(180deg)}
+.acc summary .ai{width:38px;height:38px;border-radius:12px;background:var(--sky);color:var(--blue);display:grid;place-items:center;flex:none}
+.acc .ab{padding:0 20px 20px;animation:rise .3s ease}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.steps div{background:var(--surface2);border-radius:14px;padding:12px 14px;font-size:.92rem}.steps b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--blue);margin-bottom:3px}
+/* checklist */
+.fw{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}
+@media(max-width:900px){.fw{grid-template-columns:1fr}}
+.ring{position:sticky;top:90px;text-align:center}
+.ring svg{width:190px;height:190px;transform:rotate(-90deg)}.ring circle{fill:none;stroke-width:14;stroke-linecap:round}
+.ring .bg{stroke:var(--surface2)}.ring .fg{stroke:var(--blue);stroke-dasharray:502;stroke-dashoffset:502;transition:stroke-dashoffset .8s cubic-bezier(.2,.8,.2,1)}
+.ring .num{margin-top:-122px;height:122px;display:flex;flex-direction:column;justify-content:center;font-size:2.3rem;font-weight:800;letter-spacing:-.03em}.ring .num small{font-size:.8rem;color:var(--muted);font-weight:500}
+.ck{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:18px;background:var(--surface);border:1px solid var(--line);margin-bottom:10px;cursor:pointer;transition:.25s;text-align:left;width:100%;font-family:inherit;color:var(--ink)}
+.ck:hover{border-color:var(--blue2);transform:translateX(3px)}
+.ck .bx{width:26px;height:26px;border-radius:9px;border:2px solid var(--line);display:grid;place-items:center;flex:none;color:transparent;transition:.25s;margin-top:2px}
+.ck.done{background:var(--okbg);border-color:transparent}.ck.done .bx{background:var(--ok);border-color:var(--ok);color:#fff;transform:scale(1.08)}.ck.done .tt{text-decoration:line-through;opacity:.65}
+.ck .tt{font-weight:650;display:block}.ck .ds{font-size:.9rem;color:var(--muted);display:block;margin-top:2px}
+.ck .lk{margin-top:6px;display:inline-flex;font-size:.85rem;font-weight:650;color:var(--blue)}
+/* timeline */
+.tl{position:relative;padding-left:30px}.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:3px;background:var(--line);border-radius:3px}
+.tl .fillb{position:absolute;left:9px;top:6px;width:3px;background:var(--blue);border-radius:3px;height:0;transition:height 1.4s ease}
+.ti2{position:relative;padding:0 0 22px}.ti2::before{content:"";position:absolute;left:-29px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--surface);border:3px solid var(--blue)}
+.ti2 .d{font-size:.8rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.05em}.ti2 .t{font-weight:650}.ti2 .s{color:var(--muted);font-size:.9rem}
+.cal{display:grid;gap:8px}.ce{display:grid;grid-template-columns:170px 1fr;gap:14px;align-items:center;padding:12px 16px;border-radius:14px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c,var(--blue))}
+.ce .dt{font-weight:700;font-size:.9rem}.ce .nm{font-size:.93rem}
+@media(max-width:560px){.ce{grid-template-columns:1fr;gap:2px}}
+.lg2{display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--muted);margin:0 0 14px}.lg2 i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:6px;vertical-align:-1px}
+/* forms */
+label.f{display:block;font-size:.82rem;font-weight:650;color:var(--muted);margin-bottom:5px}
+input[type=number],select,input[type=search],input[type=text]{width:100%;padding:11px 13px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 1rem inherit;font-family:inherit}
+input:focus,select:focus{outline:3px solid var(--sky);border-color:var(--blue2)}
+.gr{display:grid;grid-template-columns:1fr 1fr 40px;gap:10px;margin-bottom:10px;align-items:end}
+.res{margin-top:16px;padding:18px;border-radius:18px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff}
+.res big{display:block;font-size:2.6rem;font-weight:800;letter-spacing:-.03em;line-height:1.1}.res span{color:#CFE0F3;font-size:.9rem}
+/* bars */
+.bar{display:flex;height:46px;border-radius:14px;overflow:hidden;margin:14px 0 8px;background:var(--surface2)}
+.bar i{display:grid;place-items:center;color:#fff;font-style:normal;font-weight:700;font-size:.85rem;width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.bar i:nth-child(1){background:#16324F}.bar i:nth-child(2){background:#2A5C8F}.bar i:nth-child(3){background:#3A78B5}.bar i:nth-child(4){background:#6FA6DE}
+.bl{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;color:var(--muted)}
+/* do/dont */
+.dd2{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:760px){.dd2{grid-template-columns:1fr}}
+.lst{list-style:none;padding:0;margin:0;display:grid;gap:9px}.lst li{display:flex;gap:10px;align-items:flex-start;padding:11px 14px;border-radius:14px;background:var(--surface2);font-size:.94rem}
+.lst.y li .ic{color:var(--ok)}.lst.n li .ic{color:var(--bad)}.lst .ic{margin-top:4px}
+/* scenario */
+.sc{display:flex;flex-direction:column;gap:14px}
+.sc .sit{font-weight:600}.sc .gb{display:flex;gap:8px;flex-wrap:wrap}
+.gb button{flex:1;min-width:88px;padding:9px 8px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font:650 .85rem inherit;font-family:inherit;cursor:pointer;color:var(--ink);transition:.2s}
+.gb button:hover{border-color:var(--blue2);transform:translateY(-2px)}
+.vd{display:none;padding:14px;border-radius:14px;font-size:.92rem}.vd.show{display:block;animation:rise .35s ease}.vd b{display:block;margin-bottom:4px}
+.vd.no{background:var(--badbg)}.vd.yes{background:var(--okbg)}.vd.chk{background:var(--warnbg)}
+.gb button.right{background:var(--ok);color:#fff;border-color:var(--ok)}.gb button.wrong{background:var(--bad);color:#fff;border-color:var(--bad);animation:shake .4s}
+.ex{display:grid;gap:12px}.ex>div{padding:14px 16px;border-radius:14px;border-left:5px solid var(--c);background:var(--surface);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.93rem}.ex b{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;color:var(--c);margin-bottom:3px}
+.ladder{display:flex;gap:0;align-items:stretch;flex-wrap:wrap}
+.ladder div{flex:1;min-width:130px;padding:18px 12px;text-align:center;color:#fff;font-weight:700;font-size:.9rem;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%,14px 50%);margin-right:-6px}
+.ladder div:nth-child(1){background:#6FA6DE}.ladder div:nth-child(2){background:#3A78B5}.ladder div:nth-child(3){background:#2A5C8F}.ladder div:nth-child(4){background:#16324F}.ladder div:nth-child(5){background:#BD3A2B}
+/* term tooltip */
+.term{border-bottom:2px dotted var(--blue2);cursor:help;position:relative;font-weight:600}
+.term::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px);width:max-content;max-width:260px;background:var(--navy);color:#fff;padding:9px 12px;border-radius:12px;font-size:.82rem;font-weight:500;line-height:1.4;opacity:0;pointer-events:none;transition:.18s;z-index:60;text-align:left}
+.term:hover::after,.term:focus::after{opacity:1;transform:translateX(-50%)}
+/* chips */
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.chip{padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surface);font:600 .85rem inherit;font-family:inherit;cursor:pointer;color:var(--ink);transition:.2s}.chip.on,.chip:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.sos{display:flex;gap:10px;flex-wrap:wrap}.sos a{display:inline-flex;gap:8px;align-items:center;padding:10px 16px;border-radius:14px;background:var(--badbg);color:var(--bad);font-weight:750}.sos a b{font-size:1.2rem}
+/* map */
+.map{width:100%;height:auto;border-radius:22px;background:var(--surface);border:1px solid var(--line)}
+.map .st{fill:var(--surface2)}.map .stt{fill:var(--muted);font-size:13px;font-weight:600}
+.map .gr2{fill:#CFE7D5;opacity:.6}:root[data-theme="dark"] .map .gr2{fill:#1E3B2C}
+.map .bld rect{fill:var(--navy);transition:.25s;cursor:pointer;opacity:0;animation:appear .6s forwards}.map .bld:nth-of-type(2) rect{animation-delay:.15s}.map .bld:nth-of-type(3) rect{animation-delay:.3s}.map .bld:nth-of-type(4) rect{animation-delay:.45s}
+.map .bld text{fill:#fff;font-size:14px;font-weight:700;pointer-events:none}
+.map .bld:hover rect,.map .bld.sel rect,.map .bld:focus rect{fill:var(--blue2);transform:translateY(-3px);filter:drop-shadow(0 8px 8px rgba(0,0,0,.25))}
+.map .ent{fill:var(--sand)}.map .entt{fill:var(--muted);font-size:10px}.map .oth{fill:#5b7a9b}
+.binfo{margin-top:14px;padding:16px 18px;border-radius:16px;background:var(--sky);min-height:76px}.binfo b{display:block}
+/* misc */
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.kv{display:grid;gap:10px}.kv div{display:flex;gap:12px;align-items:flex-start}.kv .ic{color:var(--blue);margin-top:4px}.kv small{display:block;color:var(--muted)}
+.tag{display:inline-block;padding:2px 9px;border-radius:8px;background:var(--sky);color:var(--blue);font-size:.76rem;font-weight:700;margin:0 4px 4px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}@media(max-width:820px){.split{grid-template-columns:1fr}}
+.cta{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:28px;padding:34px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta h2{color:#fff;margin:0 0 .2em}.cta p{color:#D0E1F4;margin:0}.cta .btn.primary{background:#fff;color:var(--navy)}
+.searchbox{display:flex;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0 14px;margin-bottom:16px}.searchbox input{border:0;background:none;padding:13px 0;outline:none!important}.searchbox .ic{color:var(--muted)}
+/* footer */
+footer{margin-top:60px;border-top:1px solid var(--line);background:var(--surface);padding:36px 0 46px;color:var(--muted);font-size:.88rem}
+.fg2{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}@media(max-width:760px){.fg2{grid-template-columns:1fr}}
+footer a{color:var(--muted)}.credit{margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}.credit p{margin:0 0 6px}.credit b{color:var(--ink)}.team{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.team span{padding:5px 12px;border-radius:99px;background:var(--surface2);color:var(--ink);font-size:.82rem;font-weight:550}footer h4{color:var(--ink);margin:0 0 8px;font-size:.9rem}footer li{list-style:none;margin-bottom:5px}footer ul{padding:0;margin:0}
+/* overlays */
+#sov{position:fixed;inset:0;background:rgba(8,18,30,.55);backdrop-filter:blur(6px);z-index:180;display:none;padding:calc(env(safe-area-inset-top,0px) + 70px) 16px 20px;align-items:flex-start;justify-content:center}
+#sov.open{display:flex;animation:fade .15s}
+.sbox{width:min(640px,100%);background:var(--surface);border-radius:22px;box-shadow:0 30px 80px -20px rgba(0,0,0,.5);overflow:hidden}
+.sbox input{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:18px 20px;font-size:1.1rem}
+.sres{max-height:56vh;overflow:auto;padding:8px}.sres a{display:flex;gap:12px;padding:11px 14px;border-radius:12px;color:var(--ink);align-items:center}.sres a:hover,.sres a.hl{background:var(--sky);text-decoration:none}.sres small{color:var(--muted);display:block}.sres .em{padding:22px;text-align:center;color:var(--muted)}
+#toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);transform:translate(-50%,30px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:14px;opacity:0;pointer-events:none;transition:.3s;z-index:250;max-width:90vw;font-size:.92rem}#toast.on{opacity:1;transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+#app.pg{animation:rise .5s ease}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes pop{from{opacity:0;transform:translateY(-6px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-24px) scale(1.08)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+@keyframes appear{to{opacity:1}}
+@media print{#hdr,footer,#progress,.tabs,.btn,.burger{display:none!important}.rv{opacity:1!important;transform:none!important}.panel{display:block!important}body{background:#fff;color:#000}.card,.acc{box-shadow:none;break-inside:avoid}.hero{background:#fff;color:#000}details.acc>*{display:block}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.map .bld rect{opacity:1}}
+</style>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<div id="progress"></div>
+<header id="hdr"></header>
+<div id="drawer"></div>
+<main id="app"></main>
+<footer id="ftr"></footer>
+<div id="sov"><div class="sbox"><input id="sin" type="search" autocomplete="off"><div class="sres" id="sres"></div></div></div>
+<div id="toast" role="status"></div>
+
+<script>
+(function(){
+'use strict';
+/* =====================================================================
+   НАСТРОЙКИ — ЗДЕСЬ МЕНЯТЬ ССЫЛКИ И ФОТО
+   ===================================================================== */
+var CONFIG = {
+  FORM_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSdAHYMiBjqgpf7Nkdn_ZNhmRuQoWCj6Lm41zFRrBHdSsidnHw/viewform?usp=publish-editor',  
+  MAPS: 'https://maps.google.com/?q=43.243212,76.920876'
+};
+
+// Фото: вставь путь к файлу или URL между кавычками. Пустая строка = показывается заглушка.
+var PHOTOS = {
+  hero:'images/hero.jpg', cos:'images/cos.jpg', aerial:'images/aerial.jpg', gyk:'images/gyk.jpg', uk1:'images/uk1.jpg', uk2:'images/uk2.jpg', uk3:'images/uk3.jpg', uk4:'images/uk4.jpg', uk5:'images/uk5.jpg',
+  dorm_out:'images/dorm_out.jpg', dorm_room:'images/dorm_room.jpg', dorm_laundry:'images/dorm_laundry.jpg', dorm_gym:'images/dorm_gym.jpg', dorm_study:'images/dorm_study.jpg', dorm_leisure:'images/dorm_leisure.jpg',
+  canteen:'images/canteen.jpg', cafe:'images/cafe.jpg', library:'images/library.jpg', pcclass:'images/pcclass.jpg', museum_uni:'images/museum_uni.jpg', museum_abylai:'images/museum_abylai.jpg', sport:'images/sport.jpg',
+  life_choir:'images/life_choir.jpg', life_dance:'images/life_dance.jpg', life_debate:'images/life_debate.jpg', life_mun:'images/life_mun.jpg', life_volunteer:'images/life_volunteer.jpg', life_orchestra:'images/life_orchestra.jpg',
+  faculties:'images/faculties.jpg', contacts:'images/contacts.jpg'
+};
+
+/* T(ru, kk, en, zh, tk) — строка на 5 языках */
+function T(ru,kk,en,zh,tk){return {ru:ru,kk:kk,en:en,zh:zh,tk:tk}}
+
+var LANGS = [
+  {c:'ru',n:'Русский',s:'RU'},{c:'kk',n:'Қазақша',s:'KK'},{c:'en',n:'English',s:'EN'},
+  {c:'zh',n:'中文',s:'中'},{c:'tk',n:'Türkmençe',s:'TK'}
+];
+var PAGES = ['home','first-week','campus','study','integrity','help','ask','kazakhstan','life','faculties','contacts','about','photos'];
+var MAIN = ['first-week','campus','study','integrity','help'];
+var MORE = ['ask','kazakhstan','life','faculties','contacts','about'];
+var ICON_OF = {home:'home','first-week':'check',campus:'pin',study:'book',integrity:'shield',help:'buoy',ask:'chat',kazakhstan:'globe',life:'users',faculties:'cap',contacts:'phone',about:'info',photos:'camera'};
+
+var NAV = {
+ home:T('Главная','Басты бет','Home','首页','Baş sahypa'),
+ 'first-week':T('Первая неделя','Алғашқы апта','First week','第一周','Ilkinji hepde'),
+ campus:T('Кампус','Кампус','Campus','校园','Kampus'),
+ study:T('Учёба','Оқу','Studies','学习','Okuw'),
+ integrity:T('Академическая честность','Академиялық адалдық','Academic integrity','学术诚信','Akademik dogruçyllyk'),
+ help:T('Что делать, если…','Не істеу керек, егер…','What to do if…','遇到问题怎么办','Näme etmeli, eger…'),
+ ask:T('Спроси студента','Студенттен сұра','Ask a student','问学长学姐','Talyplardan sora'),
+ kazakhstan:T('Жизнь в Казахстане','Қазақстандағы өмір','Life in Kazakhstan','在哈萨克斯坦','Gazagystanda ýaşaýyş'),
+ life:T('Студенческая жизнь','Студенттік өмір','Student life','校园生活','Talyp durmuşy'),
+ faculties:T('Факультеты','Факультеттер','Faculties','院系','Fakultetler'),
+ contacts:T('Контакты','Байланыс','Contacts','联系方式','Habarlaşmak'),
+ about:T('О проекте','Жоба туралы','About the project','关于项目','Taslama barada'),
+ photos:T('Список фото','Фото тізімі','Photo list','照片清单','Suratlaryň sanawy')
+};
+var MORE_L = T('Ещё','Тағы','More','更多','Ýene');
+var BRAND = T('Гид Абылай хана','Абылай хан гиді','Ablai Khan Guide','阿布赉汗指南','Ablaý han gollanmasy');
+var UNI = T('КазУМОиМЯ им. Абылай хана','Абылай хан атындағы ҚазХҚжӘТУ','Ablai Khan University','阿布赉汗大学','Ablaý han uniwersiteti');
+var UNI_FULL = T('Казахский университет международных отношений и мировых языков имени Абылай хана','Абылай хан атындағы Қазақ халықаралық қатынастар және әлем тілдері университеті','Ablai Khan Kazakh University of International Relations and World Languages','阿布赉汗哈萨克国际关系与世界语言大学','Ablaý han adyndaky Gazak halkara gatnaşyklar we dünýä dilleri uniwersiteti');
+
+var ICONS = {
+ home:'<path d="M3 11l9-8 9 8v10a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z"/>',
+ check:'<path d="M20 6L9 17l-5-5"/>',
+ pin:'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/>',
+ book:'<path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>',
+ shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>',
+ buoy:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M4.9 4.9l4.3 4.3M14.8 14.8l4.3 4.3M14.8 9.2l4.3-4.3M4.9 19.1l4.3-4.3"/>',
+ chat:'<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>',
+ globe:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/>',
+ users:'<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/>',
+ cap:'<path d="M22 10L12 5 2 10l10 5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/>',
+ phone:'<path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/>',
+ info:'<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>',
+ camera:'<path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/>',
+ search:'<circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/>',
+ moon:'<path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/>',
+ sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+ menu:'<path d="M3 6h18M3 12h18M3 18h18"/>',
+ x:'<path d="M18 6L6 18M6 6l12 12"/>',
+ down:'<path d="M6 9l6 6 6-6"/>',
+ arrow:'<path d="M5 12h14M12 5l7 7-7 7"/>',
+ alert:'<path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0zM12 9v4M12 17h.01"/>',
+ ext:'<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>',
+ calc:'<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>',
+ bus:'<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M3 11h18M7 21v-4M17 21v-4M7 14h.01M17 14h.01"/>',
+ food:'<path d="M3 2v7a3 3 0 003 3v10M9 2v7M6 2v7M17 2c-2 2-3 5-3 8s1 4 3 4v8"/>',
+ music:'<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+ museum:'<path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l9 5H3z"/>',
+ bed:'<path d="M2 20V6M2 14h20v6M22 14v-2a4 4 0 00-4-4h-7v6"/><circle cx="6.5" cy="10.5" r="1.5"/>',
+ clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+ calendar:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+ plus:'<path d="M12 5v14M5 12h14"/>',
+ trash:'<path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/>',
+ star:'<path d="M12 2l3 7 7 .6-5.3 4.7L18.2 22 12 18l-6.2 4 1.5-7.7L2 9.6 9 9z"/>',
+ lock:'<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/>'
+};
+
+/* =====================================================================
+   ХЕЛПЕРЫ
+   ===================================================================== */
+var lang='ru', fb=0, lastPage='';
+var $=function(s,r){return (r||document).querySelector(s)};
+var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var store={get:function(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+function L(o){
+  if(o==null) return '';
+  if(typeof o==='string') return o;
+  if(o[lang]!=null) return o[lang];
+  fb++;
+  return o.en!=null?o.en:(o.ru||'');
+}
+function ic(n,c){return '<svg class="ic '+(c||'')+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICONS[n]||'')+'</svg>'}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+function href(p,s){return '#/'+lang+'/'+p+(s?'/'+s:'')}
+function ext(u,t){return '<a href="'+u+'" target="_blank" rel="noopener noreferrer">'+t+' '+ic('ext')+'</a>'}
+function allv(o){return Object.keys(o).map(function(k){return o[k]}).join(' ')}
+function num(s){return (lang==='en'||lang==='zh')?String(s).replace(',','.'):String(s)}
+function toast(t){var e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(function(){e.classList.remove('on')},2800)}
+function rv(i){return 'rv" style="--d:'+((i||0)*0.07).toFixed(2)+'s'}
+
+var MON = {
+ ru:['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'],
+ kk:['қаңтар','ақпан','наурыз','сәуір','мамыр','маусым','шілде','тамыз','қыркүйек','қазан','қараша','желтоқсан'],
+ en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+ tk:['ýanwar','fewral','mart','aprel','maý','iýun','iýul','awgust','sentýabr','oktýabr','noýabr','dekabr']
+};
+function fd(d,m){return lang==='zh'?(m+'月'+d+'日'):(d+' '+MON[lang][m-1])}
+function fr(a){
+  var d1=a[0],m1=a[1],d2=a[2],m2=a[3];
+  if(d2==null) return fd(d1,m1);
+  if(lang==='zh') return m1===m2? (m1+'月'+d1+'日–'+d2+'日') : (m1+'月'+d1+'日–'+m2+'月'+d2+'日');
+  return m1===m2? (d1+' – '+d2+' '+MON[lang][m1-1]) : (fd(d1,m1)+' – '+fd(d2,m2));
+}
+
+var PH_TXT = T('Здесь будет фото','Мұнда фото болады','Photo goes here','此处放置照片','Bu ýerde surat bolar');
+function photo(key,ratio){
+  var sp=PHOTO_SPEC.filter(function(s){return s[0]===key})[0]; var cap=sp?L(sp[2]):key; var src=PHOTOS[key];
+  if(src) return '<figure class="ph" style="aspect-ratio:'+(ratio||'4/3')+'"><img loading="lazy" src="'+esc(src)+'" alt="'+esc(cap)+'"></figure>';
+  return '<figure class="ph empty" style="aspect-ratio:'+(ratio||'4/3')+'">'+ic('camera')+'<span><b>'+L(PH_TXT)+'</b><br>'+esc(cap)+'</span></figure>';
+}
+
+/* Глоссарий */
+var GL = [
+ {id:'ak',a:T('АК','АК','AK','学年历','AK'),n:T('Академический календарь','Академиялық күнтізбе','Academic calendar','学年历','Akademik senenama'),d:T('График учебного года: семестры, экзамены, каникулы, праздники.','Оқу жылының кестесі: семестрлер, емтихандар, каникул, мереке күндері.','The schedule of the academic year: semesters, exams, breaks and holidays.','学年安排：学期、考试、假期和节日。','Okuw ýylynyň tertibi: semestrler, synaglar, rugsat we baýramlar.')},
+ {id:'guk',a:T('ГУК','БОК','GUK','主楼','BB'),n:T('Главный учебный корпус','Бас оқу корпусы','Main academic building','主教学楼','Baş okuw binasy'),d:T('Главное здание университета на ул. Муратбаева, 200.','Университеттің Мұратбаев к-сі, 200 мекенжайындағы басты ғимараты.','The main university building at 200 Muratbayev St.','大学主楼，位于穆拉特巴耶夫街200号。','Uniwersitetiň Muratbaýew köçesi, 200 salgydaky esasy binasy.')},
+ {id:'uk',a:T('УК','ОК','UK','教学楼','OB'),n:T('Учебный корпус','Оқу корпусы','Academic building','教学楼','Okuw binasy'),d:T('Учебные корпуса №1–5. Например, УК-3 — учебный корпус №3.','№1–5 оқу корпустары. Мысалы, ОК-3 — №3 оқу корпусы.','Academic buildings No. 1–5. For example, UK-3 is building No. 3.','1至5号教学楼。例如“3号楼”即第三教学楼。','1–5-nji okuw binalary. Meselem, OB-3 — 3-nji okuw binasy.')},
+ {id:'cos',a:T('ЦОС','СҚО','SSC','学生服务中心','THM'),n:T('Центр обслуживания студентов','Студенттерге қызмет көрсету орталығы','Student Service Center','学生服务中心','Talyplara hyzmat ediş merkezi'),d:T('«Единое окно»: карты, справки, транскрипты. 3-й корпус, каб. 101.','«Бір терезе»: карталар, анықтамалар, транскрипттер. ОК-3, 101-каб.','A “one-stop shop”: cards, certificates, transcripts. Building 3, room 101.','“一站式”窗口：办理各类卡片、证明和成绩单。3号楼101室。','«Bir penjire»: kartlar, kepilnamalar, transkriptler. 3-nji bina, 101-nji otag.')},
+ {id:'iup',a:T('ИУП','ЖОЖ','IUP','个人学习计划','ŞOM'),n:T('Индивидуальный учебный план','Жеке оқу жоспары','Individual study plan','个人学习计划','Şahsy okuw meýilnamasy'),d:T('Твой личный список предметов на семестр и их кредитов. Ты составляешь его сам на основе РУП.','Семестрге арналған пәндер мен кредиттердің жеке тізімі. Оны жұмыс оқу жоспары негізінде өзің жасайсың.','Your own list of courses and credits for a semester. You build it yourself, based on the working curriculum.','你本学期的课程与学分清单，由你依据教学计划自行制定。','Semestr üçin dersleriň we kredit sanynyň şahsy sanawy. Ony iş okuw meýilnamasy esasynda özüň düzýärsiň.')},
+ {id:'rk',a:T('РК','МБ','RK','阶段考核','AG'),n:T('Рубежный (внутрисеместровый) контроль','Межелік (семестр ішіндегі) бақылау','Midterm control','阶段考核（学期内考核）','Aralyk (semestr içindäki) gözegçilik'),d:T('Проверка знаний по завершении раздела курса. Проводится на 8-й и 15-й неделях.','Курс бөлімі аяқталғаннан кейінгі білім тексеруі. 8-ші және 15-ші аптада өткізіледі.','A check of your knowledge after a section of the course. Held in weeks 8 and 15.','课程一个阶段结束后的知识检测，安排在第8周和第15周。','Kursuň bölümi tamamlanandan soňky bilim barlagy. 8-nji we 15-nji hepdelerde geçirilýär.')},
+ {id:'ked',a:T('КЭД','ТПК','KED','选修课目录','SDK'),n:T('Каталог элективных дисциплин','Таңдау пәндерінің каталогы','Catalog of elective courses','选修课目录','Saýlama dersleriň katalogy'),d:T('Список предметов по выбору, из которых ты собираешь ИУП.','Жеке оқу жоспарын құрастыратын таңдау пәндерінің тізімі.','The list of optional courses you can choose from when building your study plan.','你制定个人学习计划时可选的选修课清单。','Şahsy okuw meýilnamasyny düzmekde saýlap boljak dersleriň sanawy.')},
+ {id:'rup',a:T('РУП','ЖҰОЖ','RUP','教学计划','IOM'),n:T('Рабочий учебный план','Жұмыс оқу жоспары','Working curriculum','教学计划','Iş okuw meýilnamasy'),d:T('Полный перечень обязательных и выборных предметов твоей программы с кредитами и порядком изучения.','Бағдарламаңдағы міндетті және таңдау пәндерінің кредиттері мен оқу реті көрсетілген толық тізімі.','The full list of required and elective courses of your programme, with credits and the order of study.','你所在专业全部必修课和选修课的清单，含学分与学习顺序。','Maksatnamaňdaky hökmany we saýlama dersleriň kredit hem tertip bilen doly sanawy.')},
+ {id:'syl',a:T('Силлабус','Силлабус','Syllabus','课程大纲','Silabus'),n:T('Силлабус','Силлабус','Syllabus','课程大纲','Silabus'),d:T('Программа курса: цели, темы, задания, критерии оценки, график сдачи работ, литература. Читай его в начале каждого курса!','Курс бағдарламасы: мақсаттар, тақырыптар, тапсырмалар, бағалау өлшемдері, тапсыру кестесі, әдебиет. Әр курстың басында оқып шық!','The course outline: goals, topics, assignments, grading criteria, deadlines, reading list. Read it at the start of every course!','课程说明：目标、主题、作业、评分标准、提交时间表和参考书目。每门课开始时务必读一遍！','Kursuň maksatnamasy: maksatlar, temalar, tabşyryklar, baha ölçegleri, tabşyrmak tertibi, edebiýat. Her kursuň başynda okap çyk!')},
+ {id:'sro',a:T('СРО','СӨЖ','SRO','自主学习','ÖÖI'),n:T('Самостоятельная работа обучающегося','Білім алушының өзіндік жұмысы','Independent work','学生自主学习','Okuwçynyň öz-özbaşdak işi'),d:T('Работа вне занятий: СРС — самостоятельно, СРСП — с консультацией преподавателя.','Сабақтан тыс жұмыс: СӨЖ — өз бетімен, СОӨЖ — оқытушының кеңесімен.','Work outside class: on your own, or with a teacher’s consultation.','课外学习：自己独立完成，或在教师指导下完成。','Sapakdan daşary iş: özbaşdak ýa-da mugallymyň maslahaty bilen.')},
+ {id:'pre',a:T('Пререквизит','Пререквизит','Prerequisite','先修课','Öň talap'),n:T('Пререквизиты / постреквизиты','Пререквизиттер / постреквизиттер','Prerequisites / post-requisites','先修课／后续课','Öň talap edilýän / soňky dersler'),d:T('Предметы, которые нужно изучить до данного курса (пререквизиты) или после него (постреквизиты).','Осы курстан бұрын (пререквизит) немесе одан кейін (постреквизит) оқылуға тиіс пәндер.','Courses you must complete before (prerequisites) or after (post-requisites) a given course.','学习某门课之前必须先修的课程（先修课），或之后必须修读的课程（后续课）。','Şu kursdan öň (öň talap) ýa-da soň (soňky) öwrenilmeli dersler.')},
+ {id:'tr',a:T('Транскрипт','Транскрипт','Transcript','成绩单','Transkript'),n:T('Транскрипт','Транскрипт','Transcript','成绩单','Transkript'),d:T('Документ со списком пройденных предметов, кредитов, оценок и GPA. Официальный — с подписью и печатью — выдаёт ЦОС.','Өтілген пәндер, кредиттер, бағалар және GPA тізімі бар құжат. Қолы мен мөрі бар ресми транскриптті СҚО береді.','A document listing your completed courses, credits, grades and GPA. The official one (signed and stamped) is issued by the Student Service Center.','列出已修课程、学分、成绩和平均绩点的文件。带签名和公章的正式成绩单由学生服务中心出具。','Geçilen dersleriň, kreditleriň, bahalaryň we ortaça balyň sanawy bar resminama. Gol we möhür goýlan resmi transkripti hyzmat merkezi berýär.')},
+ {id:'adv',a:T('Эдвайзер','Эдвайзер','Advisor','学业导师','Advaýzer'),n:T('Эдвайзер','Эдвайзер','Academic advisor','学业导师','Advaýzer'),d:T('Преподаватель-консультант, который помогает с выбором предметов и адаптацией на протяжении всей учёбы.','Бүкіл оқу барысында пәндерді таңдауға және бейімделуге көмектесетін кеңесші оқытушы.','A teacher-consultant who helps you choose courses and adapt throughout your studies.','在整个学习期间帮助你选课和适应环境的教师。','Bütin okuw dowamynda ders saýlamakda we uýgunlaşmakda kömek berýän maslahatçy mugallym.')},
+ {id:'gpa',a:T('GPA','GPA','GPA','平均绩点','GPA'),n:T('Средний балл успеваемости','Үлгерімнің орташа балы','Grade Point Average','平均学分绩点','Ortaça baha (GPA)'),d:T('Средний результат твоей учёбы с учётом кредитов. Показывает академическую успеваемость.','Кредиттерді ескеретін оқу нәтижелерінің орташа көрсеткіші. Академиялық үлгерімді көрсетеді.','The average result of your studies, weighted by credits. It shows your academic performance.','按学分加权的学习成绩平均值，反映你的学业表现。','Kredit hasaba alnyp çykarylan okuw netijeleriniň ortaça görkezijisi. Akademik üstünligi görkezýär.')},
+ {id:'ects',a:T('ECTS','ECTS','ECTS','欧洲学分','ECTS'),n:T('Европейская система кредитов','Еуропалық кредиттер жүйесі','European Credit Transfer System','欧洲学分转换系统','Ýewropa kredit ulgamy'),d:T('Европейская система перевода и накопления кредитов — помогает сопоставлять оценки между университетами.','Кредиттерді ауыстыру және жинақтаудың еуропалық жүйесі — университеттер арасындағы бағаларды салыстыруға көмектеседі.','The European system of credit transfer and accumulation; it helps compare grades between universities.','欧洲学分转换与累积体系，便于不同大学之间对照成绩。','Kredit geçirmegiň we toplamagyň Ýewropa ulgamy — uniwersitetleriň arasynda bahalary deňeşdirmäge kömek edýär.')},
+ {id:'cr',a:T('Кредит','Кредит','Credit','学分','Kredit'),n:T('Академический кредит','Академиялық кредит','Academic credit','学分','Akademik kredit'),d:T('Единица объёма учебной нагрузки. Чем больше кредитов у предмета, тем сильнее он влияет на GPA.','Оқу жүктемесі көлемінің өлшем бірлігі. Пәннің кредиті көп болған сайын, ол GPA-ға көбірек әсер етеді.','A unit of study workload. The more credits a course has, the more it affects your GPA.','学习工作量的计量单位。一门课学分越多，对平均绩点的影响越大。','Okuw ýüklemesiniň ölçeg birligi. Dersiň kredit sany näçe köp bolsa, ol GPA-a şonça köp täsir edýär.')},
+ {id:'pt',a:T('Placement test','Деңгей анықтау тесті','Placement test','分级测试','Derejäni kesgitleýän test'),n:T('Входной тест по языку','Кіріс тіл тесті','Language placement test','语言分级测试','Dil derejesini kesgitleýän test'),d:T('Тест в первую неделю: по результату тебя распределяют в группу по уровню языка.','Бірінші аптадағы тест: нәтижесіне қарай сені тіл деңгейі бойынша топқа бөледі.','A test in the first week; based on the result you are placed in a language group of your level.','第一周的测试，根据成绩将你分到相应语言水平的班级。','Ilkinji hepdedäki test: netijesine görä seni dil derejesi boýunça topara bölýärler.')},
+ {id:'sum',a:T('Летний семестр','Жазғы семестр','Summer semester','暑期学期','Tomusky semestr'),n:T('Летний (платный) семестр','Жазғы (ақылы) семестр','Summer (paid) semester','暑期（收费）学期','Tomusky (tölegli) semestr'),d:T('Дополнительный платный семестр: пересдать предмет с оценкой F, закрыть долг или разницу в планах.','Қосымша ақылы семестр: «F» алған пәнді қайта оқу, қарызды немесе жоспарлар арасындағы айырмашылықты жабу.','An extra paid semester to retake a failed (F) course, clear academic debt or cover differences between curricula.','额外的收费学期：重修不及格（F）课程、补清欠修课程或补修培养方案差异课程。','Goşmaça tölegli semestr: «F» alnan dersi gaýtadan öwrenmek, karzy ýa-da meýilnamalardaky tapawudy ýapmak.')}
+];
+function term(id){var g=GL.filter(function(x){return x.id===id})[0]; if(!g) return id; return '<span class="term" tabindex="0" data-tip="'+esc(L(g.d))+'">'+esc(L(g.a))+'</span>'}
+function X(s){return String(s).replace(/\{\{(\w+)\}\}/g,function(m,id){return term(id)})}
+
+/* Универсальные подписи */
+var SRC_GUIDE = T('Источник: Путеводитель первокурсника  ','Дереккөз: Бірінші курс студентінің нұсқаулығы,  ','Source: First-year Guide  ','资料来源：《新生指南》 ','Çeşme: Birinji ýyl talyp gollanmasy,  ');
+var NOTE_YEAR = T('Даты и суммы меняются каждый год — уточняй в деканате или ЦОС.','Деректер  –24 нұсқаулығынан алынған. Күндер мен сомалар жыл сайын өзгереді — деканаттан немесе СҚО-дан нақтыла.','Data comes from the  –24 guide. Dates and amounts change every year — confirm with your dean’s office or the Student Service Center.','数据取自 –24学年《新生指南》。日期和金额每年都会变化，请向院系办公室或学生服务中心确认。','Maglumatlar  –24 gollanmasyndan alyndy. Seneler we möçberler her ýyl üýtgeýär — dekanatdan ýa-da hyzmat merkezinden anyklaň.');
+function noteYear(){return '<div class="note warn">'+ic('alert')+'<div>'+L(NOTE_YEAR)+'</div></div>'}
+
+function pageHead(p,lead,src){
+  return '<section class="phead"><div class="container"><div class="ph-row rv"><div class="ph-ic">'+ic(ICON_OF[p])+'</div><div><h1>'+L(NAV[p])+'</h1><p class="lead">'+L(lead)+'</p></div></div>'+(src?'<div class="meta"><span>'+ic('book')+' '+L(src)+'</span></div>':'')+'</div></section>';
+}
+function sec(inner,cls){return '<section class="sec"><div class="container '+(cls||'')+'">'+inner+'</div></section>'}
+function tabsHTML(list,cur){
+  return '<div class="tabs" role="tablist">'+list.map(function(t){return '<button role="tab" data-act="tab" data-tab="'+t[0]+'" class="'+(t[0]===cur?'on':'')+'">'+L(t[1])+'</button>'}).join('')+'</div>';
+}
+var OFF = {
+ site:'https://www.ablaikhan.kz/', portal:'https://hero.ablaikhan.kz/', lib:'https://library.ablaikhan.kz/',
+ intl:'https://www.ablaikhan.kz/ru/for-applicants/for-applicants/information_for_stud.html',
+ dorms:'https://www.ablaikhan.kz/ru/for-applicants/for-applicants/settling-in-dorms.html',
+ plag:'https://www.ablaikhan.kz/ru/for-students/for-students/plagerism.html',
+ league:'https://www.ablaikhan.kz/ru/liga-akademicheskoj-chestnosti/prosmotr-liga-akademicheskoj-chestnosti/%D0%BE-%D0%BB%D0%B8%D0%B3%D0%B5.html',
+ cos:'https://www.ablaikhan.kz/ru/for-students/for-students/sos.html',
+ med:'https://www.ablaikhan.kz/ru/for-students/for-students/медицинское-обслуживание.html',
+ psy:'https://www.ablaikhan.kz/ru/for-students/for-students/консультация-психолога.html',
+ visa:'https://www.ablaikhan.kz/ru/international/international/визовая-поддержка-и-миграционное-сопровождение.html',
+ deans:'https://www.ablaikhan.kz/ru/about-us/our-university/faculty.html',
+ policy:'https://www.ablaikhan.kz/ru/study-process/study-process/academic-policies.html',
+ guide:'https://www.ablaikhan.kz/ru/for-students/for-students/freshman-guide.html',
+ insta:'https://www.instagram.com/ablaikhan_university', tg:'https://t.me/kazumo23',
+ yt:'https://www.youtube.com/channel/UCWh8T5-dSgGOTg6lj8KP-lw', tt:'https://www.tiktok.com/@ablaikhan_university'
+};
+var SOS_N = [['112',T('Единый номер','Бірыңғай нөмір','Unified number','统一急救电话','Bitewi belgi')],['103',T('Скорая','Жедел жәрдем','Ambulance','急救','Tiz kömek')],['102',T('Полиция','Полиция','Police','警察','Polisiýa')],['101',T('Пожарные','Өрт сөндірушілер','Fire brigade','消防','Ýangyn söndürijiler')]];
+function sosLinks(){return SOS_N.map(function(n){return '<a href="tel:'+n[0]+'"><b>'+n[0]+'</b> '+L(n[1])+'</a>'}).join('')}
+
+/* =====================================================================
+   ДАННЫЕ
+   ===================================================================== */
+var PHOTO_SPEC = [
+ ['hero','home',T('Студенты на территории кампуса или фасад ГУК','Кампус аумағындағы студенттер немесе БОК қасбеті','Students on campus or the main building façade','校园里的学生或主楼外观','Kampusda talyplar ýa-da Baş binanyň fasady'),'1600×1100'],
+ ['cos','first-week',T('Центр обслуживания студентов: вход или окно','Студенттерге қызмет көрсету орталығы: кіреберіс немесе терезе','Student Service Center: entrance or service window','学生服务中心：入口或服务窗口','Talyplara hyzmat ediş merkezi: girelge ýa-da penjire'),'1200×800'],
+ ['aerial','campus',T('Аэрофото ГУК, УК-1, УК-3 и двора','БОК, ОК-1, ОК-3 және аула аэрофотосуреті','Aerial view of the main building, Buildings 1 and 3 and the courtyard','主楼、1号楼、3号楼及庭院航拍图','Baş bina, 1-nji, 3-nji binalar we howlynyň howa suraty'),'1600×900'],
+ ['gyk','campus',T('Главный учебный корпус — фасад','Бас оқу корпусы — қасбет','Main building — façade','主教学楼外观','Baş okuw binasy — fasad'),'1200×800'],
+ ['uk1','campus',T('Учебный корпус №1 — фасад','№1 оқу корпусы — қасбет','Building No. 1 — façade','1号教学楼外观','1-nji okuw binasy — fasad'),'1200×800'],
+ ['uk2','campus',T('Учебный корпус №2 — фасад','№2 оқу корпусы — қасбет','Building No. 2 — façade','2号教学楼外观','2-nji okuw binasy — fasad'),'1200×800'],
+ ['uk3','campus',T('Учебный корпус №3 — фасад','№3 оқу корпусы — қасбет','Building No. 3 — façade','3号教学楼外观','3-nji okuw binasy — fasad'),'1200×800'],
+ ['uk4','campus',T('Учебный корпус №4 — фасад','№4 оқу корпусы — қасбет','Building No. 4 — façade','4号教学楼外观','4-nji okuw binasy — fasad'),'1200×800'],
+ ['uk5','campus',T('Учебный корпус №5 — фасад','№5 оқу корпусы — қасбет','Building No. 5 — façade','5号教学楼外观','5-nji okuw binasy — fasad'),'1200×800'],
+ ['dorm_out','campus',T('Здание общежития снаружи','Жатақхана ғимараты (сырты)','Dormitory building from outside','宿舍楼外观','Ýaşaýyş jaýynyň daşy'),'1200×800'],
+ ['dorm_room','campus',T('Жилая комната','Тұрғын бөлме','A dormitory room','宿舍房间','Ýaşaýyş otagy'),'1200×800'],
+ ['dorm_laundry','campus',T('Прачечная','Кір жуатын орын','Laundry','洗衣房','Kir ýuwulýan ýer'),'1200×800'],
+ ['dorm_gym','campus',T('Тренажёрный зал','Жаттығу залы','Gym','健身房','Türgenleşik zaly'),'1200×800'],
+ ['dorm_study','campus',T('Учебная комната / компьютерный класс','Оқу бөлмесі / компьютер сыныбы','Study room / computer class','自习室／计算机教室','Okuw otagy / kompýuter klasy'),'1200×800'],
+ ['dorm_leisure','campus',T('Центр досуга','Бос уақыт орталығы','Leisure Center','休闲中心','Dynç alyş merkezi'),'1200×800'],
+ ['canteen','campus',T('Столовая (зал)','Асхана (зал)','Canteen (dining hall)','食堂（用餐区）','Naharhana (zal)'),'1200×800'],
+ ['cafe','campus',T('Кафетерий / буфет (витрина)','Кафетерий / буфет (витрина)','Cafeteria / snack bar (counter)','自助餐厅／小卖部（柜台）','Kafeterij / bufet (witrina)'),'1200×800'],
+ ['library','campus',T('Читальный зал','Оқу залы','Reading room','阅览室','Okamak zaly'),'1400×900'],
+ ['pcclass','campus',T('Компьютерный или мультимедийный класс','Компьютер немесе мультимедиялық сынып','Computer or multimedia classroom','计算机或多媒体教室','Kompýuter ýa-da multimedia klasy'),'1200×800'],
+ ['museum_uni','campus',T('Музей университета','Университет мұражайы','University museum','大学博物馆','Uniwersitetiň muzeýi'),'1200×800'],
+ ['museum_abylai','campus',T('Музей Абылай хана','Абылай хан мұражайы','Ablai Khan Museum','阿布赉汗博物馆','Ablaý han muzeýi'),'1200×800'],
+ ['sport','campus',T('Спортивный комплекс и площадка','Спорт кешені және алаң','Sports complex and court','体育馆和运动场','Sport toplumy we meýdança'),'1200×800'],
+ ['life_choir','life',T('Хор «Песни мира»','«Әлем әндері» хоры','“Songs of the World” choir','“世界之歌”合唱团','«Dünýä aýdymlary» horuny'),'1000×700'],
+ ['life_dance','life',T('Танцевальные студии BESO и EastLine','BESO және EastLine би студиялары','BESO and EastLine dance studios','BESO和EastLine舞蹈工作室','BESO we EastLine tans studiýalary'),'1000×700'],
+ ['life_debate','life',T('Дебатный клуб','Пікірсайыс клубы','Debate club','辩论社','Jedel kluby'),'1000×700'],
+ ['life_mun','life',T('Клуб Kazumo MUN','Kazumo MUN клубы','Kazumo MUN club','Kazumo MUN模拟联合国社团','Kazumo MUN kluby'),'1000×700'],
+ ['life_volunteer','life',T('Волонтёры / субботник','Еріктілер / сенбілік','Volunteers / clean-up day','志愿者／义务劳动日','Meýletinçiler / şenbelik'),'1000×700'],
+ ['life_orchestra','life',T('Оркестр «Ақ желен»','«Ақ желен» оркестрі','“Aq Zhelen” orchestra','“Aq Zhelen”民乐团','«Ak Želen» orkestri'),'1000×700'],
+ ['faculties','faculties',T('Студенты на занятии или у деканата','Сабақтағы студенттер немесе деканат жанында','Students in class or by the dean’s office','课堂上或院系办公室旁的学生','Sapakda ýa-da dekanatyň ýanynda talyplar'),'1400×800'],
+ ['contacts','contacts',T('Главный вход университета','Университеттің бас кіреберісі','Main entrance of the university','大学正门','Uniwersitetiň baş girelgesi'),'1400×800']
+];
+
+/* Улицы и адреса */
+var STREETS = {
+ mur:T('Муратбаева','Мұратбаев','Muratbayev','穆拉特巴耶夫','Muratbaýew'),
+ kur:T('Курмангазы','Құрманғазы','Kurmangazy','库尔曼加兹','Kurmangazy'),
+ she:T('Шевченко','Шевченко','Shevchenko','舍甫琴科','Şewçenko'),
+ tol:T('Толе би','Төле би','Tole bi','托莱比','Töle bi'),
+ nau:T('Наурызбай батыра','Наурызбай батыр','Nauryzbai Batyr','瑙鲁兹拜巴特尔','Naurysbaý batyr'),
+ sha:T('Шагабутдинова','Шағабұтдинов','Shagabutdinov','沙加布特季诺夫','Şagabutdinow'),
+ bai:T('Байтурсынова','Байтұрсынұлы','Baitursynov','拜图尔瑟诺夫','Baýtursynow'),
+ dos:T('Досмухамедова','Досмұхамедов','Dosmukhamedov','多斯穆哈梅多夫','Dosmuhamedow'),
+ gog:T('Гоголя','Гоголь','Gogol','果戈理','Gogol'),
+ zha:T('Жарокова','Жароков','Zharokov','扎罗科夫','Žarokow')
+};
+function st(k){return STREETS[k][lang]}
+function stLabel(k){
+  var a=st(k);
+  if(lang==='ru') return 'ул. '+a; if(lang==='kk') return a+' к-сі'; if(lang==='en') return a+' St.';
+  if(lang==='zh') return a+'街'; return a+' köçesi';
+}
+function addr(s1,n,s2){
+  var a=st(s1), b=s2?st(s2):'';
+  if(lang==='ru') return 'ул. '+a+', '+n+(s2?' (угол ул. '+b+')':'');
+  if(lang==='kk') return a+' к-сі, '+n+(s2?' ('+b+' к-сімен қиылысы)':'');
+  if(lang==='en') return n+' '+a+' St.'+(s2?' (corner of '+b+' St.)':'');
+  if(lang==='zh') return a+'街'+n+'号'+(s2?'（与'+b+'街交口）':'');
+  return a+' köçesi, '+n+(s2?' ('+b+' köçesi bilen çatrykda)':'');
+}
+var BLD = [
+ {id:'gyk',ab:T('ГУК','БОК','GUK','主楼','Baş bina'),n:T('Главный учебный корпус (ГУК)','Бас оқу корпусы (БОК)','Main building (GUK)','主教学楼','Baş okuw binasy'),s1:'mur',num:200,s2:'kur'},
+ {id:'uk1',ab:T('УК-1','ОК-1','UK-1','1号楼','1-nji bina'),n:T('Учебный корпус №1','№1 оқу корпусы','Building No. 1','1号教学楼','1-nji okuw binasy'),s1:'mur',num:200,s2:'she'},
+ {id:'uk2',ab:T('УК-2','ОК-2','UK-2','2号楼','2-nji bina'),n:T('Учебный корпус №2','№2 оқу корпусы','Building No. 2','2号教学楼','2-nji okuw binasy'),s1:'tol',num:84,s2:'nau'},
+ {id:'uk3',ab:T('УК-3','ОК-3','UK-3','3号楼','3-nji bina'),n:T('Учебный корпус №3','№3 оқу корпусы','Building No. 3','3号教学楼','3-nji okuw binasy'),s1:'she',num:140,s2:'sha'},
+ {id:'uk4',ab:T('УК-4','ОК-4','UK-4','4号楼','4-nji bina'),n:T('Учебный корпус №4','№4 оқу корпусы','Building No. 4','4号教学楼','4-nji okuw binasy'),s1:'bai',num:89,s2:'she'},
+ {id:'uk5',ab:T('УК-5','ОК-5','UK-5','5号楼','5-nji bina'),n:T('Учебный корпус №5','№5 оқу корпусы','Building No. 5','5号教学楼','5-nji okuw binasy'),s1:'dos',num:15,s2:'gog'}
+];
+function bld(id){return BLD.filter(function(b){return b.id===id})[0]}
+function room(b,n){
+  var a=L(bld(b).ab);
+  if(lang==='ru') return a+', каб. '+n; if(lang==='kk') return a+', '+n+'-каб.'; if(lang==='en') return a+', room '+n;
+  if(lang==='zh') return a+' '+n+'室'; return a+', '+n+'-nji otag';
+}
+function rooms(b,list){return L(bld(b).ab)+': '+list}
+function dormTitle(n){return T('Общежитие №'+n,'Жатақхана №'+n,'Dormitory No. '+n,n+'号宿舍','Ýaşaýyş jaýy №'+n)}
+
+/* Календарь  –24 */
+var CAL_TYPES = {
+ org:['#2A5C8F',T('Организационный период','Ұйымдастыру кезеңі','Orientation','入学适应期','Orientasiýa döwri')],
+ sem:['#1E8E5A',T('Семестр','Семестр','Semester','学期','Semestr')],
+ ctrl:['#A0610A',T('Рубежный контроль','Межелік бақылау','Midterm control','阶段考核','Aralyk gözegçilik')],
+ exam:['#BD3A2B',T('Аттестация','Аттестация','Exam session','考试周','Attestasiýa')],
+ brk:['#6FA6DE',T('Каникулы','Каникул','Break','假期','Rugsat')],
+ hol:['#8A5CC4',T('Выходной','Демалыс күні','Day off','公共假日','Dynç güni')]
+};
+var V1 = T('Вариант 1','1-нұсқа','Variant 1','方案一','1-nji wariant'), V2 = T('Вариант 2','2-нұсқа','Variant 2','方案二','2-nji wariant');
+var CAL_FALL = [
+ [[26,8,1,9],'org',T('Тест по языку и формирование ИУП','Тіл тесті және ЖОЖ қалыптастыру','Placement test and building your study plan','分级测试与制定个人学习计划','Dil testi we şahsy okuw meýilnamasyny düzmek')],
+ [[30,8],'hol',T('День Конституции','Конституция күні','Constitution Day','宪法日','Konstitusiýa güni')],
+ [[4,9,16,12],'sem',T('Осенний семестр (15 недель)','Күзгі семестр (15 апта)','Autumn semester (15 weeks)','秋季学期（15周）','Güýzki semestr (15 hepde)')],
+ [[23,10,28,10],'ctrl',T('Рубежный контроль №1','№1 межелік бақылау','Midterm control No. 1','第一次阶段考核','1-nji aralyk gözegçilik')],
+ [[25,10],'hol',T('День Республики','Республика күні','Republic Day','共和国日','Respublika güni')],
+ [[11,12,16,12],'ctrl',T('Рубежный контроль №2','№2 межелік бақылау','Midterm control No. 2','第二次阶段考核','2-nji aralyk gözegçilik')],
+ [[16,12],'hol',T('День Независимости','Тәуелсіздік күні','Independence Day','独立日','Garaşsyzlyk güni')],
+ [[18,12,30,12],'exam',T('Промежуточная аттестация (сессия)','Аралық аттестация (сессия)','Intermediate assessment (exam session)','期末考核（考试周）','Aralyk attestasiýa (sessiýa)'),V1],
+ [[18,12,6,1],'exam',T('Промежуточная аттестация (сессия)','Аралық аттестация (сессия)','Intermediate assessment (exam session)','期末考核（考试周）','Aralyk attestasiýa (sessiýa)'),V2],
+ [[1,1,2,1],'hol',T('Новый год','Жаңа жыл','New Year','新年','Täze ýyl')],
+ [[1,1,13,1],'brk',T('Зимние каникулы','Қысқы каникул','Winter break','寒假','Gyşky rugsat'),V1],
+ [[8,1,20,1],'brk',T('Зимние каникулы','Қысқы каникул','Winter break','寒假','Gyşky rugsat'),V2],
+ [[7,1],'hol',T('Православное Рождество','Православиелік Рождество','Orthodox Christmas','东正教圣诞节','Prawoslaw Roždestwosy')]
+];
+var CAL_SPRING = [
+ [[15,1,4,5],'sem',T('Весенний семестр (15 недель)','Көктемгі семестр (15 апта)','Spring semester (15 weeks)','春季学期（15周）','Ýazky semestr (15 hepde)'),V1],
+ [[22,1,11,5],'sem',T('Весенний семестр (15 недель)','Көктемгі семестр (15 апта)','Spring semester (15 weeks)','春季学期（15周）','Ýazky semestr (15 hepde)'),V2],
+ [[26,2,2,3],'ctrl',T('Рубежный контроль №1','№1 межелік бақылау','Midterm control No. 1','第一次阶段考核','1-nji aralyk gözegçilik'),V1],
+ [[4,3,9,3],'org',T('Формирование ИУП на следующий период','Келесі кезеңге ЖОЖ қалыптастыру','Building your study plan for the next period','制定下一阶段的个人学习计划','Indiki döwür üçin şahsy okuw meýilnamasyny düzmek')],
+ [[8,3],'hol',T('Международный женский день','Халықаралық әйелдер күні','International Women’s Day','国际妇女节','Halkara aýallar güni')],
+ [[11,3,16,3],'ctrl',T('Рубежный контроль №1','№1 межелік бақылау','Midterm control No. 1','第一次阶段考核','1-nji aralyk gözegçilik'),V2],
+ [[21,3,23,3],'hol',T('Наурыз','Наурыз','Nauryz','纳吾鲁孜节','Nowruz')],
+ [[29,4,4,5],'ctrl',T('Рубежный контроль №2','№2 межелік бақылау','Midterm control No. 2','第二次阶段考核','2-nji aralyk gözegçilik'),V1],
+ [[29,4,11,5],'ctrl',T('Рубежный контроль №2','№2 межелік бақылау','Midterm control No. 2','第二次阶段考核','2-nji aralyk gözegçilik'),V2],
+ [[13,5,8,6],'exam',T('Промежуточная аттестация (сессия)','Аралық аттестация (сессия)','Intermediate assessment (exam session)','期末考核（考试周）','Aralyk attestasiýa (sessiýa)'),V1],
+ [[20,5,8,6],'exam',T('Промежуточная аттестация (сессия)','Аралық аттестация (сессия)','Intermediate assessment (exam session)','期末考核（考试周）','Aralyk attestasiýa (sessiýa)'),V2],
+ [[10,6,15,6],'org',T('Регистрация на летний семестр','Жазғы семестрге тіркелу','Summer semester registration','暑期学期注册','Tomusky semestre hasaba alyş')],
+ [[17,6,3,8],'sem',T('Летний семестр (платный)','Жазғы семестр (ақылы)','Summer semester (paid)','暑期学期（收费）','Tomusky semestr (tölegli)')],
+ [[10,6,31,8],'brk',T('Летние каникулы','Жазғы каникул','Summer break','暑假','Tomusky rugsat')]
+];
+var BELLS = [['8:00 – 8:50','13:40 – 14:30'],['8:55 – 9:45','14:35 – 15:25'],['9:50 – 10:40','15:40 – 16:30'],['10:55 – 11:45','16:35 – 17:25'],['11:50 – 12:40','17:30 – 18:20'],['12:45 – 13:35','18:25 – 19:15']];
+var LETTERS = [['A',4],['A-',3.67],['B+',3.33],['B',3],['B-',2.67],['C+',2.33],['C',2],['C-',1.67],['D+',1.33],['D',1],['FX',0.5],['F',0]];
+var G_EXC=T('Отлично','Өте жақсы','Excellent','优秀','Ajaýyp'), G_GOOD=T('Хорошо','Жақсы','Good','良好','Gowy'), G_SAT=T('Удовлетворительно','Қанағаттанарлық','Satisfactory','及格','Kanagatlanarly'), G_UNS=T('Неудовлетворительно','Қанағаттанарлықсыз','Unsatisfactory','不及格','Kanagatlanarsyz');
+var SCALE = [
+ ['A','4,0','95–100',G_EXC],['A-','3,67','90–94',G_EXC],['B+','3,33','85–89',G_GOOD],['B','3,0','80–84',G_GOOD],['B-','2,67','75–79',G_GOOD],['C+','2,33','70–74',G_GOOD],
+ ['C','2,0','65–69',G_SAT],['C-','1,67','60–64',G_SAT],['D+','1,33','55–59',G_SAT],['D','1,0','50–54',G_SAT],['FX','0,5','25–49',G_UNS],['F','0','0–24',G_UNS]
+];
+
+/* Чек-лист первой недели */
+var FW = [
+ {id:'adv',t:T('Познакомься с эдвайзером','Эдвайзермен танысыңыз','Meet your academic advisor','认识你的学业导师','Advaýzer bilen tanyş'),
+  d:T('Преподаватель-консультант поможет с документами, картой «Оңай», стипендией, {{iup}}, военной кафедрой и расписанием. Запиши его телефон. Контакты узнай в деканате своей программы.',
+      'Кеңесші оқытушы құжаттарға, «Оңай» картасына, стипендияға, {{iup}}, әскери кафедраға және сабақ кестесіне қатысты көмектеседі. Оның телефонын жазып ал. Байланыс деректерін өз бағдарламаңның деканатынан біл.',
+      'Your advisor helps with documents, the Onay card, scholarship, your {{iup}}, the military department and timetable. Save their phone number. Ask your dean’s office how to reach them.',
+      '学业导师会帮助你处理证件、Onay卡、奖学金、{{iup}}、军事教研室和课程表等事务。请记下他/她的电话，并向你所在专业的院系办公室询问联系方式。',
+      'Maslahatçy mugallym resminamalar, «Oňaý» kartasy, stipendiýa, {{iup}}, harby kafedra we sapak tertibi boýunça kömek eder. Onuň telefon belgisini ýazyp al. Habarlaşmagyň ýoluny bilim maksatnamaň boýunça dekanatdan bil.'),go:['faculties']},
+ {id:'pt',t:T('Пройди входной тест по языку','Тіл деңгейін анықтау тестінен өтіңіз','Take the language placement test','参加语言分级测试','Dil derejesini kesgitleýän testden geç'),
+  d:T('{{pt}} проходит в организационный период. По его результату тебя распределят в группу по уровню языка.',
+      '{{pt}} ұйымдастыру кезеңінде өтеді. Нәтижесіне қарай сені тіл деңгейі бойынша топқа бөледі.',
+      'The {{pt}} takes place during orientation week. Its result decides your language group.',
+      '{{pt}}在入学适应期进行，将根据成绩把你分到相应语言水平的班级。',
+      '{{pt}} orientasiýa döwründe geçirilýär. Netijesine görä seni dil derejesi boýunça topara bölerler.'),go:['study','calendar']},
+ {id:'iup',t:T('Составь ИУП','Жеке оқу жоспарын (ЖОЖ) жасаңыз','Build your individual study plan (IUP)','制定个人学习计划','Şahsy okuw meýilnamaňy düz'),
+  d:T('{{iup}} — твой список предметов на семестр. Его составляют на основе {{rup}}; эдвайзер подскажет, как записаться на дисциплины.',
+      '{{iup}} — семестрге арналған пәндер тізімі. Ол {{rup}} негізінде жасалады; пәндерге қалай тіркелуді эдвайзер айтады.',
+      'Your {{iup}} is your list of courses for the semester, built from the {{rup}}. Your advisor will show you how to register.',
+      '{{iup}}是你本学期的课程清单，依据{{rup}}制定；学业导师会告诉你如何选课。',
+      '{{iup}} — semestr üçin dersleriň sanawy. Ol {{rup}} esasynda düzülýär; dersleri nädip saýlamalydygyny advaýzer düşündirer.'),go:['study','glossary']},
+ {id:'card',t:T('Получи Карту студента','Студент картасын алыңыз','Get your student ID card','领取学生卡','Talyp kartyňy al'),
+  d:T('Это пропуск в учебные корпуса. Оформление — через {{cos}} (УК-3, каб. 101). Обычно после 1 сентября это делают старосты групп.',
+      'Бұл — оқу корпустарына кіру рұқсаты. Рәсімдеу {{cos}} арқылы (ОК-3, 101-каб.). Әдетте 1 қыркүйектен кейін мұны топ старосталары жасайды.',
+      'This is your pass to the university buildings. Apply through the {{cos}} (Building 3, room 101). After 1 September, group leaders usually do this for the group.',
+      '这是进入教学楼的通行证，需通过{{cos}}办理（3号楼101室）。9月1日之后通常由各班班长统一办理。',
+      'Bu okuw binalaryna girmek üçin rugsatnama. {{cos}} arkaly resmilenýär (3-nji bina, 101-nji otag). Adatça 1-nji sentýabrdan soň topar starostalary edýär.'),go:['campus']},
+ {id:'onay',t:T('Оформи карту «Оңай»','«Оңай» көлік картасын рәсімдеңіз','Get your Onay transport card','办理Onay交通卡','«Oňaý» ulag kartyny resmiläň'),
+  d:T('Нужны: фото 3×4 и скан удостоверения личности или паспорта (с двух сторон) в формате JPEG. Выпуск карты — 500 тг, срок 15–20 рабочих дней.',
+      'Қажет: 3×4 фото және жеке куәліктің немесе паспорттың (екі беті) JPEG форматындағы скані. Картаны шығару — 500 теңге, мерзімі 15–20 жұмыс күні.',
+      'You need a 3×4 photo and a scan of your ID or passport (both sides) as JPEG. The card costs 500 KZT and takes 15–20 working days.',
+      '需要3×4照片，以及身份证件或护照（正反面）的JPEG扫描件。制卡费500坚戈，需15–20个工作日。',
+      'Gerek: 3×4 surat we şahsyýet güwänamasynyň ýa-da pasportyň (iki tarapy) JPEG görnüşindäki skaneri. Kartyň bahasy 500 tenge, möhleti 15–20 iş güni.'),go:['kazakhstan']},
+ {id:'fac',t:T('Найди свой факультет и деканат','Факультетіңіз бен деканатты табыңыз','Find your faculty and dean’s office','找到你的院系和院系办公室','Fakultetiňi we dekanaty tap'),
+  d:T('В деканате ведут твою образовательную программу и подскажут, кто твой эдвайзер.',
+      'Деканат сенің білім беру бағдарламаңды жүргізеді және эдвайзеріңнің кім екенін айтады.',
+      'The dean’s office runs your programme and can tell you who your advisor is.',
+      '院系办公室负责你所在专业的教学管理，可以告诉你谁是你的学业导师。',
+      'Dekanat seniň bilim maksatnamaňy alyp barýar we advaýzeriň kimdigini aýdar.'),go:['faculties']},
+ {id:'tt',t:T('Проверь расписание и звонки','Сабақ кестесін тексеріңіз','Check your timetable','查看课程表','Sapak tertibini barla'),
+  d:T('Пары идут по 50 минут в две смены: с 8:00 и с 13:40. Расписание звонков — в разделе «Учёба».',
+      'Сабақ 50 минуттан екі ауысымда өтеді: 8:00-ден және 13:40-тан. Қоңырау кестесі «Оқу» бөлімінде.',
+      'Classes are 50 minutes, in two shifts: from 8:00 and from 13:40. The bell schedule is in the “Studies” section.',
+      '每节课50分钟，分两班：8:00开始和13:40开始。作息时间见“学习”栏目。',
+      'Sapaklar 50 minutdan iki çalşykda geçýär: 8:00-dan we 13:40-dan. Jaň tertibi «Okuw» bölüminde.'),go:['study','calendar']},
+ {id:'sys',t:T('Получи доступ к университетским системам','Университет жүйелеріне қол жеткізіңіз','Get access to university systems','开通大学信息系统权限','Uniwersitetiň ulgamlaryna girmegi gazan'),
+  d:T('Образовательный портал и библиотечная система. Логины и пароли уточни у эдвайзера или в ЦОС.',
+      'Білім беру порталы мен кітапхана жүйесі. Логин мен құпиясөзді эдвайзерден немесе СҚО-дан біл.',
+      'The educational portal and library system. Ask your advisor or the Student Service Center for your login.',
+      '教育门户网站和图书馆系统。账号和密码请向学业导师或学生服务中心咨询。',
+      'Bilim portaly we kitaphana ulgamy. Login we parolyňy advaýzerden ýa-da hyzmat merkezinden bil.'),go:['contacts']},
+ {id:'lib',t:T('Найди библиотеку','Кітапхананы табыңыз','Find the library','找到图书馆','Kitaphanany tap'),
+  d:T('Абонемент — цокольный этаж УК-3; читальные залы — в УК-3, УК-1 и УК-2.',
+      'Абонемент — ОК-3-тің цокольдық қабаты; оқу залдары — ОК-3, ОК-1 және ОК-2 ғимараттарында.',
+      'The lending desk is in the basement of Building 3; reading rooms are in Buildings 3, 1 and 2.',
+      '借阅处在3号楼地下层；阅览室分别在3号楼、1号楼和2号楼。',
+      'Abonement — 3-nji binanyň sokol gatynda; okamak zallary 3-nji, 1-nji we 2-nji binalarda.'),go:['campus','library']},
+ {id:'med',t:T('Найди медицинский пункт','Медпунктті табыңыз','Find the medical center','找到医务室','Lukmançylyk bölümini tap'),
+  d:T('Информация о медицинском обслуживании — на официальном сайте университета. Узнай заранее, куда идти, если заболеешь.',
+      'Медициналық қызмет туралы ақпарат университеттің ресми сайтында. Ауырып қалсаң, қайда баратыныңды алдын ала біл.',
+      'Information on medical services is on the official university site. Find out in advance where to go if you get sick.',
+      '医疗服务信息见大学官网。请提前了解生病时该去哪里。',
+      'Lukmançylyk hyzmaty barada maglumat uniwersitetiň resmi saýtynda. Syrkawlaýan bolsaň, nirä barmalydygyny öňünden bil.'),go:['help']},
+ {id:'dorm',t:T('Найди администрацию общежития','Жатақхана әкімшілігін табыңыз','Find the dormitory administration','找到宿舍管理处','Ýaşaýyş jaýynyň administrasiýasyny tap'),
+  d:T('Общежития находятся на ул. Курмангазы, 150 и ул. Жарокова, 104.',
+      'Жатақханалар Құрманғазы к-сі, 150 және Жароков к-сі, 104 мекенжайларында орналасқан.',
+      'The dormitories are at 150 Kurmangazy St. and 104 Zharokov St.',
+      '宿舍位于库尔曼加兹街150号和扎罗科夫街104号。',
+      'Ýaşaýyş jaýlary Kurmangazy köçesi, 150 we Žarokow köçesi, 104 salgylarynda.'),go:['campus','dorms']},
+ {id:'rules',t:T('Изучи важные академические правила','Маңызды академиялық ережелерді оқыңыз','Check important academic rules','了解重要的学术规定','Möhüm akademik düzgünleri öwren'),
+  d:T('Правила экзамена, оплата, оценки и академическая честность — то, что чаще всего создаёт проблемы.',
+      'Емтихан ережелері, төлем, бағалар және академиялық адалдық — ең көп қиындық тудыратын мәселелер.',
+      'Exam rules, payment, grades and academic integrity — the things that most often cause trouble.',
+      '考试规则、缴费、成绩和学术诚信，是最容易出问题的几个方面。',
+      'Synag düzgünleri, töleg, bahalar we akademik dogruçyllyk — iň köp kynçylyk döredýän zatlar.'),go:['integrity']}
+];
+
+/* Сценарии «Можно ли так делать?» */
+var SCEN = [
+ {v:'no',s:T('Я нашёл абзац в интернете, перевёл его на английский и вставил в эссе без ссылки.','Мен интернеттен үзінді тауып, оны ағылшын тіліне аударып, дереккөзін көрсетпей эссеме қойдым.','I found a paragraph online, translated it into English and put it in my essay without a source.','我在网上找到一段文字，翻译成英文后没有注明出处就放进了我的论文。','Men internetden bir bölek tapdym, ony iňlis diline terjime edip, çeşmesini görkezmezden eseime goýdum.'),
+  a:T('Перевод чужого текста без указания источника — всё равно плагиат. Укажи автора и источник, а идеи пересказывай своими словами.','Біреудің мәтінін дереккөзін көрсетпей аудару да плагиат болып саналады. Автор мен дереккөзді көрсет, ал идеяларды өз сөзіңмен жаз.','Translating someone else’s text without citing the source is still plagiarism. Name the author and source, and put the ideas in your own words.','未注明出处而翻译他人的文字，仍然是抄袭。请标明作者和来源，并用自己的话转述观点。','Başga birinin tekstini çeşmesini görkezmezden terjime etmek hem plagiatdyr. Awtory we çeşmäni görkez, pikirleri öz sözleriň bilen aýt.')},
+ {v:'chk',s:T('Я использую онлайн-переводчик, чтобы понять задание и незнакомые слова.','Тапсырманы және таныс емес сөздерді түсіну үшін онлайн-аудармашыны пайдаланамын.','I use an online translator to understand the task and unfamiliar words.','我用在线翻译来理解作业要求和生词。','Tabşyrygy we nätanyş sözleri düşünmek üçin onlaýn terjimeçi ulanýaryn.'),
+  a:T('Понимать задание с помощью переводчика обычно нормально. Но сдавать машинный перевод как свою работу — нельзя, особенно если задание проверяет твой язык. Правила смотри в силлабусе или спроси преподавателя.','Тапсырманы түсіну үшін аудармашыны қолдану әдетте қалыпты жағдай. Бірақ машиналық аударманы өз жұмысың ретінде тапсыруға болмайды, әсіресе тапсырма сенің тіл білімінді тексеретін болса. Ережені силлабустан қара немесе оқытушыдан сұра.','Using a translator to understand the task is usually fine. Handing in machine translation as your own work is not — especially when the task tests your language. Check the syllabus or ask your teacher.','用翻译工具理解作业要求通常没问题，但把机器翻译当作自己的作业提交则不允许，尤其是当作业考查你的语言能力时。请查看课程大纲或询问教师。','Tabşyrygy düşünmek üçin terjimeçini ulanmak adatça mesele däl. Ýöne maşyn terjimesini öz işiň hökmünde tabşyrmak bolmaýar, esasanam tabşyryk seniň dil bilimiňi barlaýan bolsa. Düzgüni silabusdan gör ýa-da mugallymdan sora.')},
+ {v:'chk',s:T('Я попросил ChatGPT (ИИ) написать часть моего задания.','Мен ChatGPT-тен (жасанды интеллект) тапсырмамның бір бөлігін жазып беруін сұрадым.','I asked ChatGPT (AI) to write part of my assignment.','我让ChatGPT（人工智能）帮我写了作业的一部分。','Men ChatGPT-den (emeli aň) tabşyrygymyň bir bölegini ýazyp bermegini haýyş etdim.'),
+  a:T('Единого ответа нет: это зависит от правил университета и требований преподавателя. Выдавать чужой (в т.ч. машинный) текст за свой без разрешения нельзя. Спроси преподавателя ДО сдачи и посмотри раздел «Плагиат и списывание» на сайте.','Бір ғана жауап жоқ: бұл университет ережелері мен оқытушының талаптарына байланысты. Басқа біреудің (соның ішінде машинаның) мәтінін рұқсатсыз өз мәтініңдей көрсетуге болмайды. Тапсырар алдында оқытушыдан сұра және сайттағы «Плагиат және көшіру» бөлімін оқы.','There is no single answer: it depends on university rules and your teacher’s requirements. Presenting someone else’s (including machine-written) text as your own without permission is not allowed. Ask your teacher BEFORE you submit and read the “Plagiarism” page on the university site.','没有统一答案：这取决于大学规定和教师要求。未经许可，不得把他人（包括机器）写的文本当作自己的。提交前请先问教师，并阅读大学官网的“抄袭与作弊”页面。','Ýeke-täk jogap ýok: bu uniwersitetiň düzgünlerine we mugallymyň talaplaryna baglydyr. Başga birinin (şol sanda maşynyň) tekstini rugsatsyz öz tekstiň ýaly görkezmek bolmaýar. Tabşyrmazyndan ÖŇ mugallymdan sora we saýtdaky «Plagiat we göçürme» sahypasyny oka.')},
+ {v:'no',s:T('Я дал другу переписать мою готовую домашнюю работу.','Мен досыма дайын үй жұмысымды көшіріп жазуға бердім.','I let a friend copy my finished homework.','我把写好的作业给朋友抄了。','Men dostuma taýýar öý işimi göçürmäge berdim.'),
+  a:T('Объяснить тему — можно и даже приветствуется (взаимопомощь). Но дать готовую работу переписать — плохая идея: одинаковые работы могут считаться списыванием у обоих.','Тақырыпты түсіндіру — мүмкін және қолдау табады (өзара көмек). Ал дайын жұмысты көшіруге беру — жаман идея: бірдей жұмыстар екеуіне де көшіру болып саналуы мүмкін.','Explaining the topic is fine and even encouraged (mutual help). But letting someone copy your finished work is a bad idea: identical papers can count as cheating for both of you.','帮朋友讲解知识点是可以的，甚至值得鼓励（互帮互助）。但把写好的作业让人照抄不可取：两份雷同的作业可能对双方都被认定为作弊。','Temany düşündirmek mümkin we hatda goldanylýar (özara kömek). Ýöne taýýar işi göçürmäge bermek erbet pikir: birmeňzeş işler ikisi üçin hem göçürme hasaplanyp bilner.')},
+ {v:'chk',s:T('Я использую в новом задании кусок своей прошлой работы.','Жаңа тапсырмада өзімнің бұрынғы жұмысымның бір бөлігін пайдаланамын.','I reuse a part of my own earlier paper in a new assignment.','我在新作业里用了自己以前作业的一部分。','Täze tabşyrykda öz öňki işimiň bir bölegini ulanýaryn.'),
+  a:T('Это называют самоплагиатом. Заранее спроси преподавателя и укажи, что это твой предыдущий текст.','Мұны өзіндік плагиат деп атайды. Алдын ала оқытушыдан сұра және бұл өзіңнің бұрынғы мәтінің екенін көрсет.','This is called self-plagiarism. Ask your teacher in advance and state that it is your earlier text.','这叫“自我抄袭”。请事先询问教师，并注明这是你以前写的文字。','Muňa öz-özüňi göçürmek diýilýär. Öňünden mugallymdan sora we bu seniň öňki tekstiň diýip görkez.')},
+ {v:'yes',s:T('Я взял предложение из статьи, поставил кавычки и указал автора, год и источник.','Мен мақаладан сөйлем алып, тырнақшаға салып, автор, жыл және дереккөзді көрсеттім.','I took a sentence from an article, put it in quotation marks and cited the author, year and source.','我从一篇文章中摘取了一句话，加上引号，并注明了作者、年份和出处。','Men makaladan bir sözlem aldym, dyrnak içine aldym we awtory, ýyly hem çeşmäni görkezdim.'),
+  a:T('Да. Точная цитата в кавычках со ссылкой — правильный способ. Не злоупотребляй: основная часть работы должна быть твоей.','Иә. Тырнақшадағы нақты дәйексөз бен сілтеме — дұрыс тәсіл. Шектен шықпа: жұмыстың негізгі бөлігі сенікі болуы тиіс.','Yes. An exact quote in quotation marks with a citation is the right way. Do not overdo it: most of the work must be yours.','可以。带引号并附出处的原文引用是正确做法。但不要滥用：作业的主体内容必须是你自己的。','Hawa. Dyrnak içindäki takyk sitata we salgylanma — dogry usul. Aşa geçme: işiň esasy bölegi seniň özüňki bolmaly.')},
+ {v:'yes',s:T('Я пересказал идею статьи своими словами и указал источник.','Мен мақаланың идеясын өз сөзіммен жеткізіп, дереккөзді көрсеттім.','I retold an article’s idea in my own words and cited the source.','我用自己的话转述了文章的观点，并注明了来源。','Men makalanyň pikirini öz sözlerim bilen aýtdym we çeşmäni görkezdim.'),
+  a:T('Да. Это парафраз со ссылкой. Важно именно переписать мысль по-своему, а не заменить пару слов.','Иә. Бұл — сілтемесі бар парафраз. Бірнеше сөзді ауыстыру емес, ойды өзіңше қайта жазу маңызды.','Yes. That is a paraphrase with a citation. You must really rewrite the idea in your own way, not just swap a few words.','可以。这是带出处的改写。关键是真正用自己的方式重新表达，而不是只换几个词。','Hawa. Bu çeşmesi görkezilen parafraz. Birnäçe sözi çalyşmak däl, pikiri öz ýoluň bilen täzeden aýtmak möhümdir.')},
+ {v:'no',s:T('На экзамене телефон лежит у меня в кармане, я его не трогаю.','Емтиханда телефоным қалтамда жатыр, оған тиіспеймін.','During the exam my phone is in my pocket, but I don’t touch it.','考试时手机放在我口袋里，但我不碰它。','Synagda telefonym jübümde ýatyr, oňa degmeýärin.'),
+  a:T('Пользоваться телефонами на экзамене запрещено, а шпаргалка ведёт к удалению и оценке «F». Не рискуй: оставь телефон в сумке или выключи и уточни у преподавателя, где его оставить.','Емтиханда телефонды пайдалануға тыйым салынған, ал шпаргалка емтиханнан шығаруға және «F» бағасына әкеледі. Тәуекелге барма: телефонды сөмкеңде қалдыр немесе өшір, оны қайда қалдыру керегін оқытушыдан сұра.','Phones are banned during exams, and a cheat sheet leads to removal and a grade of “F”. Don’t risk it: leave the phone in your bag or switch it off, and ask where to put it.','考试期间禁止使用手机，而小抄会导致被请出考场并记“F”。不要冒险：把手机留在包里或关机，并向教师确认手机放在哪里。','Synagda telefon ulanmak gadagan, şpargalka bolsa synagdan çykarylmaga we «F» bahasyna getirýär. Töwekgellik etme: telefony sumkaňda goý ýa-da öçür, ony nirede goýmalydygyny mugallymdan sora.')}
+];
+
+/* Помощь */
+var HELPS = [
+ {id:'pass',i:'lock',v:1,
+  t:T('Я потерял паспорт','Мен паспортымды жоғалттым','I lost my passport','我丢了护照','Men pasportymy ýitirdim'),
+  w:T('Сообщи в полицию, в посольство или консульство своей страны и в международный отдел университета.','Полицияға, өз еліңнің елшілігіне немесе консулдығына және университеттің халықаралық бөліміне хабарла.','Report it to the police, to your embassy or consulate, and to the university’s international office.','向警方、本国大使馆或领事馆以及大学国际处报告。','Polisiýa, öz ýurduňyň ilçihanasyna ýa-da konsulhanasyna we uniwersitetiň halkara bölümine habar ber.'),
+  who:T('Международный отдел, эдвайзер, ЦОС','Халықаралық бөлім, эдвайзер, СҚО','International office, advisor, Student Service Center','国际处、学业导师、学生服务中心','Halkara bölüm, advaýzer, hyzmat merkezi'),
+  where:T('Уточни кабинет в ЦОС (УК-3, каб. 101)','Қай кабинетке баруды СҚО-дан біл (ОК-3, 101-каб.)','Ask at the Student Service Center (Building 3, room 101) for the right room','请到学生服务中心（3号楼101室）询问具体办公室','Haýsy otaga barmalydygyny hyzmat merkezinden bil (3-nji bina, 101-nji otag)'),
+  doc:T('Копия паспорта, миграционная карта, справка из полиции','Паспорт көшірмесі, көші-қон картасы, полициядан анықтама','Passport copy, migration card, police report','护照复印件、移民卡、警方证明','Pasportyň göçürmesi, migrasiýa kartasy, polisiýadan kepilnama')},
+ {id:'card',i:'cap',v:0,
+  t:T('Я потерял студенческую карту','Мен студент картамды жоғалттым','I lost my student ID card','我丢了学生卡','Men talyp kartymy ýitirdim'),
+  w:T('Обратись в ЦОС — карту студента оформляют там.','СҚО-ға бар — студент картасын сонда рәсімдейді.','Go to the Student Service Center — student cards are issued there.','请到学生服务中心——学生卡在那里办理。','Hyzmat merkezine bar — talyp kartlary şol ýerde resmilenýär.'),
+  who:T('Специалист ЦОС вашего факультета','Факультетіңіздің СҚО маманы','Your faculty’s specialist at the Student Service Center','学生服务中心负责你所在院系的工作人员','Fakultetiňiziň hyzmat merkezindäki hünärmeni'),
+  where:T('УК-3, каб. 101','ОК-3, 101-каб.','Building 3, room 101','3号楼101室','3-nji bina, 101-nji otag'),
+  doc:T('Документ, удостоверяющий личность','Жеке басты куәландыратын құжат','An identity document','身份证件','Şahsyýeti tassyklaýan resminama')},
+ {id:'sick',i:'buoy',v:0,link:'med',
+  t:T('Я заболел','Мен ауырып қалдым','I feel sick','我生病了','Men syrkawladym'),
+  w:T('Обратись к врачу и сохрани справку: пропуск по болезни считается уважительным, если он подтверждён справкой. Сообщи преподавателю. В экстренном случае звони 103 или 112.','Дәрігерге бар және анықтаманы сақта: ауырғандықтан сабақ жіберу анықтамамен расталса, дәлелді болып саналады. Оқытушыға хабарла. Шұғыл жағдайда 103 немесе 112 нөміріне қоңырау шал.','See a doctor and keep the certificate: an absence for illness is excused when confirmed by a doctor’s note. Tell your teacher. In an emergency call 103 or 112.','请就医并保存诊断证明：因病缺课经医生证明后视为有正当理由。请告知任课教师。紧急情况请拨打103或112。','Lukmana ýüz tut we kepilnamany sakla: syrkawlanyň sebäpli sapak sypdyrmak kepilnama bilen tassyklansa, oňat sebäp hasaplanýar. Mugallyma habar ber. Gyssagly ýagdaýda 103 ýa-da 112 belgä jaň et.'),
+  who:T('Врач, преподаватель, эдвайзер','Дәрігер, оқытушы, эдвайзер','Doctor, teacher, advisor','医生、任课教师、学业导师','Lukman, mugallym, advaýzer'),
+  where:T('Медицинское обслуживание — см. сайт университета','Медициналық қызмет — университет сайтын қара','Medical services — see the university website','医疗服务——见大学官网','Lukmançylyk hyzmaty — uniwersitetiň saýtyna seret'),
+  doc:T('Медицинская справка','Медициналық анықтама','Medical certificate','医疗证明','Lukmançylyk kepilnamasy')},
+ {id:'room',i:'pin',v:0,
+  t:T('Я не знаю, где моя аудитория','Аудиториямның қайда екенін білмеймін','I can’t find my classroom','我找不到我的教室','Auditoriýamyň nirededigini bilemok'),
+  w:T('Проверь адрес корпуса в разделе «Кампус» (у корпусов разные адреса!). Затем спроси у охраны, старосты или в деканате.','«Кампус» бөлімінен корпустың мекенжайын тексер (корпустардың мекенжайы әртүрлі!). Содан кейін күзеттен, старостадан немесе деканаттан сұра.','Check the building address in the “Campus” section (buildings have different addresses!). Then ask security, your group leader or the dean’s office.','先在“校园”栏目核对教学楼地址（各楼地址不同！），再询问保安、班长或院系办公室。','«Kampus» bölüminde binanyň salgysyny barla (binalaryň salgylary dürli!). Soňra garawuldan, starostadan ýa-da dekanatdan sora.'),
+  who:T('Староста, деканат','Староста, деканат','Group leader, dean’s office','班长、院系办公室','Starosta, dekanat'),
+  where:T('Раздел «Кампус» на этом сайте','Осы сайттың «Кампус» бөлімі','“Campus” section of this site','本网站“校园”栏目','Bu saýtyň «Kampus» bölümi'),
+  doc:T('—','—','—','—','—')},
+ {id:'late',i:'clock',v:0,
+  t:T('Я опаздываю на экзамен','Мен емтиханға кешігіп жатырмын','I am late for an exam','我考试要迟到了','Men synaga giç galýaryn'),
+  w:T('Опоздавших к экзамену не допускают — правило жёсткое. Сразу свяжись с деканатом или эдвайзером и объясни причину; при уважительной причине понадобятся документы.','Емтиханға кешіккендер жіберілмейді — ереже қатаң. Дереу деканатпен немесе эдвайзермен байланысып, себебін түсіндір; дәлелді себеп болса, құжаттар қажет болады.','Late students are not admitted to the exam — the rule is strict. Contact your dean’s office or advisor immediately and explain; for a valid reason you will need documents.','迟到者不得参加考试——规定很严格。请立即联系院系办公室或学业导师说明原因；若有正当理由，需要提供证明材料。','Synaga giç galanlara rugsat berilmeýär — düzgün gaty. Derrew dekanat ýa-da advaýzer bilen habarlaş we sebäbini düşündir; oňat sebäp bolsa, resminamalar gerek bolar.'),
+  who:T('Деканат, эдвайзер, преподаватель','Деканат, эдвайзер, оқытушы','Dean’s office, advisor, teacher','院系办公室、学业导师、任课教师','Dekanat, advaýzer, mugallym'),
+  where:T('Деканат твоего факультета','Факультетіңнің деканаты','Your faculty’s dean’s office','你所在院系的办公室','Fakultetiň dekanaty'),
+  doc:T('Справка или иной документ, подтверждающий причину','Себебін растайтын анықтама немесе басқа құжат','A certificate or other proof of the reason','能证明原因的证明或其他材料','Sebäbi tassyklaýan kepilnama ýa-da başga resminama')},
+ {id:'dead',i:'calc',v:1,
+  t:T('Я пропустил дедлайн','Мен мерзімді өткізіп алдым','I missed a deadline','我错过了截止日期','Men möhleti sypdyrdym'),
+  w:T('Сразу напиши преподавателю вежливое письмо с объяснением. Посмотри в силлабусе правила сдачи и штрафов. Расскажи эдвайзеру.','Дереу оқытушыға түсіндірме бере отырып, сыпайы хат жаз. Силлабустан тапсыру және айыппұл ережелерін қара. Эдвайзерге айт.','Write your teacher a polite email straight away. Check the syllabus for late-submission rules. Tell your advisor.','立刻给任课教师写一封礼貌的说明邮件，查看课程大纲中的逾期提交规定，并告诉学业导师。','Derrew mugallyma düşündiriş bilen sypaýy hat ýaz. Silabusda tabşyrmak we jerime düzgünlerine seret. Advaýzere aýt.'),
+  who:T('Преподаватель, эдвайзер','Оқытушы, эдвайзер','Teacher, advisor','任课教师、学业导师','Mugallym, advaýzer'),
+  where:T('Письмо / офис-часы','Хат / офис-сағаттар','Email / office hours','邮件／教师答疑时间','Hat / ofis sagatlary'),
+  doc:T('Подтверждение причины (если есть)','Себебін растау (болса)','Proof of the reason (if any)','原因证明（如有）','Sebäbiň tassyknamasy (bar bolsa)')},
+ {id:'res',i:'globe',v:0,link:'visa',
+  t:T('Проблема с документами о проживании','Тұру құжаттарына қатысты мәселе','Problem with my residence documents','居留证件出了问题','Ýaşamak resminamalary bilen bagly mesele'),
+  w:T('Обратись в международный отдел: на официальном сайте есть страница «Визовая поддержка и миграционное сопровождение».','Халықаралық бөлімге хабарлас: ресми сайтта «Визалық қолдау және көші-қон сүйемелдеуі» беті бар.','Contact the international office: the official site has a “Visa support and migration assistance” page.','请联系国际处：官网上有“签证支持与移民服务”页面。','Halkara bölüme ýüz tut: resmi saýtda «Wiza goldawy we migrasiýa hyzmaty» sahypasy bar.'),
+  who:T('Международный отдел','Халықаралық бөлім','International office','国际处','Halkara bölüm'),
+  where:T('См. страницу на сайте университета','Университет сайтындағы бетті қара','See the page on the university website','见大学官网相应页面','Uniwersitetiň saýtyndaky sahypa seret'),
+  doc:T('Паспорт, виза / разрешение, миграционная карта','Паспорт, виза / рұқсат, көші-қон картасы','Passport, visa / permit, migration card','护照、签证／居留许可、移民卡','Pasport, wiza / rugsatnama, migrasiýa kartasy')},
+ {id:'lost',i:'search',v:1,
+  t:T('Я потерял вещь в университете','Мен университетте затымды жоғалттым','I lost something at the university','我在学校丢了东西','Men uniwersitetde zadymy ýitirdim'),
+  w:T('В доступных материалах порядок не описан. Начни с охраны корпуса и деканата.','Қолжетімді материалдарда тәртібі сипатталмаған. Корпус күзетінен және деканаттан баста.','The procedure is not described in the available materials. Start with building security and the dean’s office.','现有材料中未说明具体流程。请先询问教学楼保安和院系办公室。','Elýeterli materiallarda tertibi beýan edilmändir. Bina garawulyndan we dekanatdan başla.'),
+  who:T('Охрана, деканат','Күзет, деканат','Security, dean’s office','保安、院系办公室','Garawul, dekanat'),
+  where:T('Корпус, где потерял','Жоғалтқан корпусың','The building where you lost it','丢失物品的教学楼','Ýitiren binaň'),
+  doc:T('—','—','—','—','—')}
+];
+
+/* FAQ */
+var FAQ = [
+ {c:'study',q:T('Можно ли пропустить занятие, если я болею?','Ауырып қалсам, сабақты жіберуге бола ма?','Can I miss a class because I am sick?','生病了可以缺课吗？','Syrkawlasam, sapagy sypdyrsam bolarmy?'),
+  a:T('Пропуск возможен по уважительным причинам: болезнь, подтверждённая справкой врача, и чрезвычайные обстоятельства. Сообщи преподавателю и посмотри правила посещаемости в силлабусе.','Дәлелді себептермен жіберуге болады: дәрігер анықтамасымен расталған ауру және төтенше жағдайлар. Оқытушыға хабарла және силлабустан қатысу ережелерін қара.','Absences are allowed for valid reasons: illness confirmed by a doctor’s note, and emergencies. Tell your teacher and check the attendance rules in the syllabus.','因正当理由可以缺课：有医生证明的疾病和突发情况。请告知教师，并在课程大纲中查看出勤规定。','Oňat sebäpler bilen sypdyrmak bolýar: lukman kepilnamasy bilen tassyklanan kesel we adatdan daşary ýagdaýlar. Mugallyma habar ber we silabusda gatnaşyk düzgünlerine seret.')},
+ {c:'study',q:T('Сколько длится семестр?','Семестр қанша уақытқа созылады?','How long is a semester?','一个学期有多长？','Semestr näçe wagt dowam edýär?'),
+  a:T('15 недель. Учебный год — 36 недель: 30 недель обучения и 6 недель аттестации. Экзаменационная сессия — от 1 до 3 недель.','15 апта. Оқу жылы — 36 апта: 30 апта оқу және 6 апта аттестация. Емтихан сессиясы — 1-ден 3 аптаға дейін.','15 weeks. The academic year is 36 weeks: 30 weeks of study and 6 of assessment. An exam session lasts 1–3 weeks.','15周。一个学年共36周：30周授课加6周考核。考试周持续1至3周。','15 hepde. Okuw ýyly 36 hepde: 30 hepde okuw we 6 hepde attestasiýa. Synag sessiýasy 1-den 3 hepdä çenli dowam edýär.')},
+ {c:'study',q:T('Что будет, если я получу «F»?','«F» алсам не болады?','What happens if I get an “F”?','如果得了“F”会怎样？','«F» alsam näme bolar?'),
+  a:T('Предмет нужно изучить повторно в летнем семестре — он платный.','Пәнді жазғы семестрде қайта оқу керек — ол ақылы.','You must retake the course in the summer semester, which is paid.','这门课需要在暑期学期重修，暑期学期是收费的。','Dersi tomusky semestrde gaýtadan öwrenmeli — ol tölegli.')},
+ {c:'study',q:T('Как рассчитывается итоговая оценка?','Қорытынды баға қалай есептеледі?','How is my final grade calculated?','期末总评如何计算？','Jemleýji baha nähili hasaplanýar?'),
+  a:T('Итоговая = (РК1 + РК2) / 2 × 0,6 + экзамен × 0,4. К экзамену допускают, если по каждому рубежному контролю не меньше 50 баллов. Попробуй калькулятор в разделе «Учёба».','Қорытынды баға = (МБ1 + МБ2) / 2 × 0,6 + емтихан × 0,4. Әр межелік бақылаудан кемінде 50 балл болса, емтиханға жіберіледі. «Оқу» бөліміндегі калькуляторды байқап көр.','Final = (RK1 + RK2) / 2 × 0.6 + exam × 0.4. You are admitted to the exam if you have at least 50 points in each midterm control. Try the calculator in the “Studies” section.','总评 =（阶段考核1 + 阶段考核2）/ 2 × 0.6 + 考试 × 0.4。每次阶段考核至少50分才能参加考试。可以试试“学习”栏目中的计算器。','Jemleýji baha = (AG1 + AG2) / 2 × 0,6 + synag × 0,4. Her aralyk gözegçilikden azyndan 50 bal bolsa, synaga rugsat berilýär. «Okuw» bölümindäki hasaplaýjyny synap gör.')},
+ {c:'money',q:T('Когда нужно платить за обучение?','Оқу ақысын қашан төлеу керек?','When do I have to pay tuition?','学费什么时候缴？','Okuw tölegini haçan tölemeli?'),
+  a:T('Либо полностью до 25 августа, либо по графику. Вариант I: 40% до 25 августа, 10% до 1 декабря, 25% до 1 февраля, 25% до 1 апреля. Вариант II: 50% до 25 августа, остаток до 1 апреля. Сверь с текущим годом.','Не толық 25 тамызға дейін, не кесте бойынша. I нұсқа: 25 тамызға дейін 40%, 1 желтоқсанға дейін 10%, 1 ақпанға дейін 25%, 1 сәуірге дейін 25%. II нұсқа: 25 тамызға дейін 50%, қалғаны 1 сәуірге дейін. Ағымдағы жылмен салыстырып тексер.','Either in full by 25 August, or in instalments. Option I: 40% by 25 Aug, 10% by 1 Dec, 25% by 1 Feb, 25% by 1 Apr. Option II: 50% by 25 Aug, the rest by 1 Apr. Confirm for the current year.','要么8月25日前一次缴清，要么分期缴纳。方案一：8月25日前40%，12月1日前10%，2月1日前25%，4月1日前25%。方案二：8月25日前50%，余额4月1日前缴清。请以当年规定为准。','Ýa-da 25 awgusta çenli doly, ýa-da tertip boýunça. I wariant: 25 awgusta çenli 40%, 1 dekabra çenli 10%, 1 fewrala çenli 25%, 1 aprele çenli 25%. II wariant: 25 awgusta çenli 50%, galany 1 aprele çenli. Häzirki ýyl bilen deňeşdirip barla.')},
+ {c:'docs',q:T('Где получить официальный транскрипт?','Ресми транскриптті қайдан алуға болады?','Where do I get an official transcript?','在哪里领取正式成绩单？','Resmi transkripti nireden alyp bolar?'),
+  a:T('В Центре обслуживания студентов: 3-й корпус, кабинет 101. Официальный транскрипт — с подписью и печатью.','Студенттерге қызмет көрсету орталығында: ОК-3, 101-кабинет. Ресми транскриптте қол мен мөр болады.','At the Student Service Center: Building 3, room 101. The official transcript is signed and stamped.','在学生服务中心（3号楼101室）领取。正式成绩单带有签名和公章。','Talyplara hyzmat ediş merkezinde: 3-nji bina, 101-nji otag. Resmi transkriptde gol we möhür bolýar.')},
+ {c:'docs',q:T('Как получить карту «Оңай»?','«Оңай» картасын қалай алуға болады?','How do I get the Onay card?','怎样办理Onay卡？','«Oňaý» kartyny nädip almaly?'),
+  a:T('Подготовь фото 3×4 и скан удостоверения личности или паспорта в JPEG. Данные передаёт специалист ЦОС (обычно через старосту группы), оплата 500 тг (Kaspi.kz), ожидание 15–20 рабочих дней.','3×4 фото мен жеке куәліктің немесе паспорттың JPEG форматындағы скані дайында. Деректерді СҚО маманы енгізеді (әдетте топ старостасы арқылы), төлем — 500 теңге (Kaspi.kz), күту мерзімі 15–20 жұмыс күні.','Prepare a 3×4 photo and a scan of your ID or passport in JPEG. The Student Service Center enters your data (usually via the group leader), pay 500 KZT (Kaspi.kz), wait 15–20 working days.','准备3×4照片以及身份证件或护照的JPEG扫描件。学生服务中心工作人员（通常通过班长）录入信息，通过Kaspi.kz支付500坚戈，等待15–20个工作日。','3×4 surat we şahsyýet güwänamasynyň ýa-da pasportyň JPEG skanerini taýýarla. Maglumatlary hyzmat merkeziniň hünärmeni (adatça topar starostasy arkaly) girizýär, töleg 500 tenge (Kaspi.kz), garaşmaly wagty 15–20 iş güni.')},
+ {c:'life',q:T('Что такое Placement test?','Тіл деңгейін анықтау тесті деген не?','What is the placement test?','什么是语言分级测试？','Dil derejesini kesgitleýän test nämedir?'),
+  a:T('Входной тест по иностранным языкам в организационный период. По результату формируют группы по уровню.','Ұйымдастыру кезеңіндегі шет тілдерінен кіріс тест. Нәтижесіне қарай деңгей бойынша топтар құрылады.','An entrance test of foreign languages during orientation. The results are used to form groups by level.','入学适应期进行的外语入学测试，根据成绩按水平分班。','Orientasiýa döwründe geçirilýän daşary ýurt dilleri boýunça giriş testi. Netijesine görä derejä görä toparlar düzülýär.')}
+];
+var FAQ_CATS = [['all',T('Все','Барлығы','All','全部','Hemmesi')],['study',T('Учёба','Оқу','Studies','学习','Okuw')],['money',T('Оплата','Төлем','Payment','缴费','Töleg')],['docs',T('Документы','Құжаттар','Documents','证件','Resminamalar')],['life',T('Жизнь','Өмір','Life','生活','Durmuş')]];
+
+/* Факультеты */
+var P_TR = T('6В02301 — Переводческое дело','6В02301 — Аударма ісі','6B02301 — Translation studies','6B02301 — 翻译','6B02301 — Terjimeçilik');
+var P_PH = T('6В02302 — Иностранная филология','6В02302 — Шетел филологиясы','6B02302 — Foreign philology','6B02302 — 外国语言文学','6B02302 — Daşary ýurt filologiýasy');
+var FAC = [
+ {id:'ped',n:T('Педагогический факультет иностранных языков','Шетел тілдері педагогикалық факультеті','Faculty of Pedagogy of Foreign Languages','外语师范学院','Daşary ýurt dilleri pedagogika fakulteti'),off:['gyk',708],
+  pr:[T('6В01701 — Учитель двух иностранных языков','6В01701 — Екі шет тілі мұғалімі','6B01701 — Teacher of two foreign languages','6B01701 — 双外语教师','6B01701 — Iki daşary ýurt dilinden mugallym')],
+  dep:[[T('Практики речи и коммуникации (1–2 курсы)','Сөйлеу және коммуникация практикасы (1–2 курс)','Speech and Communication Practice (years 1–2)','言语与交际实践教研室（1–2年级）','Gepleşik we kommunikasiýa amaly (1–2-nji kurslar)'),'uk1',202],
+       [T('Теории и практики межкультурной коммуникации (3 курс)','Мәдениетаралық коммуникация теориясы мен практикасы (3 курс)','Theory and Practice of Intercultural Communication (year 3)','跨文化交际理论与实践教研室（3年级）','Medeniýetara kommunikasiýanyň nazarýeti we amaly (3-nji kurs)'),'uk1',226],
+       [T('Методики иноязычного образования (4 курс)','Шетел тілінде білім беру әдістемесі (4 курс)','Methodology of Foreign-Language Education (year 4)','外语教学法教研室（4年级）','Daşary ýurt dilinde bilim bermegiň usulyýeti (4-nji kurs)'),'uk1',306],
+       [T('Педагогики и психологии','Педагогика және психология','Pedagogy and Psychology','教育学与心理学教研室','Pedagogika we psihologiýa'),'uk1',326]]},
+ {id:'tr',n:T('Факультет перевода и филологии','Аударма және филология факультеті','Faculty of Translation and Philology','翻译与语文学学院','Terjime we filologiýa fakulteti'),off:['uk2',110],pr:[P_TR,P_PH],
+  dep:[[T('Практики речи иностранных языков (1–2 курсы)','Шетел тілдерінің сөйлеу практикасы (1–2 курс)','Speech Practice of Foreign Languages (years 1–2)','外语言语实践教研室（1–2年级）','Daşary ýurt dilleriniň gepleşik amaly (1–2-nji kurslar)'),'uk2',216],
+       [T('Перевода и межкультурной коммуникации (3–4 курсы)','Аударма және мәдениетаралық коммуникация (3–4 курс)','Translation and Intercultural Communication (years 3–4)','翻译与跨文化交际教研室（3–4年级）','Terjime we medeniýetara kommunikasiýa (3–4-nji kurslar)'),'uk2',212],
+       [T('Синхронного перевода','Синхронды аударма','Simultaneous Interpretation','同声传译教研室','Sinhron terjime'),'uk2',214],
+       [T('Романских языков','Роман тілдері','Romance Languages','罗曼语族语言教研室','Roman dilleri'),'uk2',213],
+       [T('Практики речи иностранной филологии (1–2 курсы)','Шетел филологиясының сөйлеу практикасы (1–2 курс)','Speech Practice of Foreign Philology (years 1–2)','外国语言文学言语实践教研室（1–2年级）','Daşary ýurt filologiýasynyň gepleşik amaly (1–2-nji kurslar)'),'uk2',314],
+       [T('Теории иностранной филологии (3–4 курсы)','Шетел филологиясының теориясы (3–4 курс)','Theory of Foreign Philology (years 3–4)','外国语言文学理论教研室（3–4年级）','Daşary ýurt filologiýasynyň nazarýeti (3–4-nji kurslar)'),'uk2',312]]},
+ {id:'or',n:T('Факультет востоковедения','Шығыстану факультеті','Faculty of Oriental Studies','东方学学院','Gündogaryň öwrenilişi fakulteti'),off:['gyk',809],
+  pr:[P_TR,P_PH,T('6В02201 — Востоковедение','6В02201 — Шығыстану','6B02201 — Oriental studies','6B02201 — 东方学','6B02201 — Gündogaryň öwrenilişi'),T('6В02202 — Тюркология','6В02202 — Түркітану','6B02202 — Turkology','6B02202 — 突厥学','6B02202 — Türkologiýa')],
+  dep:[[T('Перевода восточных языков','Шығыс тілдерінің аудармасы','Translation of Oriental Languages','东方语言翻译教研室','Gündogar dilleriniň terjimesi'),'uk3',313],
+       [T('Восточной филологии','Шығыс филологиясы','Oriental Philology','东方语言文学教研室','Gündogar filologiýasy'),'uk3',311],
+       [T('Востоковедения','Шығыстану','Oriental Studies','东方学教研室','Gündogaryň öwrenilişi'),'uk3',317]]},
+ {id:'mg',n:T('Факультет менеджмента и международных коммуникаций','Менеджмент және халықаралық коммуникациялар факультеті','Faculty of Management and International Communications','管理与国际传播学院','Menejment we halkara kommunikasiýalar fakulteti'),off:['uk1',322],
+  pr:[T('6В03201 — Журналистика','6В03201 — Журналистика','6B03201 — Journalism','6B03201 — 新闻学','6B03201 — Žurnalistika'),T('6В11101 — Туризм','6В11101 — Туризм','6B11101 — Tourism','6B11101 — 旅游','6B11101 — Syýahatçylyk'),T('6В11102 — Ресторанное дело и гостиничный бизнес','6В11102 — Мейрамхана ісі және қонақ үй бизнесі','6B11102 — Restaurant and hotel business','6B11102 — 餐饮与酒店业','6B11102 — Restoran we myhmanhana biznesi'),T('6В04103 — Менеджмент и маркетинг','6В04103 — Менеджмент және маркетинг','6B04103 — Management and marketing','6B04103 — 管理与市场营销','6B04103 — Menejment we marketing')],
+  dep:[[T('Международных коммуникаций','Халықаралық коммуникациялар','International Communications','国际传播教研室','Halkara kommunikasiýalar'),'uk1',304],
+       [T('Менеджмент международного туризма','Халықаралық туризм менеджменті','International Tourism Management','国际旅游管理教研室','Halkara syýahatçylyk menejmenti'),'uk1',422],
+       [T('Менеджмент гостеприимства','Қонақжайлылық менеджменті','Hospitality Management','酒店接待管理教研室','Myhmansöýerlik menejmenti'),'uk1',433],
+       [T('Менеджмент и маркетинг','Менеджмент және маркетинг','Management and Marketing','管理与市场营销教研室','Menejment we marketing'),'uk1',308]]},
+ {id:'ir',n:T('Факультет международных отношений, бизнеса и права','Халықаралық қатынастар, бизнес және құқық факультеті','Faculty of International Relations, Business and Law','国际关系、商务与法学学院','Halkara gatnaşyklar, biznes we hukuk fakulteti'),off:['uk1',201],
+  pr:[T('6B03101 — Международные отношения','6B03101 — Халықаралық қатынастар','6B03101 — International relations','6B03101 — 国际关系','6B03101 — Halkara gatnaşyklar'),T('6B04101 — Международный бизнес','6B04101 — Халықаралық бизнес','6B04101 — International business','6B04101 — 国际商务','6B04101 — Halkara biznes'),T('6B04201 — Юриспруденция','6B04201 — Құқықтану','6B04201 — Jurisprudence','6B04201 — 法学','6B04201 — Hukukşynaslyk'),T('6B04202 — Международное право','6B04202 — Халықаралық құқық','6B04202 — International law','6B04202 — 国际法','6B04202 — Halkara hukuk')],
+  dep:[[T('Международных отношений','Халықаралық қатынастар','International Relations','国际关系教研室','Halkara gatnaşyklar'),'uk1',215],
+       [T('Международного бизнеса','Халықаралық бизнес','International Business','国际商务教研室','Halkara biznes'),'uk1',212],
+       [T('Международного права','Халықаралық құқық','International Law','国际法教研室','Halkara hukuk'),'uk1',208],
+       [T('Профессионального иностранного языка международного взаимодействия','Халықаралық өзара іс-қимылға арналған кәсіби шет тілі','Professional Foreign Language for International Cooperation','国际交往专业外语教研室','Halkara hyzmatdaşlyk üçin hünär daşary ýurt dili'),'uk1',217]]}
+];
+
+/* =====================================================================
+   СТРАНИЦЫ (часть 1)
+   ===================================================================== */
+var V = {};
+
+function scen(i){
+  var s=SCEN[i];
+  var lab={yes:T('✅ Можно','✅ Болады','✅ Yes','✅ 可以','✅ Bolýar'),chk:T('⚠️ Зависит','⚠️ Байланысты','⚠️ It depends','⚠️ 视情况而定','⚠️ Baglydyr'),no:T('❌ Нельзя','❌ Болмайды','❌ No','❌ 不可以','❌ Bolmaýar')};
+  var head={yes:T('Можно','Болады','Yes, this is fine','可以','Bolýar'),chk:T('Зависит от правил','Ережелерге байланысты','It depends on the rules','视规定而定','Düzgünlere baglydyr'),no:T('Нельзя','Болмайды','No, this is not OK','不可以','Bolmaýar')};
+  return '<article class="card sc rv" data-v="'+s.v+'" style="--d:'+(i*0.05)+'s"><p class="sit">“'+L(s.s)+'”</p><div class="gb">'+['yes','chk','no'].map(function(k){return '<button data-act="guess" data-g="'+k+'">'+L(lab[k])+'</button>'}).join('')+'</div><div class="vd '+s.v+'"><b>'+L(head[s.v])+'</b>'+L(s.a)+'</div></article>';
+}
+
+/* ---- ГЛАВНАЯ ---- */
+V.home = function(){
+  var H = T('Твой университет на понятном языке','Университетің — түсінікті тілде','Your university, in plain language','用你听得懂的语言了解你的大学','Uniwersitetiň düşnükli dilde');
+  var S = T('Неофициальный студенческий гид КазУМОиМЯ им. Абылай хана для новых студентов — особенно иностранных.','Абылай хан атындағы ҚазХҚжӘТУ-дың жаңа студенттерге, әсіресе шетелдік студенттерге арналған бейресми студенттік гиді.','An unofficial student guide to Ablai Khan University for new students — especially international ones.','面向新生（尤其是留学生）的阿布赉汗大学非官方学生指南。','Ablaý han uniwersitetiniň täze talyplar, esasanam daşary ýurtly talyplar üçin resmi däl talyp gollanmasy.');
+  var PILL = T('Гид для студентов · 5 языков','Студенттерге арналған гид · 5 тіл','Student guide · 5 languages','学生指南 · 5种语言','Talyp gollanmasy · 5 dil');
+  var B1 = T('Начать с первой недели','Алғашқы аптадан бастау','Start with your first week','从第一周开始','Ilkinji hepdeden başla');
+  var B2 = T('Поиск','Іздеу','Search','搜索','Gözleg');
+  var TILE = {
+   'first-week':T('Чек-лист из 12 шагов: эдвайзер, ИУП, карты, библиотека.','12 қадамнан тұратын тізім: эдвайзер, ЖОЖ, карталар, кітапхана.','A 12-step checklist: advisor, study plan, cards, library.','12步清单：学业导师、个人学习计划、各类卡片、图书馆。','12 ädimlik sanaw: advaýzer, şahsy okuw meýilnamasy, kartlar, kitaphana.'),
+   study:T('Календарь, оценки, калькулятор GPA, глоссарий, экзамены.','Күнтізбе, бағалар, орташа балл калькуляторы, сөздік, емтихандар.','Calendar, grades, GPA calculator, glossary, exams.','学年历、成绩、平均绩点计算器、术语表、考试。','Senenama, bahalar, ortaça bal hasaplaýjysy, sözlük, synaglar.'),
+   integrity:T('Плагиат, цитаты, переводы. Можно ли так делать?','Плагиат, дәйексөз, аударма. Осылай істеуге бола ма?','Plagiarism, quotes, translation. Can I do this?','抄袭、引用、翻译。这样做可以吗？','Plagiat, sitata, terjime. Şeýle etmek bolýarmy?'),
+   help:T('Потерял документ? Заболел? Опаздываешь? Пошаговые инструкции.','Құжат жоғалды ма? Ауырып қалдың ба? Кешігіп жатырсың ба? Қадамдық нұсқаулар.','Lost a document? Sick? Late? Step-by-step help.','丢了证件？生病了？要迟到了？分步指引。','Resminama ýitdimi? Syrkawladyňmy? Giç galýarsyňmy? Ädimme-ädim görkezmeler.')
+  };
+  var stats = [[36,T('недель в учебном году','оқу жылындағы апта','weeks in the academic year','学年周数','okuw ýylynda hepde')],[15,T('недель в семестре','семестрдегі апта','weeks per semester','每学期周数','semestrde hepde')],[6,T('учебных корпусов','оқу корпусы','academic buildings','教学楼','okuw binasy')],[5,T('языков сайта','сайт тілі','site languages','网站语言','sahypa dili')]];
+  var quick = [
+   [T('Получить карту «Оңай»','«Оңай» картасын алу','Get the Onay card','办理Onay交通卡','«Oňaý» kartyny almak'),href('first-week')],
+   [T('Найти корпус','Корпусты табу','Find a building','找教学楼','Binany tapmak'),href('campus')],
+   [T('Узнать, как платить за учёбу','Оқу ақысын қалай төлеуді білу','See how to pay tuition','了解如何缴学费','Okuw tölegini nädip tölemelidigini bilmek'),href('study','pay')],
+   [T('Правила экзамена','Емтихан ережелері','Exam rules','考试规则','Synag düzgünleri'),href('study','exams')],
+   [T('Посчитать GPA','Орташа балды есептеу','Calculate my GPA','计算平均绩点','Ortaça baly hasaplamak'),href('study','grades')],
+   [T('Можно ли так делать?','Осылай істеуге бола ма?','Can I do this?','这样做可以吗？','Şeýle etmek bolýarmy?'),href('integrity')]
+  ];
+  var steps = [
+   [T('Первый день','Бірінші күн','Day 1','第一天','Birinji gün'),T('Знакомство с эдвайзером','Эдвайзермен танысу','Meet your advisor','认识学业导师','Advaýzer bilen tanyşmak'),T('Он поможет со всем остальным.','Қалғанының бәріне ол көмектеседі.','They will help with everything else.','其余事项都可以请他/她帮忙。','Galanlarynyň hemmesinde ol kömek eder.')],
+   [T('26 авг – 1 сен','26 тамыз – 1 қыркүйек','26 Aug – 1 Sep','8月26日–9月1日','26 awgust – 1 sentýabr'),T('Тест по языку и ИУП','Тіл тесті және ЖОЖ','Placement test and study plan','分级测试与学习计划','Dil testi we okuw meýilnamasy'),T('Уровень языка и выбор предметов.','Тіл деңгейі және пәндерді таңдау.','Your language level and course choice.','确定语言水平并选课。','Dil derejesi we dersleri saýlamak.')],
+   [T('После 1 сентября','1 қыркүйектен кейін','After 1 September','9月1日之后','1-nji sentýabrdan soň'),T('Карты в ЦОС','Карталар СҚО-да','Cards at the service center','在学生服务中心办卡','Kartlar hyzmat merkezinde'),T('Карта студента и «Оңай» — УК-3, каб. 101.','Студент картасы және «Оңай» — ОК-3, 101-каб.','Student card and Onay — Building 3, room 101.','学生卡和Onay卡——3号楼101室。','Talyp kartasy we «Oňaý» — 3-nji bina, 101-nji otag.')],
+   [T('4 сентября','4 қыркүйек','4 September','9月4日','4-nji sentýabr'),T('Начало семестра','Семестрдің басталуы','Semester starts','学期开始','Semestriň başlanmagy'),T('Даты по календарю  –24; уточни на текущий год.','Күндер  –24 күнтізбесі бойынша; ағымдағы жылға нақтыла.','Dates follow the  –24 calendar; confirm for the current year.','日期依据 –24学年历；请核实当年安排。','Seneler  –24 senenamasy boýunça; häzirki ýyl üçin anyklaň.')]
+  ];
+  var openT=T('Открыть','Ашу','Open','打开','Aç');
+  return ''+
+  '<section class="hero"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="container hero-in">'+
+   '<div><span class="pill">'+ic('star')+' '+L(PILL)+'</span><h1>'+L(H)+'</h1><p class="lead">'+L(S)+'</p>'+
+   '<div class="hero-cta"><a class="btn primary lg" href="'+href('first-week')+'">'+L(B1)+' '+ic('arrow')+'</a><button class="btn ghost-w lg" data-act="search">'+ic('search')+' '+L(B2)+'</button></div>'+
+   '<div class="stats">'+stats.map(function(s){return '<div><b data-count="'+s[0]+'">0</b><span>'+L(s[1])+'</span></div>'}).join('')+'</div></div>'+
+   '<div class="hero-visual">'+photo('hero','5/4')+
+    '<div class="fl f1">'+ic('check')+' '+L(T('Входной тест','Деңгей анықтау тесті','Placement test','分级测试','Derejäni kesgitleýän test'))+'</div><div class="fl f2">'+ic('calc')+' '+L(T('Средний балл 3,33','Орташа балл 3,33','GPA 3.33','平均绩点 3.33','Ortaça bal 3,33'))+'</div><div class="fl f3">'+ic('bus')+' '+L(T('Карта «Оңай»','«Оңай» картасы','Onay card','Onay卡','«Oňaý» kartasy'))+'</div></div>'+
+  '</div></section>'+
+  sec('<div class="sech rv"><div><div class="kicker">'+L(T('С чего начать','Неден бастау керек','Where to start','从哪里开始','Nireden başlamaly'))+'</div><h2>'+L(T('Главное для новичка','Жаңадан келгенге басты ақпарат','The essentials for a newcomer','新生必读','Täze gelenler üçin esasy zatlar'))+'</h2></div></div>'+
+   '<div class="grid g4">'+['first-week','study','integrity','help'].map(function(p,i){return '<a class="card tile '+rv(i)+'" href="'+href(p)+'"><div class="ti">'+ic(ICON_OF[p])+'</div><h3>'+L(NAV[p])+'</h3><p>'+L(TILE[p])+'</p><span class="go">'+L(openT)+' '+ic('arrow')+'</span></a>'}).join('')+'</div>')+
+  sec('<div class="split"><div class="'+rv(0)+'"><div class="kicker">'+L(T('Быстрый доступ','Жылдам қолжетімділік','Quick access','快速入口','Çalt elýeterlilik'))+'</div><h2>'+L(T('Мне нужно…','Маған керек…','I need to…','我需要…','Maňa gerek…'))+'</h2>'+
+   '<div class="grid" style="gap:10px">'+quick.map(function(q){return '<a class="card hov" style="padding:14px 18px;display:flex;align-items:center;gap:12px;font-weight:600" href="'+q[1]+'">'+ic('arrow')+' '+L(q[0])+'</a>'}).join('')+'</div></div>'+
+   '<div class="'+rv(2)+'"><div class="kicker">'+L(T('Первые дни','Алғашқы күндер','First days','最初几天','Ilkinji günler'))+'</div><h2>'+L(T('Как пройдёт начало','Бастамасы қалай өтеді','How the start goes','开学初期的安排','Başlangyç nähili geçer'))+'</h2>'+
+   '<div class="tl"><div class="fillb"></div>'+steps.map(function(s){return '<div class="ti2"><div class="d">'+L(s[0])+'</div><div class="t">'+L(s[1])+'</div><div class="s">'+L(s[2])+'</div></div>'}).join('')+'</div></div></div>')+
+  sec('<div class="sech rv"><div><div class="kicker">'+L(T('Мини-игра','Мини-ойын','Mini game','迷你游戏','Mini oýun'))+'</div><h2>'+L(T('Можно ли так делать?','Осылай істеуге бола ма?','Can I do this?','这样做可以吗？','Şeýle etmek bolýarmy?'))+'</h2><p>'+L(T('Угадай — и проверь себя.','Болжап көр — сосын тексер.','Take a guess — then check yourself.','先猜一猜，再验证答案。','Çen — soň barla.'))+'</p></div><a class="btn ghost" href="'+href('integrity')+'">'+L(T('Все ситуации','Барлық жағдайлар','All situations','全部情境','Ähli ýagdaýlar'))+' '+ic('arrow')+'</a></div><div class="grid g2">'+scen(0)+scen(2)+'</div>')+
+  sec('<div class="cta rv"><div><h2>'+L(T('Нужна срочная помощь?','Шұғыл көмек керек пе?','Need urgent help?','需要紧急帮助吗？','Gyssagly kömek gerekmi?'))+'</h2><p>'+L(T('Экстренные номера Казахстана и пошаговые инструкции на все случаи.','Қазақстандағы шұғыл нөмірлер және барлық жағдайға арналған қадамдық нұсқаулар.','Emergency numbers in Kazakhstan and step-by-step guides for common situations.','哈萨克斯坦紧急电话，以及常见情况的分步指引。','Gazagystanda gyssagly belgiler we ähli ýagdaýlar üçin ädimme-ädim görkezmeler.'))+'</p><div class="sos" style="margin-top:14px">'+sosLinks()+'</div></div><a class="btn primary lg" href="'+href('help')+'">'+L(NAV.help)+' '+ic('arrow')+'</a></div>')+
+  sec('<div class="note info rv">'+ic('info')+'<div>'+L(T('Это неофициальный учебный проект, созданный студентами. Информация основана на Путеводителе первокурсника   и публичных страницах ablaikhan.kz.','Бұл — студенттер жасаған ресми емес оқу жобасы. Ақпарат   жылғы Бірінші курс студентінің нұсқаулығына және ablaikhan.kz сайтының ашық беттеріне негізделген.','This is an unofficial coursework project made by students. The information is based on the First-year Guide   and public pages of ablaikhan.kz.','这是学生制作的非官方课程项目，内容依据 年《新生指南》和ablaikhan.kz的公开页面。','Bu talyplar tarapyndan taýýarlanan resmi däl okuw taslamasy. Maglumatlar  -nji ýylyň Birinji ýyl talyp gollanmasyna we ablaikhan.kz saýtynyň açyk sahypalaryna esaslanýar.'))+'</div></div>');
+};
+
+/* ---- ПЕРВАЯ НЕДЕЛЯ ---- */
+V['first-week'] = function(){
+  var done = store.get('fw',[]);
+  var det = T('Подробнее','Толығырақ','Details','详情','Has köp');
+  var list = FW.map(function(x,i){
+    var d = done.indexOf(x.id)>-1;
+    var go = x.go ? '<a class="lk" href="'+href(x.go[0],x.go[1])+'" data-stop="1">'+L(det)+' →</a>' : '';
+    return '<div class="ck rv'+(d?' done':'')+'" role="checkbox" aria-checked="'+d+'" tabindex="0" data-act="ck" data-id="'+x.id+'" style="--d:'+(i*0.04)+'s"><span class="bx">'+ic('check')+'</span><span><span class="tt">'+L(x.t)+'</span><span class="ds">'+X(L(x.d))+'</span>'+go+'</span></div>';
+  }).join('');
+  return pageHead('first-week',T('Мини-гид по адаптации: отмечай шаги — прогресс сохранится в твоём браузере.','Бейімделу бойынша шағын нұсқаулық: қадамдарды белгіле — прогресс браузеріңде сақталады.','A mini adaptation guide: tick off the steps — your progress is saved in your browser.','适应指南：勾选完成的步骤，进度会保存在你的浏览器中。','Uýgunlaşmak boýunça gysgaça gollanma: ädimleri belläp gidiber — öňegidişlik brauzeriňde saklanýar.'),SRC_GUIDE)+
+  sec('<div class="fw"><aside class="ring rv"><svg viewBox="0 0 180 180"><circle class="bg" cx="90" cy="90" r="80"/><circle class="fg" id="ringfg" cx="90" cy="90" r="80"/></svg><div class="num"><span id="ringn">0/'+FW.length+'</span><small>'+L(T('выполнено','орындалды','done','已完成','ýerine ýetirildi'))+'</small></div>'+
+   '<div style="margin-top:18px">'+photo('cos','3/2')+'</div><button class="btn ghost sm" style="margin-top:14px" data-act="fwreset">'+L(T('Сбросить','Тазалау','Reset','重置','Arassala'))+'</button></aside><div>'+noteYear()+list+'</div></div>');
+};
+
+/* ---- КАМПУС ---- */
+function mapSVG(){
+  var g=function(id,x,y,w,h,lab){return '<g class="bld" data-b="'+id+'" tabindex="0" role="button"><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="9"/><text x="'+(x+w/2)+'" y="'+(y+h/2+5)+'" text-anchor="middle">'+lab+'</text></g>'};
+  return '<svg class="map" viewBox="0 0 640 430" role="img" aria-label="'+esc(L(T('Схема расположения корпусов №1, №3 и ГУК','№1, №3 корпустар мен БОК орналасу сызбасы','Layout of buildings 1, 3 and the main building','1号楼、3号楼与主楼位置示意图','1-nji, 3-nji binalaryň we Baş binanyň ýerleşiş shemasy')))+'">'+
+   '<rect class="st" x="14" y="10" width="520" height="30" rx="6"/><text class="stt" x="274" y="30" text-anchor="middle">'+stLabel('she')+'</text>'+
+   '<rect class="st" x="14" y="390" width="520" height="30" rx="6"/><text class="stt" x="274" y="410" text-anchor="middle">'+stLabel('kur')+'</text>'+
+   '<rect class="st" x="560" y="10" width="34" height="410" rx="6"/><text class="stt" transform="translate(582 215) rotate(90)" text-anchor="middle">'+stLabel('sha')+'</text>'+
+   '<rect class="gr2" x="150" y="126" width="390" height="196" rx="10"/>'+
+   g('uk3',150,58,390,60,L(bld('uk3').ab))+g('uk1',80,58,62,268,L(bld('uk1').ab))+g('gyk',80,334,460,50,L(bld('gyk').ab))+
+   '<g><rect class="oth" x="230" y="170" width="150" height="72" rx="9"/><text x="305" y="211" text-anchor="middle" style="fill:#fff;font-size:13px;font-weight:700">'+L(T('Спорткомплекс','Спорт кешені','Sports complex','体育馆','Sport toplumy'))+'</text></g>'+
+   '<g><rect x="240" y="262" width="100" height="44" rx="6" style="fill:#3f8f5f"/><circle cx="290" cy="284" r="9" style="fill:none;stroke:#fff;stroke-width:1.5"/><path d="M290 262v44M240 284h100" style="stroke:#fff;stroke-width:1.5"/></g>'+
+   '<rect class="ent" x="452" y="118" width="46" height="12" rx="4"/><text class="entt" x="475" y="146" text-anchor="middle">'+L(T('Вход','Кіру','Entrance','入口','Girelge'))+'</text>'+
+   '<rect class="ent" x="142" y="176" width="12" height="46" rx="4"/><rect class="ent" x="270" y="382" width="52" height="12" rx="4"/>'+
+  '</svg>';
+}
+function bldInfo(id){
+  var b=id?bld(id):null; if(!b) return '<b>'+L(T('Наведи или нажми на корпус','Корпусқа меңзерді апар немесе бас','Hover or tap a building','将鼠标移到或点击教学楼','Binanyň üstüne eltiň ýa-da basyň'))+'</b>';
+  return '<b>'+ic('pin')+' '+L(b.n)+'</b>'+addr(b.s1,b.num,b.s2);
+}
+function bldCards(){
+  return BLD.map(function(b,i){return '<div class="card '+rv(i%3)+'">'+photo(b.id,'16/10')+'<h3 style="margin-top:14px">'+L(b.ab)+' — '+L(b.n)+'</h3><p style="color:var(--muted);margin:0">'+ic('pin')+' '+addr(b.s1,b.num,b.s2)+'</p></div>'}).join('');
+}
+V.campus = function(sub){
+  var tabs=[['buildings',T('Корпуса','Корпустар','Buildings','教学楼','Binalar')],['dorms',T('Общежития','Жатақханалар','Dormitories','宿舍','Ýaşaýyş jaýlary')],['food',T('Питание','Тамақтану','Food','餐饮','Iýmit')],['library',T('Библиотека','Кітапхана','Library','图书馆','Kitaphana')],['rooms',T('Классы','Сыныптар','Classrooms','教室','Klaslar')],['museums',T('Музеи','Мұражайлар','Museums','博物馆','Muzeýler')]];
+  var cur=sub&&tabs.some(function(t){return t[0]===sub})?sub:'buildings';
+  var roomRows=[
+   [T('Мультимедийный кабинет с интерактивной доской','Интерактивті тақтасы бар мультимедиялық кабинет','Multimedia room with interactive board','配有互动白板的多媒体教室','Interaktiw tagtaly multimedia otagy'),rooms('gyk','310, 314')],
+   [T('Компьютерные классы','Компьютер сыныптары','Computer classes','计算机教室','Kompýuter klaslary'),rooms('gyk','307, 309, 310, 312, 313')+' · '+rooms('uk1','214, 402, 406, 410, 412, 413, 429')+' · '+rooms('uk2','303')+' · '+rooms('uk3','210, 216, 220')],
+   [T('Интернет-класс','Интернет-сынып','Internet class','上网教室','Internet klasy'),rooms('gyk','311, 313, 309')],
+   [T('Лингафонный кабинет','Лингафон кабинеті','Language lab','语言实验室','Lingafon otagy'),rooms('gyk','315, 203')+' · '+rooms('uk1','412')],
+   [T('Видеозал','Бейнезал','Video room','视听室','Wideo zal'),rooms('gyk','316')+' · '+rooms('uk1','419')],
+   [T('Лекционный зал с проектором','Проекторы бар дәрісхана','Lecture hall with projector','配投影仪的阶梯教室','Proýektorly leksiýa zaly'),rooms('gyk','414, 514, 614')+' · '+rooms('uk1','314, 332, 325, 307, 311, 219')+' · '+rooms('uk3','103, 104, 106, 207, 423')]
+  ];
+  var dorms=[[1,'kur',150,'zha'],[2,'kur',150,'zha'],[3,'zha',104,null]];
+  var rn=function(n){return T('Читальный зал №'+n,'Оқу залы №'+n,'Reading room No. '+n,'阅览室'+n,'Okamak zaly №'+n)};
+  var rl=[T('1 этаж, УК-3','1-қабат, ОК-3','1st floor, Building 3','3号楼1层','3-nji bina, 1-nji gat'),T('2 этаж, УК-1','2-қабат, ОК-1','2nd floor, Building 1','1号楼2层','1-nji bina, 2-nji gat'),T('2 этаж, УК-2','2-қабат, ОК-2','2nd floor, Building 2','2号楼2层','2-nji bina, 2-nji gat')];
+  var food=[[T('Кафетерий','Кафетерий','Cafeteria','自助餐厅','Kafeterij'),T('1 этаж главного учебного корпуса','Бас оқу корпусының 1-қабаты','1st floor, main building','主楼1层','Baş binanyň 1-nji gaty')],[T('Буфеты','Буфеттер','Snack bars','小卖部','Bufetler'),T('В учебных корпусах 2–5','2–5-оқу корпустарында','In Buildings 2–5','2至5号楼内','2–5-nji binalarda')],[T('Столовая','Асхана','Canteen','食堂','Naharhana'),T('1 этаж ГУК и 1 этаж УК-1','БОК-тің 1-қабаты және ОК-1-дің 1-қабаты','1st floor of the main building and of Building 1','主楼1层和1号楼1层','Baş binanyň we 1-nji binanyň 1-nji gaty')]];
+  return pageHead('campus',T('Где что находится: корпуса, общежития, питание, библиотека, классы и музеи.','Не қайда орналасқан: корпустар, жатақханалар, тамақтану, кітапхана, сыныптар және мұражайлар.','Where everything is: buildings, dormitories, food, library, classrooms and museums.','各处位置：教学楼、宿舍、餐饮、图书馆、教室和博物馆。','Nämäniň nirededigi: binalar, ýaşaýyş jaýlary, iýmit, kitaphana, klaslar we muzeýler.'),SRC_GUIDE)+
+  sec(tabsHTML(tabs,cur)+
+  '<div class="panel'+(cur==='buildings'?' on':'')+'" data-panel="buildings"><div class="note warn">'+ic('alert')+'<div>'+L(T('Корпуса находятся по разным адресам. ГУК и УК-1 стоят на одной территории (ул. Муратбаева, 200), но входы — с разных улиц (Курмангазы и Шевченко). Перед первым занятием проверь адрес своего корпуса.','Корпустар әртүрлі мекенжайларда орналасқан. БОК мен ОК-1 бір аумақта (Мұратбаев к-сі, 200), бірақ кіреберістері әр көшеде (Құрманғазы және Шевченко). Алғашқы сабаққа дейін өз корпусыңның мекенжайын тексер.','Buildings are at different addresses. The main building and Building 1 share one campus (200 Muratbayev St.), but their entrances are on different streets (Kurmangazy and Shevchenko). Check your building’s address before your first class.','各教学楼地址不同。主楼和1号楼在同一院区（穆拉特巴耶夫街200号），但入口分别在库尔曼加兹街和舍甫琴科街。第一次上课前请确认你所在教学楼的地址。','Binalar dürli salgylarda ýerleşýär. Baş bina bilen 1-nji bina bir meýdançada (Muratbaýew köçesi, 200), ýöne girelgeleri dürli köçelerde (Kurmangazy we Şewçenko). Ilkinji sapakdan öň öz binaňyň salgysyny barla.'))+'</div></div>'+
+   '<div class="split" style="align-items:start"><div class="rv">'+mapSVG()+'<div class="binfo" id="binfo">'+bldInfo()+'</div><p style="margin-top:12px"><a class="btn ghost sm" href="'+CONFIG.MAPS+'" target="_blank" rel="noopener noreferrer">'+ic('pin')+' '+L(T('Открыть на карте','Картадан ашу','Open in Maps','在地图中打开','Kartada aç'))+'</a></p></div><div class="rv">'+photo('aerial','16/10')+'<p style="margin-top:14px;color:var(--muted)">'+L(T('Схема показывает ГУК, УК-1, УК-3 и спорткомплекс. Иллюстрация упрощённая.','Сызбада БОК, ОК-1, ОК-3 және спорт кешені көрсетілген. Сурет жеңілдетілген.','The plan shows the main building, Buildings 1 and 3 and the sports complex. Simplified illustration.','示意图显示主楼、1号楼、3号楼和体育馆，图示为简化画法。','Shemada Baş bina, 1-nji we 3-nji binalar hem sport toplumy görkezilen. Surat ýönekeýleşdirilen.'))+'</p>'+photo('sport','16/10')+'</div></div>'+
+   '<h2 style="margin-top:34px">'+L(T('Все корпуса','Барлық корпустар','All buildings','所有教学楼','Ähli binalar'))+'</h2><div class="grid g3">'+bldCards()+'</div></div>'+
+  '<div class="panel'+(cur==='dorms'?' on':'')+'" data-panel="dorms"><div class="grid g3">'+dorms.map(function(d,i){return '<div class="card '+rv(i)+'"><h3>'+ic('bed')+' '+L(dormTitle(d[0]))+'</h3><p style="color:var(--muted);margin:0">'+ic('pin')+' '+addr(d[1],d[2],d[3])+'</p></div>'}).join('')+'</div>'+
+   '<p style="margin:18px 0">'+L(T('В общежитиях есть комнаты, прачечная, тренажёрный зал, учебные комнаты и «Центр досуга» с еженедельными просмотрами фильмов. Вопросы по заселению — на официальной странице.','Жатақханаларда бөлмелер, кір жуатын орын, жаттығу залы, оқу бөлмелері және апта сайын фильм көрсетілетін «Бос уақыт орталығы» бар. Орналасу мәселелері — ресми бетте.','The dormitories have rooms, a laundry, a gym, study rooms and a Leisure Center with weekly film screenings. For move-in questions see the official page.','宿舍配有房间、洗衣房、健身房、自习室，以及每周放映电影的“休闲中心”。入住相关问题请查看官方页面。','Ýaşaýyş jaýlarynda otaglar, kir ýuwulýan ýer, türgenleşik zaly, okuw otaglary we her hepde film görkezilýän «Dynç alyş merkezi» bar. Ýerleşmek soraglary resmi sahypada.'))+' '+ext(OFF.dorms,L(T('Заселение в общежития','Жатақханаға орналасу','Dormitory move-in','宿舍入住','Ýaşaýyş jaýyna ýerleşmek')))+'</p>'+
+   '<div class="grid g3">'+['dorm_out','dorm_room','dorm_laundry','dorm_gym','dorm_study','dorm_leisure'].map(function(k,i){return '<div class="'+rv(i%3)+'">'+photo(k,'4/3')+'</div>'}).join('')+'</div></div>'+
+  '<div class="panel'+(cur==='food'?' on':'')+'" data-panel="food"><div class="grid g3">'+food.map(function(f,i){return '<div class="card '+rv(i)+'"><h3>'+ic('food')+' '+L(f[0])+'</h3><p style="color:var(--muted);margin:0">'+L(f[1])+'</p></div>'}).join('')+'</div><div class="grid g2" style="margin-top:18px">'+photo('canteen','16/10')+photo('cafe','16/10')+'</div></div>'+
+  '<div class="panel'+(cur==='library'?' on':'')+'" data-panel="library"><div class="split"><div><div class="card" style="margin-bottom:14px"><h3>'+ic('book')+' '+L(T('Абонемент','Абонемент','Lending desk','外借处','Abonement'))+'</h3><p style="margin:0;color:var(--muted)">'+L(T('Цокольный этаж УК-3. Выдача и приём книг, заказ по электронному каталогу.','ОК-3-тің цокольдық қабаты. Кітап беру және қабылдау, электрондық каталог арқылы тапсырыс.','Basement of Building 3. Borrow and return books, order via the electronic catalog.','3号楼地下层。借还图书，可通过电子目录预约。','3-nji binanyň sokol gaty. Kitap bermek we kabul etmek, elektron katalog arkaly sargyt.'))+'</p></div>'+
+   [1,2,3].map(function(n,i){return '<div class="card" style="margin-bottom:10px;padding:14px 20px"><b>'+L(rn(n))+'</b> — '+L(rl[i])+'</div>'}).join('')+
+   '<p>'+ext(OFF.lib,L(T('Электронная библиотека','Электрондық кітапхана','Online library','电子图书馆','Elektron kitaphana')))+'</p></div>'+photo('library','4/3')+'</div></div>'+
+  '<div class="panel'+(cur==='rooms'?' on':'')+'" data-panel="rooms"><div class="tw"><table><thead><tr><th>'+L(T('Тип','Түрі','Type','类型','Görnüşi'))+'</th><th>'+L(T('Кабинеты','Кабинеттер','Rooms','教室','Otaglar'))+'</th></tr></thead><tbody>'+roomRows.map(function(r){return '<tr><td>'+L(r[0])+'</td><td>'+r[1]+'</td></tr>'}).join('')+'</tbody></table></div><div style="margin-top:18px">'+photo('pcclass','21/9')+'</div></div>'+
+  '<div class="panel'+(cur==='museums'?' on':'')+'" data-panel="museums"><div class="grid g2"><div class="card">'+photo('museum_uni','16/10')+'<h3 style="margin-top:14px">'+ic('museum')+' '+L(T('Музей университета','Университет мұражайы','University museum','大学博物馆','Uniwersitetiň muzeýi'))+'</h3><p style="color:var(--muted);margin:0">'+L(T('История вуза и международные связи.','Университет тарихы және халықаралық байланыстар.','The university’s history and international ties.','大学历史与国际合作。','Uniwersitetiň taryhy we halkara gatnaşyklary.'))+'</p></div><div class="card">'+photo('museum_abylai','16/10')+'<h3 style="margin-top:14px">'+ic('museum')+' '+L(T('Музей Абылай хана','Абылай хан мұражайы','Ablai Khan Museum','阿布赉汗博物馆','Ablaý han muzeýi'))+'</h3><p style="color:var(--muted);margin:0">'+L(T('Экспозиция о хане, в честь которого назван университет.','Университетке есімі берілген ханға арналған көрме.','An exhibition about the khan the university is named after.','介绍大学冠名者阿布赉汗的展览。','Uniwersitete ady dakylan han hakynda sergi.'))+'</p></div></div></div>');
+};
+
+/* ---- УЧЁБА ---- */
+function calList(list){
+  return '<div class="cal">'+list.map(function(e,i){
+    var t=CAL_TYPES[e[1]];
+    var vt=e[3]?' <span class="tag">'+L(e[3])+'</span>':'';
+    return '<div class="ce rv" style="--c:'+t[0]+';--d:'+(i*0.03)+'s"><div class="dt">'+fr(e[0])+'</div><div class="nm">'+L(e[2])+vt+' <span style="color:'+t[0]+';font-size:.82rem;font-weight:650">· '+L(t[1])+'</span></div></div>';
+  }).join('')+'</div>';
+}
+function rkLab(n){return lang==='ru'?'РК'+n:lang==='kk'?'МБ'+n:lang==='en'?'RK'+n:lang==='zh'?'阶段考核'+n:'AG'+n}
+function gpaRow(letter,cr){
+  return '<div class="gr"><div><label class="f">'+L(T('Оценка','Баға','Grade','成绩','Baha'))+'</label><select data-calc="gpa">'+LETTERS.map(function(l){return '<option value="'+l[1]+'"'+(l[0]===letter?' selected':'')+'>'+l[0]+' ('+num(String(l[1]).replace('.',','))+')</option>'}).join('')+'</select></div><div><label class="f">'+L(T('Кредиты','Кредит','Credits','学分','Kredit'))+'</label><input type="number" min="1" max="30" value="'+cr+'" data-calc="gpa"></div><button class="ibtn" data-act="gpadel" aria-label="'+esc(L(T('Удалить','Жою','Remove','删除','Poz')))+'">'+ic('trash')+'</button></div>';
+}
+V.study = function(sub){
+  var tabs=[['calendar',T('Календарь','Күнтізбе','Calendar','学年历','Senenama')],['grades',T('Оценки и GPA','Бағалар және GPA','Grades & GPA','成绩与绩点','Bahalar we GPA')],['glossary',T('Глоссарий','Сөздік','Glossary','术语表','Sözlük')],['exams',T('Экзамены','Емтихандар','Exams','考试','Synaglar')],['summer',T('Летний семестр','Жазғы семестр','Summer semester','暑期学期','Tomusky semestr')],['pay',T('Оплата','Төлем','Payment','缴费','Töleg')]];
+  var cur=sub&&tabs.some(function(t){return t[0]===sub})?sub:'calendar';
+  var legend='<div class="lg2">'+Object.keys(CAL_TYPES).map(function(k){return '<span><i style="background:'+CAL_TYPES[k][0]+'"></i>'+L(CAL_TYPES[k][1])+'</span>'}).join('')+'</div>';
+  var gpaRows=[['A',5],['B+',5],['C+',6],['D',5]].map(function(r){return gpaRow(r[0],r[1])}).join('');
+  var yes=function(x){return '<li>'+ic('check')+'<span>'+L(x)+'</span></li>'};
+  var no=function(x){return '<li>'+ic('x')+'<span>'+L(x)+'</span></li>'};
+  var formula = T('ИО = ((РК1 + РК2) / 2) × 0,6 + Экзамен × 0,4','ҚБ = ((МБ1 + МБ2) / 2) × 0,6 + Емтихан × 0,4','Final = ((RK1 + RK2) / 2) × 0.6 + Exam × 0.4','总评 = ((阶段考核1 + 阶段考核2) / 2) × 0.6 + 考试 × 0.4','JB = ((AG1 + AG2) / 2) × 0,6 + Synag × 0,4');
+  var byT = T('до 25 авг','25 тамызға дейін','by 25 Aug','8月25日前','25 awgusta çenli');
+  return pageHead('study',T('Как устроен учебный год, как считаются оценки и что означают незнакомые слова.','Оқу жылы қалай ұйымдастырылған, бағалар қалай есептеледі және таныс емес сөздер нені білдіреді.','How the academic year works, how grades are calculated and what the unfamiliar words mean.','学年如何安排、成绩如何计算，以及陌生术语的含义。','Okuw ýyly nähili gurnalýar, bahalar nähili hasaplanýar we nätanyş sözler nämäni aňladýar.'),SRC_GUIDE)+
+  sec(tabsHTML(tabs,cur)+
+  '<div class="panel'+(cur==='calendar'?' on':'')+'" data-panel="calendar">'+noteYear()+
+   '<div class="grid g3" style="margin-bottom:24px">'+[['36',T('недель в учебном году','оқу жылындағы апта','weeks per academic year','学年总周数','okuw ýylynda hepde')],['30 + 6',T('недель обучения + аттестации','оқу + аттестация аптасы','weeks of study + assessment','教学周 + 考核周','okuw + attestasiýa hepdesi')],['15',T('недель в семестре','семестрдегі апта','weeks per semester','每学期周数','semestrde hepde')]].map(function(s,i){return '<div class="card '+rv(i)+';text-align:center"><div style="font-size:2.2rem;font-weight:800;color:var(--blue)">'+s[0]+'</div><div style="color:var(--muted)">'+L(s[1])+'</div></div>'}).join('')+'</div>'+
+   '<div class="note info">'+ic('info')+'<div>'+L(T('Вариант 1 и вариант 2 относятся к разным программам. Уточни свой вариант в деканате или у эдвайзера.','1-нұсқа мен 2-нұсқа әртүрлі бағдарламаларға қатысты. Өз нұсқаңды деканаттан немесе эдвайзерден біл.','Variant 1 and Variant 2 apply to different programmes. Ask your dean’s office or advisor which one is yours.','方案一和方案二适用于不同专业，请向院系办公室或学业导师确认你适用哪一个。','1-nji we 2-nji wariant dürli maksatnamalara degişli. Öz warianty dekanatdan ýa-da advaýzerden bil.'))+'</div></div>'+legend+
+   '<h2>'+L(T('Осень – зима  –24',' –24 жылғы күз – қыс','Autumn – winter  –24',' –24学年秋冬',' –24-nji ýylyň güýzi – gyşy'))+'</h2>'+calList(CAL_FALL)+
+   '<h2 style="margin-top:28px">'+L(T('Весна – лето 2024','2024 жылғы көктем – жаз','Spring – summer 2024','2024年春夏','2024-nji ýylyň ýazy – tomusy'))+'</h2>'+calList(CAL_SPRING)+
+   '<h2 style="margin-top:28px">'+ic('clock')+' '+L(T('Расписание звонков','Қоңырау кестесі','Bell schedule','作息时间','Jaň tertibi'))+'</h2><div class="tw" style="max-width:520px"><table><thead><tr><th>'+L(T('1 смена','1-ауысым','Shift 1','第一班','1-nji çalşyk'))+'</th><th>'+L(T('2 смена','2-ауысым','Shift 2','第二班','2-nji çalşyk'))+'</th></tr></thead><tbody>'+BELLS.map(function(b){return '<tr><td>'+b[0]+'</td><td>'+b[1]+'</td></tr>'}).join('')+'</tbody></table></div></div>'+
+  '<div class="panel'+(cur==='grades'?' on':'')+'" data-panel="grades">'+
+   '<div class="grid g2"><div class="card"><h3>'+ic('calc')+' '+L(T('Как считается итоговая оценка','Қорытынды баға қалай есептеледі','How your final grade is calculated','期末总评如何计算','Jemleýji baha nähili hasaplanýar'))+'</h3><p style="color:var(--muted)">'+X(L(T('Два {{rk}} дают 60% оценки, экзамен — 40%. К экзамену допускают, если по каждому рубежному контролю набрано не менее 50 баллов.','Екі {{rk}} бағаның 60%-ын, емтихан 40%-ын құрайды. Әр межелік бақылаудан кемінде 50 балл жинаған жағдайда ғана емтиханға жіберіледі.','Two {{rk}} count for 60% of the grade, the exam for 40%. You are admitted to the exam only with at least 50 points in each midterm control.','两次{{rk}}占总评的60%，考试占40%。每次阶段考核至少获得50分才能参加考试。','Iki {{rk}} bahanyň 60%-ini, synag 40%-ini düzýär. Her aralyk gözegçilikden azyndan 50 bal toplan bolsaň, synaga rugsat berilýär.')))+'</p><code style="display:block;padding:12px 14px;background:var(--surface2);border-radius:12px;font-size:.9rem">'+L(formula)+'</code>'+
+    '<h3 style="margin-top:20px">'+L(T('Калькулятор итоговой оценки','Қорытынды баға калькуляторы','Final grade calculator','总评计算器','Jemleýji baha hasaplaýjysy'))+'</h3><div class="grid g3" style="gap:10px"><div><label class="f">'+rkLab(1)+'</label><input type="number" min="0" max="100" value="80" data-calc="fin" id="f1"></div><div><label class="f">'+rkLab(2)+'</label><input type="number" min="0" max="100" value="75" data-calc="fin" id="f2"></div><div><label class="f">'+L(T('Экзамен','Емтихан','Exam','考试','Synag'))+'</label><input type="number" min="0" max="100" value="70" data-calc="fin" id="f3"></div></div><div class="res" id="finres"></div></div>'+
+   '<div class="card"><h3>'+ic('calc')+' '+L(T('Калькулятор GPA','GPA калькуляторы','GPA calculator','平均绩点（GPA）计算器','Ortaça bal (GPA) hasaplaýjysy'))+'</h3><p style="color:var(--muted)">'+X(L(T('{{gpa}} = сумма (цифровой эквивалент × кредиты) ÷ сумма кредитов. Пример — из путеводителя (получается 2,65).','{{gpa}} = (сандық баламасы × кредит) қосындысы ÷ кредиттердің жалпы саны. Мысал нұсқаулықтан алынған (нәтиже 2,65).','{{gpa}} = sum (numeric grade × credits) ÷ total credits. The example is from the guide (it gives 2.65).','{{gpa}} =（各科绩点 × 学分）之和 ÷ 总学分。示例取自新生指南（结果为2.65）。','{{gpa}} = (sanly ekwiwalent × kredit) jemi ÷ kreditleriň umumy sany. Mysal gollanmadan alyndy (netije 2,65).')))+'</p><div id="gparows">'+gpaRows+'</div><button class="btn ghost sm" data-act="gpaadd">'+ic('plus')+' '+L(T('Добавить предмет','Пән қосу','Add a course','添加课程','Ders goşmak'))+'</button><div class="res" id="gpares"></div></div></div>'+
+   '<h2 style="margin-top:30px">'+L(T('Шкала оценок','Бағалау шкаласы','Grade scale','评分标准','Baha şkalasy'))+'</h2><div class="tw"><table><thead><tr><th>'+L(T('Буква','Әріп','Letter','字母等级','Harp'))+'</th><th>'+L(T('Цифровой эквивалент','Сандық баламасы','Numeric','绩点','Sanly ekwiwalent'))+'</th><th>'+L(T('Баллы','Балл','Points','分数','Bal'))+'</th><th>'+L(T('Традиционная система','Дәстүрлі жүйе','Traditional','传统等级','Adaty ulgam'))+'</th></tr></thead><tbody>'+SCALE.map(function(r){return '<tr><td><b>'+r[0]+'</b></td><td>'+num(r[1])+'</td><td>'+r[2]+'</td><td>'+L(r[3])+'</td></tr>'}).join('')+'</tbody></table></div>'+
+   '<p style="margin-top:14px;color:var(--muted)">'+X(L(T('Для перевода на следующий курс нужен {{gpa}} не ниже переводного балла, установленного университетом.','Келесі курсқа көшу үшін {{gpa}} университет белгілеген өтпелі баллдан төмен болмауы керек.','To move to the next year your {{gpa}} must be at least the transfer score set by the university.','升入下一学年要求{{gpa}}不低于大学规定的升级分数。','Indiki kursa geçmek üçin {{gpa}} uniwersitetiň bellän geçiş balyndan pes bolmaly däl.')))+'</p></div>'+
+  '<div class="panel'+(cur==='glossary'?' on':'')+'" data-panel="glossary"><div class="searchbox">'+ic('search')+'<input type="search" id="glq" data-filter="gl" placeholder="'+esc(L(T('Найти термин…','Терминді іздеу…','Find a term…','查找术语…','Termin gözle…')))+'"></div><div class="grid g2" id="gllist">'+GL.map(function(g){return '<div class="card gli" data-s="'+esc((L(g.a)+' '+allv(g.n)+' '+allv(g.d)).toLowerCase())+'"><span class="tag">'+esc(L(g.a))+'</span><h3>'+L(g.n)+'</h3><p style="margin:0;color:var(--muted)">'+L(g.d)+'</p></div>'}).join('')+'</div></div>'+
+  '<div class="panel'+(cur==='exams'?' on':'')+'" data-panel="exams"><div class="dd2"><div><h2 style="color:var(--ok)">'+ic('check')+' '+L(T('Нужно','Қажет','Do','应当做','Gerek'))+'</h2><ul class="lst y">'+[
+    T('Оплатить обучение и сдать внутрисеместровый контроль — иначе к экзамену не допустят.','Оқу ақысын төлеп, семестр ішіндегі бақылауды тапсыру — әйтпесе емтиханға жіберілмейсің.','Have paid tuition and passed the midterm control — otherwise you will not be admitted.','已缴清学费并通过学期内考核，否则不能参加考试。','Okuw tölegini tölemek we semestr içindäki gözegçiligi tabşyrmak — bolmasa synaga rugsat berilmeýär.'),
+    T('Иметь при себе студенческий билет.','Студенттік билетті өзіңмен алып жүру.','Bring your student ID.','随身携带学生证。','Talyp bileti ýanyňda bolmaly.'),
+    T('Прийти вовремя и сидеть в своей аудитории по списку группы.','Уақытында келіп, топ тізіміне сәйкес өз аудиторияңда отыру.','Arrive on time and sit in your own room, as per the group list.','准时到场，并按班级名单在自己的教室就座。','Wagtynda gelip, topar sanawyna görä öz auditoriýaňda oturmak.'),
+    T('В письменном экзамене писать ответы только на выданных листах.','Жазбаша емтиханда жауапты тек берілген парақтарға жазу.','In a written exam, write answers only on the sheets provided.','笔试时只能把答案写在发放的答题纸上。','Ýazuw synagynda jogaplary diňe berlen kagyzlara ýazmak.')
+   ].map(yes).join('')+'</ul></div>'+
+   '<div><h2 style="color:var(--bad)">'+ic('x')+' '+L(T('Нельзя','Болмайды','Don’t','禁止','Bolmaýar'))+'</h2><ul class="lst n">'+[
+    T('Выходить из аудитории после начала экзамена.','Емтихан басталғаннан кейін аудиториядан шығу.','Leave the room after the exam has started.','考试开始后离开考场。','Synag başlanandan soň auditoriýadan çykmak.'),
+    T('Разговаривать с другими студентами и по телефону.','Басқа студенттермен және телефонмен сөйлесу.','Talk to other students or on the phone.','与其他同学交谈或打电话。','Beýleki talyplar bilen ýa-da telefonda gürleşmek.'),
+    T('Заглядывать в чужой лист или монитор — это грубое нарушение, вас удалят с экзамена.','Біреудің парағына немесе мониторына қарау — өрескел бұзушылық, емтиханнан шығарылады.','Look at another student’s sheet or screen — a serious violation; you will be removed.','偷看他人答卷或屏幕属于严重违规，将被取消考试资格。','Başga birinin kagyzyna ýa-da monitoryna seretmek — agyr düzgün bozma, synagdan çykarylarsyň.'),
+    T('Пользоваться телефоном, электронной записной книжкой, шпаргалкой, справочной литературой (кроме разрешённой преподавателем).','Телефонды, электрондық жазу кітапшасын, шпаргалканы, анықтамалық әдебиетті (оқытушы рұқсат еткеннен басқасын) пайдалану.','Use a phone, electronic organizer, cheat sheet or reference materials (except those allowed by the teacher).','使用手机、电子记事本、小抄或参考资料（教师允许的除外）。','Telefondan, elektron ýazgy depderçesinden, şpargalkadan, anyklama edebiýatyndan (mugallymyň rugsat berenlerinden başgasyndan) peýdalanmak.'),
+    T('Опаздывать: опоздавших не допускают.','Кешігу: кешіккендерді жібермейді.','Be late: late students are not admitted.','迟到：迟到者不得入场。','Giç galmak: giç galanlara rugsat berilmeýär.')
+   ].map(no).join('')+'</ul></div></div>'+
+   '<div class="note warn" style="margin-top:20px">'+ic('alert')+'<div><b>'+L(T('Шпаргалка = оценка «F».','Шпаргалка = «F» бағасы.','A cheat sheet = a grade of “F”.','小抄 = 成绩“F”。','Şpargalka = «F» bahasy.'))+'</b> '+L(T('Студента удаляют из аудитории и ставят «F» за экзамен.','Студент аудиториядан шығарылып, емтиханға «F» қойылады.','The student is removed from the room and gets an “F” for the exam.','学生将被请出考场，该考试记“F”。','Talyp auditoriýadan çykarylýar we synaga «F» goýulýar.'))+'</div></div></div>'+
+  '<div class="panel'+(cur==='summer'?' on':'')+'" data-panel="summer"><div class="split"><div class="card"><h3>'+ic('calendar')+' '+L(T('Что это','Бұл не','What it is','这是什么','Bu näme'))+'</h3><p style="color:var(--muted)">'+X(L(T('{{sum}} — платный. Он нужен, чтобы пересдать предмет, закрыть долги или разницу в учебных планах. Даты — в календаре.','{{sum}} — ақылы. Ол пәнді қайта тапсыру, қарыздарды немесе оқу жоспарларындағы айырмашылықты жабу үшін қажет. Күндері — күнтізбеде.','The {{sum}} is paid. It lets you retake a course, clear debts or cover differences between curricula. Dates are in the calendar.','{{sum}}为收费学期，用于重修课程、补清欠修课程或补修培养方案差异课程。日期见学年历。','{{sum}} — tölegli. Ol dersi gaýtadan tabşyrmak, karzlary ýa-da okuw meýilnamalaryndaky tapawudy ýapmak üçin gerek. Seneler senenamada.')))+'</p><h3>'+L(T('Кто может закрыть долги','Қарызды кімдер жаба алады','Who can clear debts','哪些学生可以补修','Karzy kimler ýapyp biler'))+'</h3><ul class="lst">'+[
+    T('Не допущенные к промежуточной аттестации','Аралық аттестацияға жіберілмегендер','Not admitted to the intermediate assessment','未获准参加期末考核者','Aralyk attestasiýa rugsat berilmedikler'),
+    T('Не прошедшие аттестацию','Аттестациядан өтпегендер','Did not pass the assessment','考核未通过者','Attestasiýadan geçmedikler'),
+    T('Не закрывшие академическую разницу в срок','Академиялық айырмашылықты мерзімінде жаппағандар','Did not cover the academic difference on time','未按期补清学业差异者','Akademik tapawudy wagtynda ýapmadyklar')].map(yes).join('')+'</ul></div>'+
+   '<div class="card"><h3>'+ic('star')+' '+L(T('Как записаться','Қалай жазылу керек','How to sign up','如何报名','Nädip ýazylmaly'))+'</h3><div class="tl"><div class="fillb"></div>'+[
+    T('После летней сессии подай заявление на имя декана: укажи курсы и оплату.','Жазғы сессиядан кейін деканның атына өтініш бер: курстар мен төлемді көрсет.','After the summer session, write to the dean: name the courses and payment.','暑期考试周结束后向院长提交申请，注明课程和缴费情况。','Tomusky sessiýadan soň dekanyň adyna arza ber: kurslary we tölegi görkez.'),
+    T('Декан рассматривает заявление.','Декан өтінішті қарайды.','The dean reviews the application.','院长审核申请。','Dekan arzany gözden geçirýär.'),
+    T('Организацию ведёт Офис регистрации, контролирует Учебное управление.','Ұйымдастыруды Тіркеу офисі жүргізеді, Оқу басқармасы бақылайды.','The Registrar’s Office organizes it; the Academic Department monitors it.','由注册办公室组织，教务处负责监督。','Guramagy Hasaba alyş ofisi alyp barýar, Okuw müdirligi gözegçilik edýär.')].map(function(s,i){return '<div class="ti2"><div class="d">'+(i+1)+'</div><div class="t">'+L(s)+'</div></div>'}).join('')+'</div><p style="color:var(--muted);margin:0">'+L(T('Дополнительные курсы доступны, если нет долгов и группа «рентабельная».','Қосымша курстар қарызың болмаса және топ «рентабельді» болса қолжетімді.','Extra courses are available if you have no debts and the group is viable.','若无欠债且开班人数达到要求，可选修附加课程。','Goşmaça kurslar karzyň bolmasa we topar «girdejili» bolsa elýeterli.'))+'</p></div></div></div>'+
+  '<div class="panel'+(cur==='pay'?' on':'')+'" data-panel="pay">'+noteYear()+'<div class="grid g2"><div class="card"><h3>'+L(T('Вариант I — четыре платежа','I нұсқа — төрт төлем','Option I — four payments','方案一——分四次缴纳','I wariant — dört töleg'))+'</h3><div class="bar" data-bar="40,10,25,25"><i>40%</i><i>10%</i><i>25%</i><i>25%</i></div><div class="bl"><span>'+L(byT)+'</span><span>'+L(T('до 1 дек','1 желтоқсанға дейін','by 1 Dec','12月1日前','1 dekabra çenli'))+'</span><span>'+L(T('до 1 фев','1 ақпанға дейін','by 1 Feb','2月1日前','1 fewrala çenli'))+'</span><span>'+L(T('до 1 апр','1 сәуірге дейін','by 1 Apr','4月1日前','1 aprele çenli'))+'</span></div></div>'+
+   '<div class="card"><h3>'+L(T('Вариант II — два платежа','II нұсқа — екі төлем','Option II — two payments','方案二——分两次缴纳','II wariant — iki töleg'))+'</h3><div class="bar" data-bar="50,50"><i>50%</i><i>50%</i></div><div class="bl"><span>'+L(byT)+'</span><span>'+L(T('до 1 апр (остаток)','1 сәуірге дейін (қалғаны)','by 1 Apr (remainder)','4月1日前（余额）','1 aprele çenli (galan)'))+'</span></div></div></div>'+
+   '<p style="margin-top:18px">'+L(T('Можно оплатить весь срок обучения или учебный год сразу — до начала занятий и не позднее 25 августа. Проценты — от стоимости услуг за один год обучения.','Бүкіл оқу мерзімінің немесе бір оқу жылының ақысын бірден төлеуге болады — сабақ басталмай тұрып, кеш дегенде 25 тамызға дейін. Пайыздар бір оқу жылының құнынан есептеледі.','You can also pay for the whole programme or a whole year at once — before classes start and by 25 August at the latest. Percentages refer to one year’s tuition.','也可以一次性缴清全部学制或一个学年的学费——须在开课前、最迟8月25日前。百分比按一学年学费计算。','Ähli okuw möhleti ýa-da bir okuw ýyly üçin töleg birbada tölenip bilner — sapaklar başlamanka, iň giçi 25 awgusta çenli. Göterimler bir ýyllyk hyzmat bahasyndan hasaplanýar.'))+'</p>'+
+   '<div class="note info">'+ic('info')+'<div>'+L(T('Если тебя отчислили за неуплату и ты погасил долг, можно восстановиться в течение 4 недель с момента отчисления. Университет восстанавливает в течение 3 рабочих дней после предъявления документа об оплате. Стоимость для иностранных студентов смотри на официальном сайте.','Егер төлемегенің үшін оқудан шығарылсаң және қарызыңды өтесең, шығарылған сәттен бастап 4 апта ішінде қайта қалпына келуге болады. Университет төлем құжатын көрсеткеннен кейін 3 жұмыс күні ішінде қалпына келтіреді. Шетелдік студенттерге арналған құнын ресми сайттан қара.','If you were expelled for non-payment and then cleared the debt, you may be reinstated within 4 weeks of the expulsion; the university reinstates you within 3 working days after you show proof of payment. For tuition fees for international students see the official site.','如因欠费被除名，还清欠款后可在除名之日起4周内申请复学；提交缴费凭证后，大学将在3个工作日内办理复学。留学生学费标准请查看官方网站。','Töleg tölemänligiň üçin çykarylan bolsaň we karzyňy ýapan bolsaň, çykarylan pursatyndan 4 hepde içinde dikeldilmek mümkin. Uniwersitet töleg resminamasy görkezilenden soň 3 iş güni içinde dikeldýär. Daşary ýurtly talyplar üçin bahany resmi saýtdan gör.'))+'</div></div></div>');
+};
+
+/* ---- АКАДЕМИЧЕСКАЯ ЧЕСТНОСТЬ ---- */
+V.integrity = function(){
+  var C=[['plag',T('Плагиат','Плагиат','Plagiarism','抄袭','Plagiat'),T('Выдать чужой текст или идею за свои: скопировать, перевести без ссылки, «слегка переписать».','Біреудің мәтінін немесе идеясын өзіңдікі етіп көрсету: көшіру, сілтемесіз аудару, «сәл өзгертіп жазу».','Passing off someone else’s text or idea as your own: copying, translating without a source, “lightly rewriting”.','把他人的文字或观点当作自己的：照抄、不注明出处地翻译、“稍作改写”。','Başga birinin tekstini ýa-da pikirini öz pikiriň ýaly görkezmek: göçürmek, salgylanmasyz terjime etmek, «azajyk üýtgedip ýazmak».')],
+   ['quote',T('Цитата','Дәйексөз','Quotation','引用','Sitata'),T('Точные слова автора — в кавычках и со ссылкой (автор, год, источник).','Автордың нақты сөздері — тырнақшада және сілтемемен (автор, жыл, дереккөз).','The author’s exact words — in quotation marks, with a citation (author, year, source).','作者的原话——加引号并附出处（作者、年份、来源）。','Awtoryň takyk sözleri — dyrnak içinde we salgylanma bilen (awtor, ýyl, çeşme).')],
+   ['para',T('Парафраз','Парафраз','Paraphrase','改写','Parafraz'),T('Мысль автора, изложенная по-своему, — тоже со ссылкой на источник.','Автордың ойы өз сөзіңмен жазылады — ол да дереккөзге сілтемемен.','The author’s idea put in your own words — still with a citation.','用自己的话转述作者的观点——同样需要注明出处。','Awtoryň pikiri öz sözleriň bilen aýdylýar — ol hem çeşmä salgylanma bilen.')]];
+  var orig=T('«Сон улучшает память, потому что мозг упорядочивает новую информацию во время отдыха.» — Иванов, 2020','«Ұйқы есте сақтауды жақсартады, өйткені ми демалыс кезінде жаңа ақпаратты реттейді.» — Сәрсенов, 2020','“Sleep improves memory because the brain sorts new information while we rest.” — Smith, 2020','“睡眠能改善记忆，因为大脑会在休息时整理新信息。”——王，2020年','«Uky ýat saklamagy gowulandyrýar, sebäbi beýni dynç alýan wagty täze maglumaty tertibe salýar.» — Ataýew, 2020');
+  var copy=T('Сон улучшает память, потому что мозг упорядочивает новую информацию во время отдыха.','Ұйқы есте сақтауды жақсартады, өйткені ми демалыс кезінде жаңа ақпаратты реттейді.','Sleep improves memory because the brain sorts new information while we rest.','睡眠能改善记忆，因为大脑会在休息时整理新信息。','Uky ýat saklamagy gowulandyrýar, sebäbi beýni dynç alýan wagty täze maglumaty tertibe salýar.');
+  var copyNote=T('Скопировано без кавычек и ссылки. Перевод этого предложения на другой язык без ссылки — тоже плагиат.','Тырнақшасыз және сілтемесіз көшірілген. Бұл сөйлемді сілтемесіз басқа тілге аудару да плагиат болып саналады.','Copied with no quotation marks or source. Translating this sentence into another language without a source is plagiarism too.','未加引号、未注明出处的照抄。把这句话翻译成另一种语言而不注明出处，同样是抄袭。','Dyrnaksyz we salgylanmasyz göçürilen. Bu sözlemi salgylanmasyz başga diline terjime etmek hem plagiatdyr.');
+  var quote=T('Иванов (2020) утверждает: «сон улучшает память, потому что мозг упорядочивает новую информацию во время отдыха».','Сәрсенов (2020) былай дейді: «ұйқы есте сақтауды жақсартады, өйткені ми демалыс кезінде жаңа ақпаратты реттейді».','Smith (2020) states that “sleep improves memory because the brain sorts new information while we rest.”','王（2020）指出：“睡眠能改善记忆，因为大脑会在休息时整理新信息。”','Ataýew (2020) şeýle diýýär: «uky ýat saklamagy gowulandyrýar, sebäbi beýni dynç alýan wagty täze maglumaty tertibe salýar».');
+  var para=T('По словам Иванова (2020), пока мы спим, мозг систематизирует усвоенное, и это помогает лучше запоминать.','Сәрсеновтің (2020) айтуынша, біз ұйықтап жатқанда ми меңгергенімізді жүйелейді, бұл жақсырақ есте сақтауға көмектеседі.','According to Smith (2020), the brain organises what we have learned while we are asleep, which helps us remember it.','据王（2020）所述，我们睡觉时大脑会梳理所学内容，这有助于加深记忆。','Ataýewiň (2020) aýtmagyna görä, biz uklanymyzda beýni öwrenenlerimizi tertibe salýar, bu bolsa ýat saklamaga kömek edýär.');
+  var ladder=[T('Предупреждение','Ескерту','Warning','警告','Duýduryş'),T('Выговор','Сөгіс','Reprimand','记过','Käýinç'),T('Строгий выговор','Қатаң сөгіс','Strict reprimand','严重记过','Berk käýinç'),T('Штраф','Айыппұл','Fine','罚款','Jerime'),T('Исключение','Оқудан шығару','Expulsion','开除','Okuwdan çykarmak')];
+  return pageHead('integrity',T('Что такое плагиат, чем цитата отличается от кражи текста и как не нарушить правила — особенно при работе с переводом.','Плагиат деген не, дәйексөз мәтінді ұрлаудан несімен ерекшеленеді және ережені бұзбау үшін не істеу керек — әсіресе аудармамен жұмыс істегенде.','What plagiarism is, how a quote differs from copying, and how to stay within the rules — especially when translating.','什么是抄袭，引用与照抄有何不同，以及如何遵守规则——尤其是在翻译时。','Plagiat näme, sitata tekst ogurlamakdan nämesi bilen tapawutlanýar we düzgünleri bozmazlyk üçin näme etmeli — esasanam terjime bilen işlände.'),T('Источник: Этический кодекс студентов и официальные страницы','Дереккөз: Студенттердің этика кодексі (  жылғы нұсқаулық) және ресми беттер','Source: Student ethics code (Guide  ) and official pages','资料来源：学生道德准则（ 年《新生指南》）及官网页面','Çeşme: Talyplaryň etika kody (  gollanmasy) we resmi sahypalar'))+
+  sec('<div class="note info">'+ic('info')+'<div>'+L(T('Ответы про переводчики и ИИ — ориентир, а не официальная политика университета. Точные правила — в силлабусе и у преподавателя.','Аудармашылар мен жасанды интеллект туралы жауаптар — бағдар ғана, университеттің ресми саясаты емес. Нақты ережелер — силлабуста және оқытушыда.','Answers about translators and AI are guidance, not official university policy. The exact rules are in your syllabus and with your teacher.','关于翻译工具和人工智能的回答仅供参考，并非大学的官方政策。具体规定请以课程大纲和任课教师为准。','Terjimeçiler we emeli aň barada jogaplar diňe ugur görkezijidir, uniwersitetiň resmi syýasaty däl. Takyk düzgünler silabusda we mugallymda.'))+'</div></div>'+
+  '<div class="grid g3">'+C.map(function(c,i){return '<div class="card '+rv(i)+'"><span class="badge '+(c[0]==='plag'?'bad':'ok')+'">'+L(c[1])+'</span><p style="margin:12px 0 0">'+L(c[2])+'</p></div>'}).join('')+'</div>')+
+  sec('<div class="kicker">'+L(T('Пример','Мысал','Example','示例','Mysal'))+'</div><h2>'+L(T('Одна мысль — три способа','Бір ой — үш тәсіл','One idea — three ways','一个观点，三种写法','Bir pikir — üç usul'))+'</h2><div class="ex rv">'+
+   '<div style="--c:var(--muted)"><b>'+L(T('Оригинал (учебный пример)','Түпнұсқа (оқу үлгісі)','Original (sample)','原文（教学示例）','Asyl nusga (okuw mysaly)'))+'</b>'+L(orig)+'</div>'+
+   '<div style="--c:var(--bad)"><b>❌ '+L(C[0][1])+'</b>'+L(copy)+'<br><small>'+L(copyNote)+'</small></div>'+
+   '<div style="--c:var(--ok)"><b>✅ '+L(C[1][1])+'</b>'+L(quote)+'</div>'+
+   '<div style="--c:var(--ok)"><b>✅ '+L(C[2][1])+'</b>'+L(para)+'</div></div>')+
+  sec('<div class="sech rv"><div><div class="kicker">'+L(T('Интерактив','Интерактив','Interactive','互动','Interaktiw'))+'</div><h2>'+L(T('Можно ли так делать?','Осылай істеуге бола ма?','Can I do this?','这样做可以吗？','Şeýle etmek bolýarmy?'))+'</h2><p>'+L(T('Выбери ответ — и сразу узнаешь, прав ли ты.','Жауап таңда — дұрыс па, жоқ па, бірден білесің.','Pick an answer and find out at once whether you are right.','选择一个答案，立刻知道你答得对不对。','Jogap saýla — dogry ýa-da nädogrudygyny derrew bilersiň.'))+'</p></div></div><div class="grid g2">'+SCEN.map(function(s,i){return scen(i)}).join('')+'</div>')+
+  sec('<h2 class="rv">'+L(T('Что бывает за нарушение','Бұзғаны үшін не болады','What happens if you break the rules','违规会有什么后果','Düzgüni bozanda näme bolýar'))+'</h2><div class="ladder rv">'+ladder.map(function(x){return '<div>'+L(x)+'</div>'}).join('')+'</div><p style="margin-top:16px;color:var(--muted)">'+L(T('Санкции из Этического кодекса зависят от серьёзности нарушения. Плагиат, обман преподавателя и списывание противоречат принципу добросовестности.','Этика кодексіндегі санкциялар бұзушылықтың ауырлығына байланысты. Плагиат, оқытушыны алдау және көшіру адалдық қағидатына қайшы келеді.','Sanctions from the Ethics Code depend on the seriousness of the violation. Plagiarism, deceiving a teacher and cheating go against the principle of conscientiousness.','道德准则规定的处分视违规严重程度而定。抄袭、欺骗教师和作弊都违背诚实守信原则。','Etika kodeksindäki çäreler bozulmanyň agyrlygyna baglydyr. Plagiat, mugallymy aldamak we göçürmek dogruçyllyk ýörelgesine ters gelýär.'))+'</p>')+
+  sec('<div class="card rv"><h3>'+L(T('Официальные материалы','Ресми материалдар','Official resources','官方资料','Resmi materiallar'))+'</h3><p style="margin:0">'+ext(OFF.plag,L(T('Плагиат и списывание','Плагиат және көшіру','Plagiarism and cheating','抄袭与作弊','Plagiat we göçürme')))+' &nbsp;·&nbsp; '+ext(OFF.league,L(T('Лига академической честности','Академиялық адалдық лигасы','Academic Integrity League','学术诚信联盟','Akademik dogruçyllyk ligasy')))+' &nbsp;·&nbsp; '+ext(OFF.policy,L(T('Академическая политика','Академиялық саясат','Academic policy','学术政策','Akademik syýasat')))+'</p></div>');
+};
+
+/* ---- ПОМОЩЬ ---- */
+V.help = function(){
+  var lw=T('Кому писать','Кімге жазу керек','Who to contact','找谁','Kime ýazmaly'), lwh=T('Где','Қайда','Where','地点','Nirede'), ld=T('Документы','Құжаттар','Documents','所需材料','Resminamalar'), lo=T('Официальная страница','Ресми бет','Official page','官方页面','Resmi sahypa'), lc=T('уточнить','нақтылау керек','to confirm','待确认','anyklamaly');
+  return pageHead('help',T('Пошагово: что делать → кому писать → куда идти → какие нужны документы.','Қадамдап: не істеу керек → кімге жазу керек → қайда бару керек → қандай құжаттар қажет.','Step by step: what to do → who to contact → where to go → which documents you need.','分步指引：怎么做 → 找谁 → 去哪里 → 需要哪些材料。','Ädimme-ädim: näme etmeli → kime ýazmaly → nirä barmaly → haýsy resminamalar gerek.'),T('Источник: Путеводитель и официальный сайт','Дереккөз:   жылғы нұсқаулық және ресми сайт','Source: Guide   and official website','资料来源： 年《新生指南》和官网','Çeşme:   gollanmasy we resmi saýt'))+
+  sec('<div class="card rv" style="margin-bottom:22px"><h3>'+ic('alert')+' '+L(T('Экстренная ситуация?','Шұғыл жағдай ма?','Emergency?','紧急情况？','Gyssagly ýagdaý?'))+'</h3><div class="sos">'+sosLinks()+'</div></div>'+
+  HELPS.map(function(h,i){
+    var link=h.link?'<p style="margin:12px 0 0">'+ext(OFF[h.link],L(lo))+'</p>':'';
+    return '<details class="acc rv" style="--d:'+(i*0.04)+'s"><summary><span class="ai">'+ic(h.i)+'</span>'+L(h.t)+(h.v?' <span class="badge draft">'+L(lc)+'</span>':'')+'<span class="ci">'+ic('down')+'</span></summary><div class="ab"><p>'+L(h.w)+'</p><div class="steps"><div><b>'+L(lw)+'</b>'+L(h.who)+'</div><div><b>'+L(lwh)+'</b>'+L(h.where)+'</div><div><b>'+L(ld)+'</b>'+L(h.doc)+'</div></div>'+link+'</div></details>';
+  }).join('')+
+  '<div class="note warn">'+ic('alert')+'<div>'+L(T('Пометка «уточнить» означает, что точный порядок нужно подтвердить в деканате или ЦОС.','«Нақтылау керек» белгісі — нақты тәртіпті деканаттан немесе СҚО-дан растау қажет дегенді білдіреді.','A “to confirm” tag means the exact procedure should be confirmed with your dean’s office or the Student Service Center.','“待确认”标记表示具体流程需向院系办公室或学生服务中心核实。','«Anyklamaly» bellik takyk tertibi dekanatdan ýa-da hyzmat merkezinden tassyklamaly diýmegi aňladýar.'))+'</div></div>');
+};
+
+/* ---- СПРОСИ СТУДЕНТА ---- */
+V.ask = function(){
+  return pageHead('ask',T('Вопросы студентов и ответы. Не нашёл своё — задай вопрос: он попадёт администрации.','Студенттердің сұрақтары мен жауаптары. Өз сұрағыңды таппасаң — сұрақ қой: ол әкімшілікке жетеді.','Students’ questions and answers. Can’t find yours? Ask — it goes straight to the administration.','学生提问与解答。没找到你的问题？直接提问，会转给校方管理部门。','Talyplaryň soraglary we jogaplary. Öz soragyňy tapmadyňmy? Sorag ber — ol administrasiýa ýetýär.'),SRC_GUIDE)+
+  sec('<div class="cta rv"><div><h2>'+L(T('«Я не понимаю…»','«Мен түсінбеймін…»','“I don’t understand…”','“我不明白……”','«Men düşünemok…»'))+'</h2><p>'+L(T('Напиши свой вопрос — ответ появится здесь после проверки.','Сұрағыңды жаз — жауап тексерілгеннен кейін осында пайда болады.','Write your question — the answer will appear here after review.','写下你的问题——审核后答案会发布在这里。','Soragyňy ýaz — jogap barlagdan soň şu ýerde peýda bolar.'))+'</p></div><button class="btn primary lg" data-act="ask">'+ic('chat')+' '+L(T('Задать вопрос','Сұрақ қою','Ask a question','提问','Sorag bermek'))+' '+ic('ext')+'</button></div>')+
+  sec('<div class="searchbox">'+ic('search')+'<input type="search" data-filter="faq" placeholder="'+esc(L(T('Поиск по вопросам…','Сұрақтардан іздеу…','Search questions…','搜索问题…','Soraglardan gözle…')))+'"></div><div class="chips">'+FAQ_CATS.map(function(c,i){return '<button class="chip'+(i===0?' on':'')+'" data-act="cat" data-cat="'+c[0]+'">'+L(c[1])+'</button>'}).join('')+'</div><div id="faqlist">'+FAQ.map(function(f){return '<details class="acc faqi" data-c="'+f.c+'" data-s="'+esc((allv(f.q)+' '+allv(f.a)).toLowerCase())+'"><summary><span class="ai">'+ic('chat')+'</span>'+L(f.q)+'<span class="ci">'+ic('down')+'</span></summary><div class="ab"><p style="margin:0">'+L(f.a)+'</p></div></details>'}).join('')+'</div>');
+};
+
+/* ---- КАЗАХСТАН ---- */
+V.kazakhstan = function(){
+  // [казахская фраза, латиница, ru, en, zh, tk]
+  var ph=[
+   ['Сәлеметсіз бе!','Salemetsiz be','Здравствуйте!','Hello!','您好！','Salam!'],
+   ['Рақмет!','Rakhmet','Спасибо!','Thank you!','谢谢！','Sag boluň!'],
+   ['Кешіріңіз.','Keshiriniz','Извините.','Excuse me / Sorry.','对不起。','Bagyşlaň.'],
+   ['Қай жерде…?','Kai zherde…?','Где …?','Where is …?','……在哪里？','… nirede?'],
+   ['Көмектесіңізші.','Komektesinizshi','Помогите, пожалуйста.','Please help me.','请帮帮我。','Kömek ediň, haýyş.'],
+   ['Түсінбедім.','Tusinbedim','Я не понял(а).','I don’t understand.','我不明白。','Men düşünmedim.'],
+   ['Қайталаңызшы.','Kaitalanyzshy','Повторите, пожалуйста.','Please repeat.','请再说一遍。','Gaýtalaň, haýyş.'],
+   ['Қош болыңыз!','Kosh bolynyz','До свидания!','Goodbye!','再见！','Hoş galyň!']
+  ];
+  var mi = {ru:2,en:3,zh:4,tk:5};
+  var lkey = T('Как читать','Латынша оқылуы','How to read','拉丁字母读音','Nähili okalýar');
+  var lmean = T('Перевод','Аударма','Meaning','意思','Manysy');
+  var K=function(a,b,c,d,e,f){return T(a,b,c,d,e)};
+  var ho=[
+   [[1,1,2,1],T('Новый год','Жаңа жыл','New Year','新年','Täze ýyl')],
+   [[7,1],T('Православное Рождество','Православиелік Рождество','Orthodox Christmas','东正教圣诞节','Prawoslaw Roždestwosy')],
+   [[8,3],T('Международный женский день','Халықаралық әйелдер күні','International Women’s Day','国际妇女节','Halkara aýallar güni')],
+   [[15,3],T('День Конституции','Конституция күні','Constitution Day','宪法日','Konstitusiýa güni')],
+   [[21,3,23,3],T('Наурыз','Наурыз','Nauryz','纳吾鲁孜节','Nowruz')],
+   [[1,5],T('День единства народа Казахстана','Қазақстан халқының бірлігі күні','Day of Unity of the People of Kazakhstan','哈萨克斯坦人民团结日','Gazagystan halkynyň agzybirlik güni')],
+   [[7,5],T('День защитника Отечества','Отан қорғаушы күні','Defender of the Fatherland Day','祖国保卫者日','Watan goragçylary güni')],
+   [[9,5],T('День Победы','Жеңіс күні','Victory Day','胜利日','Ýeňiş güni')],
+   [[27,5],T('Курбан айт (в 2026 г.)','Құрбан айт (2026 ж.)','Kurban Ait (in 2026)','古尔邦节（2026年）','Gurban baýramy (2026-njy ýylda)')],
+   [[6,7],T('День столицы','Астана күні','Capital Day','首都日','Paýtagt güni')],
+   [[25,10],T('День Республики','Республика күні','Republic Day','共和国日','Respublika güni')],
+   [[16,12],T('День Независимости','Тәуелсіздік күні','Independence Day','独立日','Garaşsyzlyk güni')]
+  ];
+  var isKk = lang==='kk';
+  var head = isKk ? '<th>Қазақша</th><th>'+L(lkey)+'</th>' : '<th>Қазақша</th><th>'+L(lkey)+'</th><th>'+L(lmean)+'</th>';
+  var rows = ph.map(function(r){
+    return '<tr><td style="font-weight:700;color:var(--blue)">'+r[0]+'</td><td>'+r[1]+'</td>'+(isKk?'':'<td>'+r[mi[lang]]+'</td>')+'</tr>';
+  }).join('');
+  return pageHead('kazakhstan',T('Коротко о том, что полезно знать, чтобы быстрее освоиться: фразы, праздники, транспорт, номера.','Тезірек бейімделу үшін білуге пайдалы қысқаша ақпарат: сөз тіркестері, мерекелер, көлік, нөмірлер.','A short guide to help you settle in: phrases, holidays, transport and emergency numbers.','帮助你尽快适应的简要信息：常用语、节日、交通和紧急电话。','Tiz uýgunlaşmak üçin peýdaly gysgaça maglumat: sözlemler, baýramlar, ulag, belgiler.'),T('Источник: Путеводитель и общедоступные данные','Дереккөз:   жылғы нұсқаулық және ашық деректер','Source: Guide   and public information','资料来源： 年《新生指南》及公开信息','Çeşme:   gollanmasy we açyk maglumatlar'))+
+  sec('<h2 class="rv">'+L(T('Полезные фразы на казахском','Пайдалы сөз тіркестері','Useful Kazakh phrases','实用哈萨克语','Peýdaly gazakça sözlemler'))+'</h2><div class="tw rv"><table><thead><tr>'+head+'</tr></thead><tbody>'+rows+'</tbody></table></div><p class="rv" style="color:var(--muted);margin-top:10px">'+L(T('Латинская запись — приблизительная, для подсказки произношения.','Латынша жазылуы шамамен, оқылуына көмек ретінде берілген.','The Latin spelling is approximate, meant only as a pronunciation hint.','拉丁字母拼写仅为近似读音提示。','Latyn ýazuwy takmynan, diňe aýdylyşy üçin kömek hökmünde berilýär.'))+'</p>')+
+  sec('<div class="grid g2"><div class="card rv"><h3>'+ic('calendar')+' '+L(T('Праздничные (выходные) дни','Мереке (демалыс) күндері','Public holidays (days off)','公共假日','Baýram (dynç) günleri'))+'</h3><div class="kv">'+ho.map(function(h){return '<div><span class="tag" style="min-width:96px;text-align:center">'+fr(h[0])+'</span><span>'+L(h[1])+'</span></div>'}).join('')+'</div><p style="color:var(--muted);margin:14px 0 0;font-size:.88rem">'+L(T('Список действует на 2026 год. Даты переносов и возможные изменения смотри в официальном календаре.','Тізім 2026 жылға арналған. Демалыс күндерінің ауысуын және мүмкін өзгерістерді ресми күнтізбеден қара.','The list applies to 2026. Check the official calendar for transferred days off and any changes.','此名单适用于2026年。调休安排和可能的变动请以官方日历为准。','Sanaw 2026-njy ýyl üçin dogry. Dynç günleriň göçürilmegini we mümkin üýtgeşmeleri resmi senenamadan gör.'))+'</p></div>'+
+   '<div class="card rv"><h3>'+ic('bus')+' '+L(T('Транспорт','Көлік','Transport','交通','Ulag'))+'</h3><p>'+L(T('В Алматы по студенческой карте «Оңай» можно ездить на автобусе, троллейбусе, трамвае и метро. Порядок оформления — на странице «Первая неделя».','Алматыда «Оңай» студенттік картасымен автобуспен, троллейбуспен, трамваймен және метромен жүруге болады. Рәсімдеу тәртібі — «Алғашқы апта» бетінде.','In Almaty your student Onay card works on buses, trolleybuses, trams and the metro. See “First week” for how to get it.','在阿拉木图，学生版Onay卡可用于公交车、无轨电车、有轨电车和地铁。办理方式见“第一周”页面。','Almatyda «Oňaý» talyp kartasy bilen awtobusda, trolleýbusda, tramwaýda we metroda ýöräp bolýar. Resmileşdirmek tertibi «Ilkinji hepde» sahypasynda.'))+'</p><a class="btn ghost sm" href="'+href('first-week')+'">'+L(T('Как получить карту','Картаны қалай алуға болады','How to get the card','如何办卡','Kartyny nädip almaly'))+' '+ic('arrow')+'</a>'+
+   '<h3 style="margin-top:24px">'+ic('alert')+' '+L(T('Экстренные номера','Шұғыл нөмірлер','Emergency numbers','紧急电话','Gyssagly belgiler'))+'</h3><div class="sos">'+sosLinks()+'</div>'+
+   '<h3 style="margin-top:24px">'+ic('users')+' '+L(T('Этикет в университете','Университеттегі әдеп','University etiquette','校园礼仪','Uniwersitetde edep'))+'</h3><ul class="lst">'+[
+    T('Обращайся к преподавателям и сотрудникам уважительно, на «вы».','Оқытушылар мен қызметкерлерге құрметпен, «сіз» деп жүгін.','Address teachers and staff politely and formally.','对教师和工作人员要有礼貌，使用敬称。','Mugallymlara we işgärlere hormat bilen, «siz» diýip ýüzlen.'),
+    T('Приходи вовремя: пропуски допустимы только по уважительной причине.','Уақытында кел: сабақты тек дәлелді себеппен жіберуге болады.','Be on time: absences are excused only for valid reasons.','按时到校：只有正当理由才可缺课。','Wagtynda gel: sapagy diňe oňat sebäp bilen sypdyrmak bolýar.'),
+    T('Не кури в здании и перед входом; не разговаривай по телефону на занятиях и в библиотеке.','Ғимаратта және кіреберісте темекі шекпе; сабақта және кітапханада телефонмен сөйлеспе.','No smoking inside or at the entrance; no phone calls in class or the library.','不要在楼内和入口处吸烟；上课和在图书馆时不要打电话。','Binada we girelgede çilim çekme; sapakda we kitaphanada telefonda gürleşme.')
+   ].map(function(x){return '<li>'+ic('check')+'<span>'+L(x)+'</span></li>'}).join('')+'</ul></div></div>');
+};
+
+/* ---- ЖИЗНЬ ---- */
+V.life = function(){
+  var C=[
+   ['life_choir','music',T('Студенческий хор «Песни мира»','«Әлем әндері» студенттік хоры','“Songs of the World” student choir','“世界之歌”学生合唱团','«Dünýä aýdymlary» talyp hory'),T('Неоднократный призёр республиканских конкурсов хорового искусства.','Хор өнері республикалық байқауларының бірнеше мәрте жүлдегері.','A repeated prizewinner at national choral competitions.','多次在全国合唱比赛中获奖。','Respublika hor sungaty ýaryşlarynyň gaýta-gaýta ýeňijisi.')],
+   ['life_orchestra','music',T('Оркестр «Ақ желен»','«Ақ желен» оркестрі','“Aq Zhelen” orchestra','“Aq Zhelen”民乐团','«Ak Želen» orkestri'),T('Этнографический оркестр народных инструментов.','Халық аспаптарының этнографиялық оркестрі.','An ethnographic orchestra of folk instruments.','民族乐器民乐团。','Halk saz gurallarynyň etnografik orkestri.')],
+   ['life_dance','star',T('Танцы: BESO и EastLine','Би: BESO және EastLine','Dance: BESO and EastLine','舞蹈：BESO和EastLine','Tans: BESO we EastLine'),T('Победители различных городских конкурсов.','Қалалық түрлі байқаулардың жеңімпаздары.','Winners of various city competitions.','多项城市比赛的获奖者。','Dürli şäher ýaryşlarynyň ýeňijileri.')],
+   ['life_debate','chat',T('Дебатные клубы','Пікірсайыс клубтары','Debate clubs','辩论社团','Jedel klublary'),T('«Абылай хан» (казахская лига) и «Pantheon» (русская лига).','«Абылай хан» (қазақ лигасы) және «Pantheon» (орыс лигасы).','“Abylai Khan” (Kazakh league) and “Pantheon” (Russian league).','“阿布赉汗”（哈萨克语组）和“Pantheon”（俄语组）。','«Ablaý han» (gazak ligasy) we «Pantheon» (rus ligasy).')],
+   ['life_mun','globe',T('Kazumo MUN','Kazumo MUN','Kazumo MUN','Kazumo MUN','Kazumo MUN'),T('Студенческий клуб ООН.','Студенттік БҰҰ клубы.','The student United Nations club.','学生模拟联合国社团。','Talyplaryň BMG kluby.')],
+   ['life_volunteer','users',T('Волонтёры: «Лига волонтеров» и «Көмек»','Еріктілер: «Еріктілер лигасы» және «Көмек»','Volunteers: “Volunteer League” and “Kömek”','志愿者：“志愿者联盟”和“Kömek”','Meýletinçiler: «Meýletinçiler ligasy» we «Kömek»'),T('Волонтёрские организации; осенью и весной — субботники «Университет — мой второй дом».','Еріктілер ұйымдары; күзде және көктемде — «Университет — менің екінші үйім» сенбіліктері.','Volunteer organizations; in autumn and spring — clean-up days “University is my second home”.','志愿者组织；每年春秋两季举办“大学是我的第二个家”义务劳动日。','Meýletinçi guramalar; güýzde we ýazda — «Uniwersitet — meniň ikinji öýüm» şenbelikleri.')]
+  ];
+  return pageHead('life',T('Клубы, творчество, волонтёрство и спорт — чем заняться после занятий.','Үйірмелер, шығармашылық, еріктілік және спорт — сабақтан кейін немен айналысуға болады.','Clubs, arts, volunteering and sport — what to do after class.','社团、艺术、志愿服务和体育——下课后可以做什么。','Toparlar, döredijilik, meýletinçilik we sport — sapakdan soň näme etmeli.'),SRC_GUIDE)+
+  sec('<div class="grid g3">'+C.map(function(c,i){return '<div class="card hov '+rv(i%3)+'">'+photo(c[0],'3/2')+'<h3 style="margin-top:14px">'+ic(c[1])+' '+L(c[2])+'</h3><p style="margin:0;color:var(--muted)">'+L(c[3])+'</p></div>'}).join('')+'</div>')+
+  sec('<div class="grid g2"><div class="card rv"><h3>'+ic('users')+' '+L(T('Центр студенческих инициатив (ЦСИ)','Студенттік бастамалар орталығы','Student Initiatives Center','学生创新倡议中心','Talyp başlangyçlary merkezi'))+'</h3><p>'+L(T('Студенческий орган самоуправления: помогает реализовывать студенческие инициативы, развивать деловую активность и творческий потенциал.','Студенттік өзін-өзі басқару органы: студенттік бастамаларды іске асыруға, іскерлік белсенділік пен шығармашылық әлеуетті дамытуға көмектеседі.','The student self-government body: it supports student initiatives and helps develop business activity and creative potential.','学生自治机构：帮助实现学生倡议，培养实践能力和创造潜力。','Talyplaryň özbaşdak dolandyryş guramasy: talyp başlangyçlaryny durmuşa geçirmäge, işewürlik işjeňligini we döredijilik mümkinçiligini ösdürmäge kömek edýär.'))+'</p><ul class="lst"><li>'+ic('check')+'<span>'+L(T('Культмассовый сектор — мероприятия и концерты','Мәдени-бұқаралық сектор — іс-шаралар мен концерттер','Cultural sector — events and concerts','文化活动部——组织活动和演出','Medeni-köpçülik pudagy — çäreler we konsertler'))+'</span></li><li>'+ic('check')+'<span>'+L(T('Сектор международного сотрудничества — работа с иностранными студентами','Халықаралық ынтымақтастық секторы — шетелдік студенттермен жұмыс','International cooperation sector — work with international students','国际合作部——服务留学生','Halkara hyzmatdaşlyk pudagy — daşary ýurtly talyplar bilen işleşmek'))+'</span></li></ul></div>'+
+   '<div class="card rv"><h3>'+ic('star')+' '+L(T('Спорт и досуг','Спорт және бос уақыт','Sport and leisure','体育与休闲','Sport we boş wagt'))+'</h3><p>'+L(T('Помимо обязательной физкультуры можно заниматься в спортивных секциях в спорткомплексе. Студентам общежитий доступен «Центр досуга» с еженедельными фильмами. Туристическая организация «InyazTravel» — первая в университете.','Міндетті дене шынықтырудан бөлек, спорт кешеніндегі секцияларға қатысуға болады. Жатақханада тұратын студенттерге апта сайын фильм көрсетілетін «Бос уақыт орталығы» қолжетімді. «InyazTravel» туристік ұйымы — университеттегі алғашқысы.','Besides compulsory PE you can join sports sections in the sports complex. Dormitory residents can use the Leisure Center with weekly film screenings. “InyazTravel” is the university’s first tourism organization.','除必修体育课外，还可以在体育馆参加各类体育社团。住宿生可使用“休闲中心”，每周放映电影。“InyazTravel”是学校的第一个旅游社团。','Hökmany beden terbiýesinden başga, sport toplumynda sport bölümlerine gatnaşyp bolýar. Ýaşaýyş jaýlarynda ýaşaýan talyplar üçin her hepde film görkezilýän «Dynç alyş merkezi» elýeterli. «InyazTravel» syýahatçylyk guramasy uniwersitetde ilkinjisi.'))+'</p></div></div>');
+};
+
+/* ---- ФАКУЛЬТЕТЫ ---- */
+V.faculties = function(){
+  var lo=T('Деканат: ','Деканат: ','Dean’s office: ','院系办公室：','Dekanat: '), lp=T('Образовательные программы','Білім беру бағдарламалары','Programmes','专业','Bilim maksatnamalary'), ld=T('Кафедры','Кафедралар','Departments','教研室','Kafedralar');
+  return pageHead('faculties',T('Пять факультетов, их программы и кабинеты деканатов. Твой эдвайзер — в деканате твоей программы.','Бес факультет, олардың бағдарламалары және деканат кабинеттері. Эдвайзеріңді өз бағдарламаңның деканатынан табасың.','Five faculties, their programmes and dean’s office rooms. Your advisor is found through your programme’s dean’s office.','五个院系、各自的专业及院系办公室位置。你的学业导师可通过所在专业的院系办公室找到。','Bäş fakultet, olaryň maksatnamalary we dekanat otaglary. Advaýzeriňi bilim maksatnamaňyň dekanatyndan tapyp bolar.'),SRC_GUIDE)+
+  sec(photo('faculties','21/8')+'<div style="height:22px"></div>'+
+  FAC.map(function(f,i){
+    return '<details class="acc rv" style="--d:'+(i*0.05)+'s"'+(i===0?' open':'')+'><summary><span class="ai">'+ic('cap')+'</span>'+L(f.n)+'<span class="ci">'+ic('down')+'</span></summary><div class="ab"><p>'+ic('pin')+' <b>'+L(lo)+'</b>'+room(f.off[0],f.off[1])+'</p><div class="split" style="align-items:start"><div><h3>'+L(lp)+'</h3><ul class="lst">'+f.pr.map(function(p){return '<li>'+ic('book')+'<span>'+L(p)+'</span></li>'}).join('')+'</ul></div><div><h3>'+L(ld)+'</h3><div class="tw"><table><tbody>'+f.dep.map(function(d){return '<tr><td>'+L(d[0])+'</td><td style="white-space:nowrap">'+room(d[1],d[2])+'</td></tr>'}).join('')+'</tbody></table></div></div></div></div></details>';
+  }).join('')+
+  '<div class="note info">'+ic('info')+'<div>'+L(T('Имена деканов, замдеканов и их телефоны меняются — актуальные контакты смотри на официальной странице:','Деканның, декан орынбасарларының есімдері мен телефондары өзгеріп тұрады — өзекті байланыс деректерін ресми беттен қара:','Names and phone numbers of deans and deputy deans change — see the official page for current contacts:','院长、副院长的姓名和电话会有变动——最新联系方式请查看官方页面：','Dekanlaryň, dekan orunbasarlarynyň atlary we telefonlary üýtgäp durýar — häzirki habarlaşma maglumatlaryny resmi sahypadan gör:'))+' '+ext(OFF.deans,L(T('Контакты деканов факультетов','Факультет деканының байланыстары','Deans’ contacts','各院院长联系方式','Fakultet dekanlarynyň habarlaşmalary')))+'</div></div>');
+};
+
+/* ---- КОНТАКТЫ ---- */
+V.contacts = function(){
+  var links=[[OFF.site,T('Официальный сайт','Ресми сайт','Official website','官方网站','Resmi saýt')],[OFF.portal,T('Образовательный портал','Білім беру порталы','Educational portal','教育门户','Bilim portaly')],[OFF.lib,T('Библиотека','Кітапхана','Library','图书馆','Kitaphana')],[OFF.intl,T('Информация для иностранных студентов','Шетелдік студенттерге арналған ақпарат','Information for international students','留学生信息','Daşary ýurtly talyplar üçin maglumat')],[OFF.cos,T('Центр обслуживания студентов','Студенттерге қызмет көрсету орталығы','Student Service Center','学生服务中心','Talyplara hyzmat ediş merkezi')],[OFF.med,T('Медицинское обслуживание','Медициналық қызмет','Medical services','医疗服务','Lukmançylyk hyzmaty')],[OFF.psy,T('Консультация психолога','Психолог кеңесі','Psychologist','心理咨询','Psiholog maslahaty')],[OFF.visa,T('Визовая поддержка','Визалық қолдау','Visa support','签证支持','Wiza goldawy')],[OFF.guide,T('Путеводитель первокурсника (оригинал)','Бірінші курс студентінің нұсқаулығы (түпнұсқа)','First-year Guide (original)','《新生指南》原文','Birinji ýyl talyp gollanmasy (asyl nusga)')]];
+  var addrT=T('г. Алматы, ул. Муратбаева, 200','Алматы қ., Мұратбаев к-сі, 200','200 Muratbayev St., Almaty','阿拉木图市穆拉特巴耶夫街200号','Almaty şäheri, Muratbaýew köçesi, 200');
+  var ext1=T('вн. 1115','ішкі 1115','ext. 1115','分机1115','içki 1115');
+  return pageHead('contacts',T('Адрес, телефоны, соцсети и ссылки на официальные ресурсы.','Мекенжай, телефондар, әлеуметтік желілер және ресми ресурстарға сілтемелер.','Address, phones, social media and links to official resources.','地址、电话、社交媒体及官方资源链接。','Salgy, telefonlar, sosial ulgamlar we resmi çeşmelere salgylanmalar.'),T('Источник: сайт ablaikhan.kz и Путеводитель','Дереккөз: ablaikhan.kz сайты және жылғы нұсқаулық','Source: ablaikhan.kz and Guide','资料来源：ablaikhan.kz 及 年《新生指南》','Çeşme: ablaikhan.kz saýty we   gollanmasy'))+
+  sec('<div class="split" style="align-items:start"><div><div class="card rv"><div class="kv">'+
+   '<div>'+ic('pin')+'<span><b>'+L(T('Адрес','Мекенжай','Address','地址','Salgy'))+'</b><small>'+L(addrT)+'</small></span></div>'+
+   '<div>'+ic('phone')+'<span><b>'+L(T('Общий телефон','Жалпы телефон','Main phone','总机','Umumy telefon'))+'</b><small><a href="tel:+77272920800">+7 (727) 292-08-00</a></small></span></div>'+
+   '<div>'+ic('phone')+'<span><b>'+L(T('Центр обслуживания студентов','Студенттерге қызмет көрсету орталығы','Student Service Center','学生服务中心','Talyplara hyzmat ediş merkezi'))+'</b><small><a href="tel:+77272920384">+7 (727) 292-03-84</a> ('+L(ext1)+')</small></span></div>'+
+   '<div>'+ic('phone')+'<span><b>'+L(T('Приёмная комиссия','Қабылдау комиссиясы','Admissions office','招生办公室','Kabul ediş toplumy'))+'</b><small><a href="tel:+77272920805">+7 (727) 292-08-05</a>, <a href="tel:+77272922373">+7 (727) 292-23-73</a></small></span></div></div>'+
+   '<p style="margin:16px 0 0"><a class="btn primary sm" href="'+CONFIG.MAPS+'" target="_blank" rel="noopener noreferrer">'+ic('pin')+' '+L(T('Открыть на карте','Картадан ашу','Open in Maps','在地图中打开','Kartada aç'))+'</a></p></div>'+
+   '<div class="card rv" style="margin-top:16px"><h3>'+L(T('Соцсети','Әлеуметтік желілер','Social media','社交媒体','Sosial ulgamlar'))+'</h3><p style="margin:0">'+ext(OFF.insta,'Instagram')+' &nbsp;·&nbsp; '+ext(OFF.tg,'Telegram')+' &nbsp;·&nbsp; '+ext(OFF.tt,'TikTok')+' &nbsp;·&nbsp; '+ext(OFF.yt,'YouTube')+'</p></div></div>'+
+   '<div class="rv">'+photo('contacts','16/10')+'<div class="card" style="margin-top:16px"><h3>'+L(T('Официальные ресурсы','Ресми ресурстар','Official resources','官方资源','Resmi çeşmeler'))+'</h3><div class="kv">'+links.map(function(l){return '<div>'+ic('ext')+'<span>'+ext(l[0],L(l[1]))+'</span></div>'}).join('')+'</div></div></div></div>');
+};
+
+/* ---- О ПРОЕКТЕ ---- */
+var AUTHORS_CYR = ['Изотова Любовь','Байдуллаева Айсу','Бекболат Альбина','Айдынгали Назым','Аккозенова Жанель','Жаксыгельды Акбота'];
+var AUTHORS_LAT = ['Izotova Lyubov','Baidullayeva Aisu','Bekbolat Albina','Aidyngali Nazym','Akkozenova Zhanel','Zhaksygeldy Akbota'];
+function authors(){return (lang==='ru'||lang==='kk')?AUTHORS_CYR:AUTHORS_LAT}
+var CREDIT = T('Работа создана в целях учебного задания студентами 210 группы, тема 39.','Жұмыс оқу тапсырмасының мақсатында 210 топ студенттерімен жасалды, 39-тақырып.','Created for a course assignment by students of group 210, topic 39.','本作品由210组学生为完成课程作业而制作，选题编号39。','Bu iş okuw tabşyrygy maksady bilen 210-njy topar talyplary tarapyndan taýýarlandy, 39-njy tema.');
+var NOT_OFFICIAL = T('Сайт не является официальным сайтом университета.','Сайт университеттің ресми сайты болып табылмайды.','This is not the official website of the university.','本网站不是大学官方网站。','Bu saýt uniwersitetiň resmi saýty däl.');
+V.about = function(){
+  return pageHead('about',T('Кто и зачем сделал этот сайт.','Бұл сайтты кім және не үшін жасады.','Who made this site and why.','谁制作了这个网站，为什么制作。','Bu saýty kim we näme üçin ýasady.'))+
+  sec('<div class="grid g2"><div class="card rv"><h3>'+L(T('О проекте','Жоба туралы','About','关于项目','Taslama barada'))+'</h3><p>'+L(T('Учебный проект по направлению «Переводческое дело»: «Доступная информация для иностранного студента». Цель — помочь тем, кому трудно ориентироваться на сайтах только на русском и казахском.','Аударма ісі бағыты бойынша оқу жобасы: «Шетелдік студентке қолжетімді ақпарат». Мақсаты — тек орыс және қазақ тілдеріндегі сайттарда бағдарлану қиын болатындарға көмектесу.','A coursework project in Translation Studies: “Accessible information for the international student”. It helps those who find sites in Russian and Kazakh alone hard to navigate.','翻译专业课程项目：“面向留学生的无障碍信息”。目的是帮助那些因网站只有俄语和哈萨克语而难以查找信息的学生。','Terjimeçilik ugry boýunça okuw taslamasy: «Daşary ýurtly talyp üçin elýeterli maglumat». Maksat — diňe rus we gazak dilindäki saýtlarda ugur tapmak kyn bolanlara kömek etmek.'))+'</p><p style="margin:0;color:var(--muted)">'+L(UNI_FULL)+'</p></div>'+
+   '<div class="card rv"><h3>'+ic('users')+' '+L(T('Авторы','Авторлар','Authors','制作人员','Awtorlar'))+'</h3><p>'+L(CREDIT)+'</p><ul class="lst">'+authors().map(function(a){return '<li>'+ic('check')+'<span>'+a+'</span></li>'}).join('')+'</ul></div></div>')+
+  sec('<div class="grid g2"><div class="card rv"><h3>'+ic('book')+' '+L(T('Источники','Дереккөздер','Sources','资料来源','Çeşmeler'))+'</h3><ul class="lst">'+[
+    T('Путеводитель первокурсника КазУМОиМЯ им. Абылай хана,  ','Абылай хан атындағы ҚазХҚжӘТУ Бірінші курс студентінің нұсқаулығы,  ','First-year Guide of Ablai Khan University,  ','阿布赉汗大学《新生指南》， 年','Ablaý han uniwersitetiniň Birinji ýyl talyp gollanmasy,  '),
+    T('Публичные страницы ablaikhan.kz','ablaikhan.kz сайтының ашық беттері','Public pages of ablaikhan.kz','ablaikhan.kz 的公开页面','ablaikhan.kz saýtynyň açyk sahypalary'),
+    T('Список государственных праздников РК на 2026 год','ҚР 2026 жылғы мемлекеттік мерекелер тізімі','List of Kazakhstan public holidays for 2026','哈萨克斯坦2026年法定节假日名单','Gazagystan Respublikasynyň 2026-njy ýyl üçin döwlet baýramlarynyň sanawy')
+   ].map(function(x){return '<li>'+ic('check')+'<span>'+L(x)+'</span></li>'}).join('')+'</ul></div>'+
+   '<div class="note warn rv" style="margin:0">'+ic('alert')+'<div>'+L(NOT_OFFICIAL)+' '+L(T('Сайт не заменяет документы университета. Актуальные сведения уточняйте в деканате и Центре обслуживания студентов.','Сайт университет құжаттарын алмастырмайды. Өзекті мәліметтерді деканаттан және Студенттерге қызмет көрсету орталығынан нақтылаңыз.','The site does not replace university documents. Confirm current details with your dean’s office and the Student Service Center.','本网站不能替代大学的正式文件。最新信息请向院系办公室和学生服务中心核实。','Saýt uniwersitetiň resminamalaryny çalyşmaýar. Häzirki maglumatlary dekanatdan we Talyplara hyzmat ediş merkezinden anyklaň.'))+'</div></div></div>');
+};
+
+/* ---- СПИСОК ФОТО ---- */
+V.photos = function(){
+  return pageHead('photos',T('Куда нужно добавить фото. Вставь путь к файлу в объект PHOTOS в начале скрипта — заглушка заменится сама.','Фотоларды қайда қосу керек. Скрипттің басындағы PHOTOS нысанына файл жолын қой — толтырғыш өзі ауысады.','Where photos are needed. Put the file path into the PHOTOS object at the top of the script.','需要添加照片的位置。把文件路径填入脚本开头的PHOTOS对象，占位图会自动被替换。','Suratlary nirä goşmaly. Faýlyň ýoluny skriptiň başyndaky PHOTOS obýektine goý — ýer tutujy özi çalşylýar.'))+
+  sec('<div class="note warn">'+ic('alert')+'<div>'+L(T('Фото из Путеводителя принадлежат университету — получи разрешение на использование или сделай свои снимки.','Нұсқаулықтағы фотолар университетке тиесілі — пайдалануға рұқсат ал немесе өз суреттеріңді түсір.','Photos from the Guide belong to the university — get permission or take your own.','《新生指南》中的照片归大学所有——请获得使用许可，或自行拍摄。','Gollanmadaky suratlar uniwersitete degişli — ulanmaga rugsat al ýa-da öz suratlaryňy düşür.'))+'</div></div><div class="tw"><table><thead><tr><th>'+L(T('Ключ','Кілт','Key','键名','Açar'))+'</th><th>'+L(T('Страница','Бет','Page','页面','Sahypa'))+'</th><th>'+L(T('Что снять','Нені түсіру керек','What to shoot','拍摄内容','Nämäni surata düşürmeli'))+'</th><th>'+L(T('Размер','Өлшемі','Size','尺寸','Ölçegi'))+'</th><th></th></tr></thead><tbody>'+PHOTO_SPEC.map(function(s){return '<tr><td><code>'+s[0]+'</code></td><td>'+L(NAV[s[1]])+'</td><td>'+L(s[2])+'</td><td>'+s[3]+'</td><td>'+(PHOTOS[s[0]]?'✅':'⬜')+'</td></tr>'}).join('')+'</tbody></table></div>');
+};
+
+/* =====================================================================
+   ШАПКА / ПОДВАЛ / РОУТЕР
+   ===================================================================== */
+var ARIA = {search:T('Поиск','Іздеу','Search','搜索','Gözleg'),lang:T('Язык','Тіл','Language','语言','Dil'),theme:T('Тема','Тақырып','Theme','主题','Tema'),menu:T('Меню','Мәзір','Menu','菜单','Menýu'),skip:T('Перейти к содержимому','Мазмұнға өту','Skip to content','跳到正文','Mazmuna geç')};
+function renderHeader(p){
+  var nav=MAIN.map(function(k){return '<a href="'+href(k)+'" class="'+(k===p?'on':'')+'">'+L(NAV[k])+'</a>'}).join('');
+  var more=MORE.map(function(k){return '<a href="'+href(k)+'">'+ic(ICON_OF[k])+' '+L(NAV[k])+'</a>'}).join('');
+  var langs=LANGS.map(function(l){return '<button data-act="lang" data-l="'+l.c+'" class="'+(l.c===lang?'cur':'')+'">'+l.n+(l.c===lang?' '+ic('check'):'')+'</button>'}).join('');
+  var cur=LANGS.filter(function(l){return l.c===lang})[0];
+  var dark=document.documentElement.getAttribute('data-theme')==='dark';
+  $('#hdr').innerHTML='<div class="container hbar"><a class="brand" href="'+href('home')+'"><span class="mk">'+ic('cap')+'</span><span>'+L(BRAND)+'<small>'+L(UNI)+'</small></span></a><nav class="main">'+nav+'<div class="dd more"><button data-act="menu" data-m="more">'+L(MORE_L)+' '+ic('down')+'</button><div class="menu" id="m-more">'+more+'</div></div></nav><span class="sp"></span>'+
+  '<button class="ibtn" data-act="search" aria-label="'+esc(L(ARIA.search))+'">'+ic('search')+'</button>'+
+  '<div class="dd lang"><button class="ibtn" data-act="menu" data-m="lang" aria-label="'+esc(L(ARIA.lang))+'">'+ic('globe')+' '+cur.s+'</button><div class="menu" id="m-lang">'+langs+'</div></div>'+
+  '<button class="ibtn" data-act="theme" aria-label="'+esc(L(ARIA.theme))+'">'+ic(dark?'sun':'moon')+'</button>'+
+  '<button class="ibtn burger" data-act="drawer" aria-label="'+esc(L(ARIA.menu))+'">'+ic('menu')+'</button></div>';
+  $('#drawer').innerHTML=['home'].concat(MAIN,MORE).map(function(k){return '<a href="'+href(k)+'">'+ic(ICON_OF[k])+' '+L(NAV[k])+'</a>'}).join('');
+}
+function renderFooter(){
+  $('#ftr').innerHTML='<div class="container"><div class="fg2"><div><b style="color:var(--ink)">'+L(BRAND)+'</b><p style="margin:8px 0 0">'+L(CREDIT)+'</p><p style="margin:8px 0 0;color:var(--ink);font-weight:550">'+authors().join(' · ')+'</p><p style="margin:8px 0 0">'+L(NOT_OFFICIAL)+'</p></div>'+
+  '<div><h4>'+L(T('Разделы','Бөлімдер','Sections','栏目','Bölümler'))+'</h4><ul>'+MAIN.map(function(k){return '<li><a href="'+href(k)+'">'+L(NAV[k])+'</a></li>'}).join('')+'</ul></div>'+
+  '<div><h4>'+L(MORE_L)+'</h4><ul>'+MORE.map(function(k){return '<li><a href="'+href(k)+'">'+L(NAV[k])+'</a></li>'}).join('')+'</ul></div></div></div>';
+}
+function parse(){
+  var h=location.hash.replace(/^#\/?/,'').split('/'); var l=h[0];
+  if(!LANGS.some(function(x){return x.c===l})){
+    l=store.get('lang',null);
+    if(!l||!LANGS.some(function(x){return x.c===l})){var n=(navigator.language||'ru').slice(0,2).toLowerCase(); l=LANGS.some(function(x){return x.c===n})?n:'ru';}
+    return {l:l,p:'home',s:''};
+  }
+  var p=PAGES.indexOf(h[1])>-1?h[1]:'home';
+  return {l:l,p:p,s:h[2]||''};
+}
+function render(){
+  var r=parse(); lang=r.l; document.documentElement.lang=lang; store.set('lang',lang);
+  fb=0; var html=V[r.p](r.s);
+  var app=$('#app'); app.innerHTML=html; app.setAttribute('data-fb',fb);
+  if(lastPage!==r.p){app.classList.remove('pg');void app.offsetWidth;app.classList.add('pg');window.scrollTo(0,0);}
+  lastPage=r.p;
+  renderHeader(r.p); renderFooter();
+  document.title=(r.p==='home'?'':L(NAV[r.p])+' · ')+L(BRAND);
+  var sk=$('.skip'); if(sk) sk.textContent=L(ARIA.skip);
+  $('#sin').placeholder=L(T('Поиск по сайту…','Сайттан іздеу…','Search the site…','搜索本站…','Sahypadan gözle…'));
+  $('#drawer').classList.remove('open');
+  after(r.p);
+}
+function after(p){
+  var io=(typeof IntersectionObserver==='function')?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);animate(e.target)}})},{threshold:.12}):null;
+  $$('.rv,.tl,[data-bar],[data-count]').forEach(function(el){ if(io) io.observe(el); else {el.classList.add('in');animate(el)} });
+  setTimeout(function(){$$('.rv').forEach(function(el){el.classList.add('in')})},2500);
+  if(p==='first-week') paintFW();
+  if(p==='study'){finCalc();gpaCalc();}
+}
+function animate(el){
+  if(el.hasAttribute('data-count')){ if(el.done) return; el.done=1; var to=+el.getAttribute('data-count'),t0=null; (function step(ts){t0=t0||ts;var k=Math.min((ts-t0)/1100,1);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(step)})(0); }
+  if(el.classList.contains('tl')){var f=$('.fillb',el);if(f)f.style.height='calc(100% - 12px)';}
+  if(el.hasAttribute('data-bar')){var w=el.getAttribute('data-bar').split(',');$$('i',el).forEach(function(i,k){i.style.width=w[k]+'%'})}
+}
+function paintFW(){
+  var done=store.get('fw',[]).filter(function(id){return FW.some(function(x){return x.id===id})});
+  var n=done.length, tot=FW.length, fg=$('#ringfg'); if(!fg) return;
+  fg.style.strokeDashoffset=502-502*n/tot; $('#ringn').textContent=n+'/'+tot;
+  if(n===tot && !paintFW.cel){paintFW.cel=1;toast(L(T('🎉 Все шаги выполнены!','🎉 Барлық қадам орындалды!','🎉 All steps done!','🎉 全部完成！','🎉 Ähli ädimler ýerine ýetirildi!')))}
+  if(n<tot) paintFW.cel=0;
+}
+function dec(x,n){var s=x.toFixed(n);return (lang==='en'||lang==='zh')?s:s.replace('.',',')}
+function letterOf(x){var t=[[95,'A'],[90,'A-'],[85,'B+'],[80,'B'],[75,'B-'],[70,'C+'],[65,'C'],[60,'C-'],[55,'D+'],[50,'D'],[25,'FX'],[0,'F']];for(var i=0;i<t.length;i++){if(x>=t[i][0])return t[i][1]}return 'F'}
+function finCalc(){
+  var f1=$('#f1'); if(!f1) return;
+  var v=function(id){var n=parseFloat($(id).value);return isNaN(n)?0:Math.max(0,Math.min(100,n))};
+  var a=v('#f1'),b=v('#f2'),e=v('#f3'), io=((a+b)/2)*0.6+e*0.4, ok=a>=50&&b>=50;
+  var okT=T('Допуск к экзамену есть (оба РК ≥ 50).','Емтиханға жіберіледі (екі МБ де ≥ 50).','You are admitted to the exam (both RK ≥ 50).','可以参加考试（两次阶段考核均≥50分）。','Synaga rugsat bar (iki AG hem ≥ 50).');
+  var noT=T('⚠️ Нет допуска к экзамену: нужно минимум 50 баллов по каждому РК.','⚠️ Емтиханға жіберілмейді: әр МБ-дан кемінде 50 балл қажет.','⚠️ Not admitted to the exam: at least 50 points in each RK are required.','⚠️ 不能参加考试：每次阶段考核至少需要50分。','⚠️ Synaga rugsat ýok: her AG-den azyndan 50 bal gerek.');
+  $('#finres').innerHTML='<big>'+dec(io,1)+' · '+letterOf(io)+'</big><span>'+L(ok?okT:noT)+'</span>';
+}
+function gpaCalc(){
+  var rows=$$('#gparows .gr'); if(!rows.length) return; var s=0,c=0;
+  rows.forEach(function(r){var g=parseFloat($('select',r).value),k=parseFloat($('input',r).value);if(!isNaN(g)&&!isNaN(k)&&k>0){s+=g*k;c+=k}});
+  $('#gpares').innerHTML='<big>'+(c?dec(s/c,2):'—')+'</big><span>GPA · '+c+' '+L(T('кредитов','кредит','credits','学分','kredit'))+'</span>';
+}
+
+/* Поиск */
+function searchIndex(){
+  var out=[];
+  PAGES.filter(function(p){return p!=='photos'}).forEach(function(p){out.push({t:L(NAV[p]),s:'',h:href(p),k:allv(NAV[p]).toLowerCase(),i:ICON_OF[p]})});
+  GL.forEach(function(g){out.push({t:L(g.a)+' — '+L(g.n),s:L(g.d),h:href('study','glossary'),k:(allv(g.a)+' '+allv(g.n)+' '+allv(g.d)).toLowerCase(),i:'book'})});
+  FAQ.forEach(function(f){out.push({t:L(f.q),s:'',h:href('ask'),k:(allv(f.q)+' '+allv(f.a)).toLowerCase(),i:'chat'})});
+  HELPS.forEach(function(h){out.push({t:L(h.t),s:'',h:href('help'),k:allv(h.t).toLowerCase(),i:'buoy'})});
+  BLD.forEach(function(b){out.push({t:L(b.ab)+' — '+L(b.n),s:addr(b.s1,b.num,b.s2),h:href('campus'),k:(allv(b.ab)+' '+allv(b.n)).toLowerCase(),i:'pin'})});
+  FAC.forEach(function(f){out.push({t:L(f.n),s:'',h:href('faculties'),k:(allv(f.n)+' '+f.pr.map(allv).join(' ')).toLowerCase(),i:'cap'})});
+  return out;
+}
+function doSearch(q){
+  q=q.trim().toLowerCase(); var box=$('#sres'); var idx=searchIndex();
+  var res=q? idx.filter(function(x){return x.k.indexOf(q)>-1}).slice(0,30) : idx.filter(function(x){return !x.s}).slice(0,8);
+  box.innerHTML=res.length? res.map(function(r){return '<a href="'+r.h+'" data-close="1">'+ic(r.i)+'<span>'+r.t+(r.s?'<small>'+r.s+'</small>':'')+'</span></a>'}).join('') : '<div class="em">'+L(T('Ничего не найдено','Ештеңе табылмады','Nothing found','未找到结果','Hiç zat tapylmady'))+'</div>';
+}
+function openSearch(){$('#sov').classList.add('open');var i=$('#sin');i.value='';doSearch('');setTimeout(function(){i.focus()},30)}
+function closeSearch(){$('#sov').classList.remove('open')}
+
+/* События */
+document.addEventListener('click',function(e){
+  var t=e.target;
+  if(t.closest('[data-stop]')){e.stopPropagation();return}
+  var d=t.closest('[data-close]'); if(d){closeSearch()}
+  if(t.id==='sov'){closeSearch();return}
+  var bb=t.closest('.bld'); if(bb){setBld(bb)}
+  var a=t.closest('[data-act]');
+  if(!a){ $$('.menu.open').forEach(function(m){m.classList.remove('open')}); return; }
+  var act=a.getAttribute('data-act');
+  if(act!=='menu') $$('.menu.open').forEach(function(m){m.classList.remove('open')});
+  if(act==='lang'){var l=a.getAttribute('data-l');var r=parse();store.set('lang',l);location.hash='#/'+l+'/'+r.p+(r.s?'/'+r.s:'');}
+  else if(act==='menu'){var m=$('#m-'+a.getAttribute('data-m'));var was=m.classList.contains('open');$$('.menu.open').forEach(function(x){x.classList.remove('open')});if(!was)m.classList.add('open');}
+  else if(act==='theme'){var root=document.documentElement;var cur=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);var nv=cur?'light':'dark';root.setAttribute('data-theme',nv);store.set('theme',nv);renderHeader(parse().p);}
+  else if(act==='drawer'){$('#drawer').classList.toggle('open')}
+  else if(act==='search'){openSearch()}
+  else if(act==='tab'){var tb=a.getAttribute('data-tab');$$('.tabs button').forEach(function(b){b.classList.toggle('on',b===a)});$$('.panel').forEach(function(p){p.classList.toggle('on',p.getAttribute('data-panel')===tb)});var r2=parse();history.replaceState(null,'','#/'+lang+'/'+r2.p+'/'+tb);$$('[data-bar],.tl').forEach(function(el){animate(el)});}
+  else if(act==='ck'){var id=a.getAttribute('data-id');var dn=store.get('fw',[]);var k=dn.indexOf(id);if(k>-1)dn.splice(k,1);else dn.push(id);store.set('fw',dn);a.classList.toggle('done');a.setAttribute('aria-checked',a.classList.contains('done'));paintFW();}
+  else if(act==='fwreset'){store.set('fw',[]);$$('.ck').forEach(function(c){c.classList.remove('done')});paintFW();}
+  else if(act==='gpaadd'){$('#gparows').insertAdjacentHTML('beforeend',gpaRow('B',5));gpaCalc();}
+  else if(act==='gpadel'){var rows=$$('#gparows .gr');if(rows.length>1){a.closest('.gr').remove();gpaCalc();}}
+  else if(act==='guess'){var card=a.closest('.sc');var right=card.getAttribute('data-v')===a.getAttribute('data-g');$$('.gb button',card).forEach(function(b){b.classList.remove('right','wrong');if(b.getAttribute('data-g')===card.getAttribute('data-v'))b.classList.add('right')});if(!right)a.classList.add('wrong');$('.vd',card).classList.add('show');}
+  else if(act==='cat'){$$('.chip').forEach(function(c){c.classList.toggle('on',c===a)});filterFaq();}
+  else if(act==='ask'){ if(CONFIG.FORM_URL){window.open(CONFIG.FORM_URL,'_blank','noopener')} else toast(L(T('Ссылка на форму ещё не добавлена.','Форма сілтемесі әлі қосылмаған.','The form link has not been added yet.','表单链接尚未添加。','Forma salgylanmasy entek goşulmady.'))); }
+});
+document.addEventListener('input',function(e){
+  var t=e.target;
+  if(t.getAttribute('data-calc')==='fin') finCalc();
+  if(t.getAttribute('data-calc')==='gpa') gpaCalc();
+  if(t.id==='sin') doSearch(t.value);
+  var f=t.getAttribute('data-filter');
+  if(f==='gl'){var q=t.value.toLowerCase();$$('.gli').forEach(function(c){c.style.display=c.getAttribute('data-s').indexOf(q)>-1?'':'none'})}
+  if(f==='faq') filterFaq();
+});
+document.addEventListener('change',function(e){var t=e.target;if(t.getAttribute&&t.getAttribute('data-calc')==='gpa')gpaCalc();});
+function filterFaq(){
+  var inp=$('[data-filter="faq"]'); var q=(inp?inp.value:'').toLowerCase(); var chip=$('.chip.on'); var c=chip?chip.getAttribute('data-cat'):'all';
+  $$('.faqi').forEach(function(el){var ok=(c==='all'||el.getAttribute('data-c')===c)&&el.getAttribute('data-s').indexOf(q)>-1;el.style.display=ok?'':'none'});
+}
+document.addEventListener('keydown',function(e){
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openSearch();}
+  else if(e.key==='Escape'){closeSearch();$('#drawer').classList.remove('open');$$('.menu.open').forEach(function(m){m.classList.remove('open')})}
+  else if((e.key==='Enter'||e.key===' ')&&e.target.getAttribute&&e.target.getAttribute('data-act')==='ck'){e.preventDefault();e.target.click();}
+  else if(e.key==='Enter'&&e.target.id==='sin'){var f=$('#sres a');if(f)f.click();}
+});
+document.addEventListener('mouseover',function(e){var b=e.target.closest&&e.target.closest('.bld');if(b){setBld(b)}});
+document.addEventListener('focusin',function(e){var b=e.target.closest&&e.target.closest('.bld');if(b){setBld(b)}});
+function setBld(b){var i=$('#binfo');if(!i)return;$$('.bld').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');i.innerHTML=bldInfo(b.getAttribute('data-b'));}
+window.addEventListener('scroll',function(){var h=document.documentElement;var s=h.scrollTop/(h.scrollHeight-h.clientHeight||1);$('#progress').style.width=(s*100)+'%'},{passive:true});
+window.addEventListener('hashchange',render);
+
+/* старт */
+var th=store.get('theme',null); if(th) document.documentElement.setAttribute('data-theme',th);
+render();
+
+})();
+</script>
+</body>
+</html>
