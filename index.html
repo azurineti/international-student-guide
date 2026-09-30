@@ -389,7 +389,7 @@ function X(s){return String(s).replace(/\{\{(\w+)\}\}/g,function(m,id){return te
 
 /* Универсальные подписи */
 var SRC_GUIDE = T('Источник: Путеводитель первокурсника  ','Дереккөз: Бірінші курс студентінің нұсқаулығы,  ','Source: First-year Guide  ','资料来源：《新生指南》 ','Çeşme: Birinji ýyl talyp gollanmasy,  ');
-var NOTE_YEAR = T('Даты и суммы меняются каждый год — уточняй в деканате или ЦОС.','Деректер  –24 нұсқаулығынан алынған. Күндер мен сомалар жыл сайын өзгереді — деканаттан немесе СҚО-дан нақтыла.','Data comes from the  –24 guide. Dates and amounts change every year — confirm with your dean’s office or the Student Service Center.','数据取自 –24学年《新生指南》。日期和金额每年都会变化，请向院系办公室或学生服务中心确认。','Maglumatlar  –24 gollanmasyndan alyndy. Seneler we möçberler her ýyl üýtgeýär — dekanatdan ýa-da hyzmat merkezinden anyklaň.');
+var NOTE_YEAR = T('Даты и суммы меняются каждый год — уточняй в деканате или ЦОС.','Деректер нұсқаулығынан алынған. Күндер мен сомалар жыл сайын өзгереді — деканаттан немесе СҚО-дан нақтыла.','Data comes from the guide. Dates and amounts change every year — confirm with your dean’s office or the Student Service Center.','数据取自 学年《新生指南》。日期和金额每年都会变化，请向院系办公室或学生服务中心确认。','Maglumatlar gollanmasyndan alyndy. Seneler we möçberler her ýyl üýtgeýär — dekanatdan ýa-da hyzmat merkezinden anyklaň.');
 function noteYear(){return '<div class="note warn">'+ic('alert')+'<div>'+L(NOTE_YEAR)+'</div></div>'}
 
 function pageHead(p,lead,src){
@@ -498,7 +498,7 @@ function room(b,n){
 function rooms(b,list){return L(bld(b).ab)+': '+list}
 function dormTitle(n){return T('Общежитие №'+n,'Жатақхана №'+n,'Dormitory No. '+n,n+'号宿舍','Ýaşaýyş jaýy №'+n)}
 
-/* Календарь  –24 */
+/* Календарь */
 var CAL_TYPES = {
  org:['#2A5C8F',T('Организационный период','Ұйымдастыру кезеңі','Orientation','入学适应期','Orientasiýa döwri')],
  sem:['#1E8E5A',T('Семестр','Семестр','Semester','学期','Semestr')],
@@ -790,7 +790,7 @@ V.home = function(){
    [T('Первый день','Бірінші күн','Day 1','第一天','Birinji gün'),T('Знакомство с эдвайзером','Эдвайзермен танысу','Meet your advisor','认识学业导师','Advaýzer bilen tanyşmak'),T('Он поможет со всем остальным.','Қалғанының бәріне ол көмектеседі.','They will help with everything else.','其余事项都可以请他/她帮忙。','Galanlarynyň hemmesinde ol kömek eder.')],
    [T('26 авг – 1 сен','26 тамыз – 1 қыркүйек','26 Aug – 1 Sep','8月26日–9月1日','26 awgust – 1 sentýabr'),T('Тест по языку и ИУП','Тіл тесті және ЖОЖ','Placement test and study plan','分级测试与学习计划','Dil testi we okuw meýilnamasy'),T('Уровень языка и выбор предметов.','Тіл деңгейі және пәндерді таңдау.','Your language level and course choice.','确定语言水平并选课。','Dil derejesi we dersleri saýlamak.')],
    [T('После 1 сентября','1 қыркүйектен кейін','After 1 September','9月1日之后','1-nji sentýabrdan soň'),T('Карты в ЦОС','Карталар СҚО-да','Cards at the service center','在学生服务中心办卡','Kartlar hyzmat merkezinde'),T('Карта студента и «Оңай» — УК-3, каб. 101.','Студент картасы және «Оңай» — ОК-3, 101-каб.','Student card and Onay — Building 3, room 101.','学生卡和Onay卡——3号楼101室。','Talyp kartasy we «Oňaý» — 3-nji bina, 101-nji otag.')],
-   [T('4 сентября','4 қыркүйек','4 September','9月4日','4-nji sentýabr'),T('Начало семестра','Семестрдің басталуы','Semester starts','学期开始','Semestriň başlanmagy'),T('Даты по календарю  –24; уточни на текущий год.','Күндер  –24 күнтізбесі бойынша; ағымдағы жылға нақтыла.','Dates follow the  –24 calendar; confirm for the current year.','日期依据 –24学年历；请核实当年安排。','Seneler  –24 senenamasy boýunça; häzirki ýyl üçin anyklaň.')]
+   [T('4 сентября','4 қыркүйек','4 September','9月4日','4-nji sentýabr'),T('Начало семестра','Семестрдің басталуы','Semester starts','学期开始','Semestriň başlanmagy'),T('Даты по календарю; уточни на текущий год.','Күндер күнтізбесі бойынша; ағымдағы жылға нақтыла.','Dates follow the calendar; confirm for the current year.','日期依据 学年历；请核实当年安排。','Seneler senenamasy boýunça; häzirki ýyl üçin anyklaň.')]
   ];
   var openT=T('Открыть','Ашу','Open','打开','Aç');
   return ''+
@@ -905,8 +905,8 @@ V.study = function(sub){
   '<div class="panel'+(cur==='calendar'?' on':'')+'" data-panel="calendar">'+noteYear()+
    '<div class="grid g3" style="margin-bottom:24px">'+[['36',T('недель в учебном году','оқу жылындағы апта','weeks per academic year','学年总周数','okuw ýylynda hepde')],['30 + 6',T('недель обучения + аттестации','оқу + аттестация аптасы','weeks of study + assessment','教学周 + 考核周','okuw + attestasiýa hepdesi')],['15',T('недель в семестре','семестрдегі апта','weeks per semester','每学期周数','semestrde hepde')]].map(function(s,i){return '<div class="card '+rv(i)+';text-align:center"><div style="font-size:2.2rem;font-weight:800;color:var(--blue)">'+s[0]+'</div><div style="color:var(--muted)">'+L(s[1])+'</div></div>'}).join('')+'</div>'+
    '<div class="note info">'+ic('info')+'<div>'+L(T('Вариант 1 и вариант 2 относятся к разным программам. Уточни свой вариант в деканате или у эдвайзера.','1-нұсқа мен 2-нұсқа әртүрлі бағдарламаларға қатысты. Өз нұсқаңды деканаттан немесе эдвайзерден біл.','Variant 1 and Variant 2 apply to different programmes. Ask your dean’s office or advisor which one is yours.','方案一和方案二适用于不同专业，请向院系办公室或学业导师确认你适用哪一个。','1-nji we 2-nji wariant dürli maksatnamalara degişli. Öz warianty dekanatdan ýa-da advaýzerden bil.'))+'</div></div>'+legend+
-   '<h2>'+L(T('Осень – зима  –24',' –24 жылғы күз – қыс','Autumn – winter  –24',' –24学年秋冬',' –24-nji ýylyň güýzi – gyşy'))+'</h2>'+calList(CAL_FALL)+
-   '<h2 style="margin-top:28px">'+L(T('Весна – лето 2024','2024 жылғы көктем – жаз','Spring – summer 2024','2024年春夏','2024-nji ýylyň ýazy – tomusy'))+'</h2>'+calList(CAL_SPRING)+
+   '<h2>'+L(T('Осень – зима ',' жылғы күз – қыс','Autumn – winter ','学年秋冬','ýylyň güýzi – gyşy'))+'</h2>'+calList(CAL_FALL)+
+   '<h2 style="margin-top:28px">'+L(T('Весна – лето','Жылғы көктем – жаз','Spring – summer','年春夏','ýylyň ýazy – tomusy'))+'</h2>'+calList(CAL_SPRING)+
    '<h2 style="margin-top:28px">'+ic('clock')+' '+L(T('Расписание звонков','Қоңырау кестесі','Bell schedule','作息时间','Jaň tertibi'))+'</h2><div class="tw" style="max-width:520px"><table><thead><tr><th>'+L(T('1 смена','1-ауысым','Shift 1','第一班','1-nji çalşyk'))+'</th><th>'+L(T('2 смена','2-ауысым','Shift 2','第二班','2-nji çalşyk'))+'</th></tr></thead><tbody>'+BELLS.map(function(b){return '<tr><td>'+b[0]+'</td><td>'+b[1]+'</td></tr>'}).join('')+'</tbody></table></div></div>'+
   '<div class="panel'+(cur==='grades'?' on':'')+'" data-panel="grades">'+
    '<div class="grid g2"><div class="card"><h3>'+ic('calc')+' '+L(T('Как считается итоговая оценка','Қорытынды баға қалай есептеледі','How your final grade is calculated','期末总评如何计算','Jemleýji baha nähili hasaplanýar'))+'</h3><p style="color:var(--muted)">'+X(L(T('Два {{rk}} дают 60% оценки, экзамен — 40%. К экзамену допускают, если по каждому рубежному контролю набрано не менее 50 баллов.','Екі {{rk}} бағаның 60%-ын, емтихан 40%-ын құрайды. Әр межелік бақылаудан кемінде 50 балл жинаған жағдайда ғана емтиханға жіберіледі.','Two {{rk}} count for 60% of the grade, the exam for 40%. You are admitted to the exam only with at least 50 points in each midterm control.','两次{{rk}}占总评的60%，考试占40%。每次阶段考核至少获得50分才能参加考试。','Iki {{rk}} bahanyň 60%-ini, synag 40%-ini düzýär. Her aralyk gözegçilikden azyndan 50 bal toplan bolsaň, synaga rugsat berilýär.')))+'</p><code style="display:block;padding:12px 14px;background:var(--surface2);border-radius:12px;font-size:.9rem">'+L(formula)+'</code>'+
